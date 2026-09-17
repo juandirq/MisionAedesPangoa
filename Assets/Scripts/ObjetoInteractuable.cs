@@ -1,114 +1,86 @@
 using UnityEngine;
-using TMPro;
-using System.Collections;
 
 public class ObjetoInteractuable : MonoBehaviour
 {
+    [Header("Referencias")]
     public GameObject textoInteraccion;
-    public GameObject ventanaDecision;
-    public PlayerMovement playerMovement;
-    public TextMeshProUGUI textoFeedback;
+    public VentanaDecisionUI ventanaUI;
     public GameManager gameManager;
 
+    [Header("Datos del objeto")]
+    public string tituloObjeto;
+
+    [TextArea(2, 4)]
+    public string descripcionObjeto;
+
+    [Header("Opciones")]
+    public string opcion1;
+    public string opcion2;
+    public string opcion3;
+
+    [Tooltip("0 = opción 1, 1 = opción 2, 2 = opción 3")]
+    public int opcionCorrecta;
+
+    [Header("Retroalimentación")]
+    [TextArea(2, 4)]
+    public string feedbackCorrecto;
+
+    [TextArea(2, 4)]
+    public string feedbackIncorrecto;
+
+    [Header("Riesgo")]
+    public int reduccionRiesgo = 20;
+
     private bool jugadorCerca = false;
-    private bool inspeccionando = false;
     private bool resuelto = false;
 
     void Update()
     {
-        if (jugadorCerca && !inspeccionando && !resuelto &&
+        if (jugadorCerca &&
+            !resuelto &&
             Input.GetKeyDown(KeyCode.E))
         {
             AbrirInspeccion();
-        }
-
-        if (inspeccionando && Input.GetKeyDown(KeyCode.Escape))
-        {
-            CerrarInspeccion();
         }
     }
 
     void AbrirInspeccion()
     {
-        inspeccionando = true;
-
         textoInteraccion.SetActive(false);
-        ventanaDecision.SetActive(true);
-        textoFeedback.gameObject.SetActive(false);
 
-        if (playerMovement != null)
+        if (ventanaUI != null)
         {
-            playerMovement.enabled = false;
+            ventanaUI.AbrirVentana(this);
         }
     }
 
-    public void RespuestaVaciar()
+    public bool ProcesarRespuesta(int opcionElegida)
     {
         if (resuelto)
-            return;
+            return false;
 
-        resuelto = true;
-
-        textoFeedback.text =
-            "¡Correcto! Eliminaste el agua acumulada.";
-
-        textoFeedback.color = Color.green;
-        textoFeedback.gameObject.SetActive(true);
-
-        if (gameManager != null)
+        if (opcionElegida == opcionCorrecta)
         {
-            gameManager.RegistrarAcierto(20);
+            resuelto = true;
+
+            if (gameManager != null)
+            {
+                gameManager.RegistrarAcierto(reduccionRiesgo);
+            }
+
+            return true;
         }
-
-        StartCoroutine(CerrarDespuesDeAcierto());
-    }
-
-    public void RespuestaTapar()
-    {
-        textoFeedback.text =
-            "Incorrecto. Primero debes eliminar el agua acumulada.";
-
-        textoFeedback.color = Color.red;
-        textoFeedback.gameObject.SetActive(true);
 
         if (gameManager != null)
         {
             gameManager.RegistrarError();
         }
+
+        return false;
     }
 
-    public void RespuestaNada()
+    public void AlCerrarVentana()
     {
-        textoFeedback.text =
-            "Incorrecto. Dejar el recipiente así mantiene el riesgo.";
-
-        textoFeedback.color = Color.red;
-        textoFeedback.gameObject.SetActive(true);
-
-        if (gameManager != null)
-        {
-            gameManager.RegistrarError();
-        }
-    }
-
-    IEnumerator CerrarDespuesDeAcierto()
-    {
-        yield return new WaitForSeconds(1.5f);
-
-        CerrarInspeccion();
-    }
-
-    public void CerrarInspeccion()
-    {
-        inspeccionando = false;
-
-        ventanaDecision.SetActive(false);
-
-        if (playerMovement != null)
-        {
-            playerMovement.enabled = true;
-        }
-
         if (jugadorCerca && !resuelto)
         {
             textoInteraccion.SetActive(true);
@@ -121,7 +93,7 @@ public class ObjetoInteractuable : MonoBehaviour
         {
             jugadorCerca = true;
 
-            if (!inspeccionando && !resuelto)
+            if (!resuelto)
             {
                 textoInteraccion.SetActive(true);
             }
@@ -133,7 +105,6 @@ public class ObjetoInteractuable : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             jugadorCerca = false;
-
             textoInteraccion.SetActive(false);
         }
     }
