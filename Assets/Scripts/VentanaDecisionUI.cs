@@ -3,6 +3,7 @@ using TMPro;
 
 public class VentanaDecisionUI : MonoBehaviour
 {
+    [Header("Referencias de UI")]
     public GameObject ventanaDecision;
 
     public TextMeshProUGUI tituloObjeto;
@@ -13,13 +14,16 @@ public class VentanaDecisionUI : MonoBehaviour
     public TextMeshProUGUI textoBoton2;
     public TextMeshProUGUI textoBoton3;
 
+    [Header("Referencias del juego")]
     public PlayerMovement playerMovement;
+    public GameManager gameManager;
 
     private ObjetoInteractuable objetoActual;
 
     void Update()
     {
-        if (ventanaDecision.activeSelf &&
+        if (ventanaDecision != null &&
+            ventanaDecision.activeSelf &&
             Input.GetKeyDown(KeyCode.Escape))
         {
             CerrarVentana();
@@ -29,6 +33,9 @@ public class VentanaDecisionUI : MonoBehaviour
     public void AbrirVentana(ObjetoInteractuable objeto)
     {
         objetoActual = objeto;
+
+        if (objetoActual == null)
+            return;
 
         tituloObjeto.text = objeto.tituloObjeto;
         descripcionObjeto.text = objeto.descripcionObjeto;
@@ -92,14 +99,25 @@ public class VentanaDecisionUI : MonoBehaviour
     {
         CancelInvoke();
 
-        ventanaDecision.SetActive(false);
+        if (ventanaDecision != null)
+            ventanaDecision.SetActive(false);
 
+        // Solo devuelve el movimiento si la partida NO terminó
         if (playerMovement != null)
-            playerMovement.enabled = true;
+        {
+            if (gameManager == null || !gameManager.JuegoTerminado)
+            {
+                playerMovement.enabled = true;
+            }
+        }
 
+        // Solo vuelve a mostrar la interacción si la partida NO terminó
         if (objetoActual != null)
         {
-            objetoActual.AlCerrarVentana();
+            if (gameManager == null || !gameManager.JuegoTerminado)
+            {
+                objetoActual.AlCerrarVentana();
+            }
         }
 
         objetoActual = null;

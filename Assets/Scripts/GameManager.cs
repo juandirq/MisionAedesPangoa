@@ -4,21 +4,30 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    [Header("HUD")]
     public TextMeshProUGUI textoRiesgo;
     public TextMeshProUGUI textoAciertos;
     public TextMeshProUGUI textoErrores;
     public TextMeshProUGUI textoTiempo;
     public TextMeshProUGUI textoObjetivos;
 
+    [Header("Resultados de la zona")]
+    public TextMeshProUGUI resultadoRiesgo;
+    public TextMeshProUGUI resultadoObjetivos;
+    public TextMeshProUGUI resultadoAciertos;
+    public TextMeshProUGUI resultadoErrores;
+
+    [Header("Paneles")]
     public GameObject panelDerrota;
     public GameObject panelVictoria;
     public GameObject ventanaDecision;
     public GameObject textoInteraccion;
 
+    [Header("Jugador")]
     public PlayerMovement playerMovement;
 
+    [Header("Configuración de la zona")]
     public float tiempoRestante = 120f;
-
     public int objetivosTotales = 4;
 
     private int objetivosCompletados = 0;
@@ -27,6 +36,9 @@ public class GameManager : MonoBehaviour
     private int errores = 0;
 
     private bool juegoTerminado = false;
+
+    // Permite que otros scripts sepan si la partida terminó
+    public bool JuegoTerminado => juegoTerminado;
 
     void Start()
     {
@@ -71,7 +83,6 @@ public class GameManager : MonoBehaviour
             riesgo = 0;
 
         ActualizarHUD();
-
         ComprobarVictoria();
     }
 
@@ -100,12 +111,23 @@ public class GameManager : MonoBehaviour
 
     void ActualizarHUD()
     {
-        textoRiesgo.text = "Riesgo: " + riesgo + "%";
-        textoAciertos.text = "Aciertos: " + aciertos;
-        textoErrores.text = "Errores: " + errores;
+        if (textoRiesgo != null)
+            textoRiesgo.text = "Riesgo: " + riesgo + "%";
 
-        textoObjetivos.text =
-            "Objetivos: " + objetivosCompletados + "/" + objetivosTotales;
+        if (textoAciertos != null)
+            textoAciertos.text = "Aciertos: " + aciertos;
+
+        if (textoErrores != null)
+            textoErrores.text = "Errores: " + errores;
+
+        if (textoObjetivos != null)
+        {
+            textoObjetivos.text =
+                "Objetivos: " +
+                objetivosCompletados +
+                "/" +
+                objetivosTotales;
+        }
 
         ActualizarTiempo();
     }
@@ -115,15 +137,21 @@ public class GameManager : MonoBehaviour
         int minutos = Mathf.FloorToInt(tiempoRestante / 60);
         int segundos = Mathf.FloorToInt(tiempoRestante % 60);
 
-        textoTiempo.text =
-            "Tiempo: " +
-            minutos.ToString("00") +
-            ":" +
-            segundos.ToString("00");
+        if (textoTiempo != null)
+        {
+            textoTiempo.text =
+                "Tiempo: " +
+                minutos.ToString("00") +
+                ":" +
+                segundos.ToString("00");
+        }
     }
 
     void Victoria()
     {
+        if (juegoTerminado)
+            return;
+
         juegoTerminado = true;
 
         if (ventanaDecision != null)
@@ -134,6 +162,28 @@ public class GameManager : MonoBehaviour
 
         if (playerMovement != null)
             playerMovement.enabled = false;
+
+        // Mostrar resultados reales
+        if (resultadoRiesgo != null)
+            resultadoRiesgo.text =
+                "Riesgo final: " + riesgo + "%";
+
+        if (resultadoObjetivos != null)
+        {
+            resultadoObjetivos.text =
+                "Objetivos: " +
+                objetivosCompletados +
+                "/" +
+                objetivosTotales;
+        }
+
+        if (resultadoAciertos != null)
+            resultadoAciertos.text =
+                "Aciertos: " + aciertos;
+
+        if (resultadoErrores != null)
+            resultadoErrores.text =
+                "Errores: " + errores;
 
         if (panelVictoria != null)
             panelVictoria.SetActive(true);
@@ -161,6 +211,8 @@ public class GameManager : MonoBehaviour
 
     public void ReiniciarZona()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(
+            SceneManager.GetActiveScene().buildIndex
+        );
     }
 }
