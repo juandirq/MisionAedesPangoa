@@ -1,0 +1,1911 @@
+fileFormatVersion: 2
+guid: 30839eff634fbea4cb5ef09186fa1de8
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3501067300523844550
+    second: Roca_0
+  - first:
+      213: -9122856746145697861
+    second: Roca_1
+  - first:
+      213: 4104059715397203947
+    second: Roca_2
+  - first:
+      213: 4151083034908996963
+    second: Roca_3
+  - first:
+      213: 4469974691463151918
+    second: Roca_4
+  - first:
+      213: -3187215287218906022
+    second: Roca_5
+  - first:
+      213: 4749411907820155179
+    second: Roca_6
+  - first:
+      213: -4851096498796106681
+    second: Roca_7
+  - first:
+      213: 2095979233125251718
+    second: Roca_8
+  - first:
+      213: 2366375977590912435
+    second: Roca_9
+  - first:
+      213: 598610392451025389
+    second: Roca_10
+  - first:
+      213: 1432004609027500483
+    second: Roca_11
+  - first:
+      213: 1203715187899059920
+    second: Roca_12
+  - first:
+      213: -2719872413443577776
+    second: Roca_13
+  - first:
+      213: -5945940243706376721
+    second: Roca_14
+  - first:
+      213: -5860554593881884052
+    second: Roca_15
+  - first:
+      213: -2572431459101863010
+    second: Roca_16
+  - first:
+      213: -6680882157086140398
+    second: Roca_17
+  - first:
+      213: 7760135616129009723
+    second: Roca_18
+  - first:
+      213: -6953806478612827683
+    second: Roca_19
+  - first:
+      213: 6897281572637426498
+    second: Roca_20
+  - first:
+      213: -5605174423411965720
+    second: Roca_21
+  - first:
+      213: 6529664905721230936
+    second: Roca_22
+  - first:
+      213: 8773707518191015839
+    second: Roca_23
+  - first:
+      213: 7731671597439068429
+    second: Roca_24
+  - first:
+      213: -153418763536213628
+    second: Roca_25
+  - first:
+      213: -28492180532286066
+    second: Roca_26
+  - first:
+      213: -6453509336904101946
+    second: Roca_27
+  - first:
+      213: -8191308540080749955
+    second: Roca_28
+  - first:
+      213: 2185733237279901650
+    second: Roca_29
+  - first:
+      213: -362317157549933343
+    second: Roca_30
+  - first:
+      213: 3405391181058489779
+    second: Roca_31
+  - first:
+      213: 3775772433087683934
+    second: Roca_32
+  - first:
+      213: 3713818480986121711
+    second: Roca_33
+  - first:
+      213: -312408008452820301
+    second: Roca_34
+  - first:
+      213: -551627622800189127
+    second: Roca_35
+  - first:
+      213: 4210020383825373422
+    second: Roca_36
+  - first:
+      213: 5595117692039176002
+    second: Roca_37
+  - first:
+      213: 6473848759134816616
+    second: Roca_38
+  - first:
+      213: 9001764679589968464
+    second: Roca_39
+  - first:
+      213: -2455311980640987825
+    second: Roca_40
+  - first:
+      213: 6170007825094881528
+    second: Roca_41
+  - first:
+      213: 8719890188236846233
+    second: Roca_42
+  - first:
+      213: 6745666289707371376
+    second: Roca_43
+  - first:
+      213: -2018173159406043819
+    second: Roca_44
+  - first:
+      213: -8963784859796959949
+    second: Roca_45
+  - first:
+      213: -7259339170418249865
+    second: Roca_46
+  - first:
+      213: -6563542844130555327
+    second: Roca_47
+  - first:
+      213: 2534648182856298288
+    second: Roca_48
+  - first:
+      213: -8855610196371347398
+    second: Roca_49
+  - first:
+      213: -7672434901940473812
+    second: Roca_50
+  - first:
+      213: 3496997024880190577
+    second: Roca_51
+  - first:
+      213: 5109953849064746391
+    second: Roca_52
+  - first:
+      213: 6922720709753493305
+    second: Roca_53
+  - first:
+      213: -6815971640179053572
+    second: Roca_54
+  - first:
+      213: 1417598969819144446
+    second: Roca_55
+  - first:
+      213: -6933103782338261538
+    second: Roca_56
+  - first:
+      213: 3332402756691995577
+    second: Roca_57
+  - first:
+      213: -2669527631125957633
+    second: Roca_58
+  - first:
+      213: 2526544881647591448
+    second: Roca_59
+  - first:
+      213: -5097589698133871267
+    second: Roca_60
+  - first:
+      213: -8562909470471929960
+    second: Roca_61
+  - first:
+      213: 3419171314035025426
+    second: Roca_62
+  - first:
+      213: 7151026231083251620
+    second: Roca_63
+  - first:
+      213: -890222210985465358
+    second: Roca_64
+  - first:
+      213: 3711357745853189859
+    second: Roca_65
+  - first:
+      213: -1565494188107031985
+    second: Roca_66
+  - first:
+      213: 594006432506118538
+    second: Roca_67
+  - first:
+      213: -8116674094116840611
+    second: Roca_68
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Roca_0
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 923
+        width: 195
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3c5a81f6d5b96fc0800000000000000
+      internalID: -3501067300523844550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_1
+      rect:
+        serializedVersion: 2
+        x: 330
+        y: 1004
+        width: 97
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bbfa535df1a156180800000000000000
+      internalID: -9122856746145697861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_2
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 1030
+        width: 23
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be7bd31219c84f830800000000000000
+      internalID: 4104059715397203947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_3
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 1027
+        width: 48
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 365b6e0e60c9b9930800000000000000
+      internalID: 4151083034908996963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_4
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 919
+        width: 110
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e21c5a78c4a880e30800000000000000
+      internalID: 4469974691463151918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_5
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 947
+        width: 81
+        height: 119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5c5f96359cb4c3d0800000000000000
+      internalID: -3187215287218906022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_6
+      rect:
+        serializedVersion: 2
+        x: 1026
+        y: 988
+        width: 77
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2171a977fc49e140800000000000000
+      internalID: 4749411907820155179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_7
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 955
+        width: 109
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74ced12cf617dacb0800000000000000
+      internalID: -4851096498796106681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_8
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 927
+        width: 83
+        height: 79
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 68ab60fe10a661d10800000000000000
+      internalID: 2095979233125251718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_9
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 986
+        width: 35
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b5f25df96e07d020800000000000000
+      internalID: 2366375977590912435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_10
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 1002
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de986e8faf0be4800800000000000000
+      internalID: 598610392451025389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_11
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 989
+        width: 18
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c96ec5da908fd310800000000000000
+      internalID: 1432004609027500483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_12
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 963
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0de4779f59474b010800000000000000
+      internalID: 1203715187899059920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_13
+      rect:
+        serializedVersion: 2
+        x: 279
+        y: 962
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 058af425372114ad0800000000000000
+      internalID: -2719872413443577776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_14
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 971
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fed8e2ee9d6cb7da0800000000000000
+      internalID: -5945940243706376721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_15
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 955
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6af2ecb5a02baea0800000000000000
+      internalID: -5860554593881884052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_16
+      rect:
+        serializedVersion: 2
+        x: 390
+        y: 961
+        width: 17
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e93913f9733ec4cd0800000000000000
+      internalID: -2572431459101863010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_17
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 955
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21892a0331db843a0800000000000000
+      internalID: -6680882157086140398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_18
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 972
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b380a385a3a81bb60800000000000000
+      internalID: 7760135616129009723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_19
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 964
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd1f87db9dd1f7f90800000000000000
+      internalID: -6953806478612827683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_20
+      rect:
+        serializedVersion: 2
+        x: 1213
+        y: 957
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 243c6e40c0118bf50800000000000000
+      internalID: 6897281572637426498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_21
+      rect:
+        serializedVersion: 2
+        x: 1239
+        y: 931
+        width: 17
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e0cc643f8b6632b0800000000000000
+      internalID: -5605174423411965720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_22
+      rect:
+        serializedVersion: 2
+        x: 460
+        y: 950
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85639d7d2a70e9a50800000000000000
+      internalID: 6529664905721230936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_23
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 0
+        width: 675
+        height: 958
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9713f0b08872c970800000000000000
+      internalID: 8773707518191015839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_24
+      rect:
+        serializedVersion: 2
+        x: 1317
+        y: 938
+        width: 17
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d09255d8a5a6c4b60800000000000000
+      internalID: 7731671597439068429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_25
+      rect:
+        serializedVersion: 2
+        x: 1261
+        y: 904
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4895b898272feddf0800000000000000
+      internalID: -153418763536213628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_26
+      rect:
+        serializedVersion: 2
+        x: 1285
+        y: 923
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e8d2f744386ca9ff0800000000000000
+      internalID: -28492180532286066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_27
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 23
+        width: 735
+        height: 898
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cf0a2343778076a0800000000000000
+      internalID: -6453509336904101946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_28
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 890
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d720dde3840a25e80800000000000000
+      internalID: -8191308540080749955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_29
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 885
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2d745dd7cc8455e10800000000000000
+      internalID: 2185733237279901650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 829
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ecf430077ac8faf0800000000000000
+      internalID: -362317157549933343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_31
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 830
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bd3d349c31624f20800000000000000
+      internalID: 3405391181058489779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_32
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 811
+        width: 27
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5d57e2e50d366430800000000000000
+      internalID: 3775772433087683934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_33
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 177
+        width: 20
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fe565775b322a8330800000000000000
+      internalID: 3713818480986121711
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_34
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 193
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b2be2f429a1aabf0800000000000000
+      internalID: -312408008452820301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_35
+      rect:
+        serializedVersion: 2
+        x: 649
+        y: 169
+        width: 42
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93993b689993858f0800000000000000
+      internalID: -551627622800189127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_36
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 197
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee8a013cb3ffc6a30800000000000000
+      internalID: 4210020383825373422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_37
+      rect:
+        serializedVersion: 2
+        x: 762
+        y: 195
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 24f9f7e85e9d5ad40800000000000000
+      internalID: 5595117692039176002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_38
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 179
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 86985d1852bb7d950800000000000000
+      internalID: 6473848759134816616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_39
+      rect:
+        serializedVersion: 2
+        x: 625
+        y: 183
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 05a3e9e5841bcec70800000000000000
+      internalID: 9001764679589968464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_40
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 168
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f45122d23cafcedd0800000000000000
+      internalID: -2455311980640987825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_41
+      rect:
+        serializedVersion: 2
+        x: 593
+        y: 153
+        width: 17
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f039244d6540a550800000000000000
+      internalID: 6170007825094881528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_42
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 145
+        width: 36
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 994754e1de5430970800000000000000
+      internalID: 8719890188236846233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_43
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 102
+        width: 24
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07bc55b10cb6d9d50800000000000000
+      internalID: 6745666289707371376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_44
+      rect:
+        serializedVersion: 2
+        x: 611
+        y: 148
+        width: 18
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55dff5a44320ef3e0800000000000000
+      internalID: -2018173159406043819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_45
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 138
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33d07c4892d3a9380800000000000000
+      internalID: -8963784859796959949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_46
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 131
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77f24237c75a14b90800000000000000
+      internalID: -7259339170418249865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_47
+      rect:
+        serializedVersion: 2
+        x: 281
+        y: 114
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14a8a83fe8c99e4a0800000000000000
+      internalID: -6563542844130555327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_48
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 88
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03f2db9d711ec2320800000000000000
+      internalID: 2534648182856298288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_49
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 48
+        width: 60
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3865f7027d8a1580800000000000000
+      internalID: -8855610196371347398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_50
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 68
+        width: 33
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2077836b19068590800000000000000
+      internalID: -7672434901940473812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_51
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 86
+        width: 18
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 174e4982444d78030800000000000000
+      internalID: 3496997024880190577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_52
+      rect:
+        serializedVersion: 2
+        x: 1317
+        y: 86
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79de428b3f33ae640800000000000000
+      internalID: 5109953849064746391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_53
+      rect:
+        serializedVersion: 2
+        x: 366
+        y: 67
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 937d810bec1721060800000000000000
+      internalID: 6922720709753493305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_54
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 64
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfbadf3e7edc861a0800000000000000
+      internalID: -6815971640179053572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_55
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 66
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef0a70690c25ca310800000000000000
+      internalID: 1417598969819144446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_56
+      rect:
+        serializedVersion: 2
+        x: 945
+        y: 59
+        width: 15
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: edd8fc6d7daa8cf90800000000000000
+      internalID: -6933103782338261538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_57
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 56
+        width: 7
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9bba821c6a21f3e20800000000000000
+      internalID: 3332402756691995577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_58
+      rect:
+        serializedVersion: 2
+        x: 979
+        y: 70
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ff3b5a463cee3fad0800000000000000
+      internalID: -2669527631125957633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_59
+      rect:
+        serializedVersion: 2
+        x: 997
+        y: 58
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 810afa30f27101320800000000000000
+      internalID: 2526544881647591448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_60
+      rect:
+        serializedVersion: 2
+        x: 1339
+        y: 58
+        width: 12
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d553a008d29b149b0800000000000000
+      internalID: -5097589698133871267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_61
+      rect:
+        serializedVersion: 2
+        x: 446
+        y: 46
+        width: 24
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89f31b0743f6a2980800000000000000
+      internalID: -8562909470471929960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_62
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 48
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 216634fc136537f20800000000000000
+      internalID: 3419171314035025426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_63
+      rect:
+        serializedVersion: 2
+        x: 997
+        y: 43
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a7b73b287c8d3360800000000000000
+      internalID: 7151026231083251620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_64
+      rect:
+        serializedVersion: 2
+        x: 1001
+        y: 46
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f96c0f9d9b45a3f0800000000000000
+      internalID: -890222210985465358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_65
+      rect:
+        serializedVersion: 2
+        x: 1016
+        y: 31
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ee49fbc434618330800000000000000
+      internalID: 3711357745853189859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_66
+      rect:
+        serializedVersion: 2
+        x: 1295
+        y: 48
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4a11fb845f364ae0800000000000000
+      internalID: -1565494188107031985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_67
+      rect:
+        serializedVersion: 2
+        x: 1309
+        y: 33
+        width: 25
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8103d304b55e3800800000000000000
+      internalID: 594006432506118538
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Roca_68
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 33
+        width: 16
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5bdc865ae7cb5f80800000000000000
+      internalID: -8116674094116840611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Roca_0: -3501067300523844550
+      Roca_1: -9122856746145697861
+      Roca_10: 598610392451025389
+      Roca_11: 1432004609027500483
+      Roca_12: 1203715187899059920
+      Roca_13: -2719872413443577776
+      Roca_14: -5945940243706376721
+      Roca_15: -5860554593881884052
+      Roca_16: -2572431459101863010
+      Roca_17: -6680882157086140398
+      Roca_18: 7760135616129009723
+      Roca_19: -6953806478612827683
+      Roca_2: 4104059715397203947
+      Roca_20: 6897281572637426498
+      Roca_21: -5605174423411965720
+      Roca_22: 6529664905721230936
+      Roca_23: 8773707518191015839
+      Roca_24: 7731671597439068429
+      Roca_25: -153418763536213628
+      Roca_26: -28492180532286066
+      Roca_27: -6453509336904101946
+      Roca_28: -8191308540080749955
+      Roca_29: 2185733237279901650
+      Roca_3: 4151083034908996963
+      Roca_30: -362317157549933343
+      Roca_31: 3405391181058489779
+      Roca_32: 3775772433087683934
+      Roca_33: 3713818480986121711
+      Roca_34: -312408008452820301
+      Roca_35: -551627622800189127
+      Roca_36: 4210020383825373422
+      Roca_37: 5595117692039176002
+      Roca_38: 6473848759134816616
+      Roca_39: 9001764679589968464
+      Roca_4: 4469974691463151918
+      Roca_40: -2455311980640987825
+      Roca_41: 6170007825094881528
+      Roca_42: 8719890188236846233
+      Roca_43: 6745666289707371376
+      Roca_44: -2018173159406043819
+      Roca_45: -8963784859796959949
+      Roca_46: -7259339170418249865
+      Roca_47: -6563542844130555327
+      Roca_48: 2534648182856298288
+      Roca_49: -8855610196371347398
+      Roca_5: -3187215287218906022
+      Roca_50: -7672434901940473812
+      Roca_51: 3496997024880190577
+      Roca_52: 5109953849064746391
+      Roca_53: 6922720709753493305
+      Roca_54: -6815971640179053572
+      Roca_55: 1417598969819144446
+      Roca_56: -6933103782338261538
+      Roca_57: 3332402756691995577
+      Roca_58: -2669527631125957633
+      Roca_59: 2526544881647591448
+      Roca_6: 4749411907820155179
+      Roca_60: -5097589698133871267
+      Roca_61: -8562909470471929960
+      Roca_62: 3419171314035025426
+      Roca_63: 7151026231083251620
+      Roca_64: -890222210985465358
+      Roca_65: 3711357745853189859
+      Roca_66: -1565494188107031985
+      Roca_67: 594006432506118538
+      Roca_68: -8116674094116840611
+      Roca_7: -4851096498796106681
+      Roca_8: 2095979233125251718
+      Roca_9: 2366375977590912435
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

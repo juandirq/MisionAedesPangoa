@@ -3,23 +3,28 @@ using UnityEngine;
 public class CameraFollow : MonoBehaviour
 {
     public Transform objetivo;
-    public float suavidad = 5f;
-
-    private Vector3 offset;
 
     void Start()
     {
-        offset = transform.position - objetivo.position;
+        if (objetivo != null)
+        {
+            transform.position = new Vector3(
+                objetivo.position.x,
+                objetivo.position.y,
+                -10f
+            );
+        }
     }
 
     void LateUpdate()
     {
-        Vector3 posicionDeseada = objetivo.position + offset;
+        if (objetivo == null)
+            return;
 
-        transform.position = Vector3.Lerp(
-            transform.position,
-            posicionDeseada,
-            suavidad * Time.deltaTime
+        transform.position = new Vector3(
+            objetivo.position.x,
+            objetivo.position.y,
+            -10f
         );
     }
 }

@@ -1,0 +1,1703 @@
+fileFormatVersion: 2
+guid: 0f33312101e93c941a69980a22c37232
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2054114915451821833
+    second: Pastito_0
+  - first:
+      213: -7133421231842284821
+    second: Pastito_1
+  - first:
+      213: -2100052913429515333
+    second: Pastito_2
+  - first:
+      213: -4718003140327740844
+    second: Pastito_3
+  - first:
+      213: -1395314865440619922
+    second: Pastito_4
+  - first:
+      213: 5802780241031504797
+    second: Pastito_5
+  - first:
+      213: -2102238827271161363
+    second: Pastito_6
+  - first:
+      213: 5289832670672097817
+    second: Pastito_7
+  - first:
+      213: -8436522167435509524
+    second: Pastito_8
+  - first:
+      213: -3079928101597561144
+    second: Pastito_9
+  - first:
+      213: -3101539672456228904
+    second: Pastito_10
+  - first:
+      213: 8305714720932675790
+    second: Pastito_11
+  - first:
+      213: 4193198938839123914
+    second: Pastito_12
+  - first:
+      213: 6682831345357871181
+    second: Pastito_13
+  - first:
+      213: 3594831646988598999
+    second: Pastito_14
+  - first:
+      213: 7538844680663586910
+    second: Pastito_15
+  - first:
+      213: -8630021829875831288
+    second: Pastito_16
+  - first:
+      213: 7877514572895451624
+    second: Pastito_17
+  - first:
+      213: -6456492274260332443
+    second: Pastito_18
+  - first:
+      213: 2694436133833575812
+    second: Pastito_19
+  - first:
+      213: -3580235721762863978
+    second: Pastito_20
+  - first:
+      213: 5681964537065814577
+    second: Pastito_21
+  - first:
+      213: -4369970503731893874
+    second: Pastito_22
+  - first:
+      213: 2736603586308565599
+    second: Pastito_23
+  - first:
+      213: -8772759336217276133
+    second: Pastito_24
+  - first:
+      213: -4933343918709939864
+    second: Pastito_25
+  - first:
+      213: 6114791454348747955
+    second: Pastito_26
+  - first:
+      213: 8521422691341467708
+    second: Pastito_27
+  - first:
+      213: 9136182162749097678
+    second: Pastito_28
+  - first:
+      213: 8150231078944622125
+    second: Pastito_29
+  - first:
+      213: -477814184618810832
+    second: Pastito_30
+  - first:
+      213: 7219320046170211957
+    second: Pastito_31
+  - first:
+      213: 1841710032536334224
+    second: Pastito_32
+  - first:
+      213: -2665652972830627359
+    second: Pastito_33
+  - first:
+      213: -4933339419143723804
+    second: Pastito_34
+  - first:
+      213: 1213895927013386543
+    second: Pastito_35
+  - first:
+      213: -6253274134779860746
+    second: Pastito_36
+  - first:
+      213: -6010992023970043410
+    second: Pastito_37
+  - first:
+      213: 6783376194201927202
+    second: Pastito_38
+  - first:
+      213: 2243062697908684702
+    second: Pastito_39
+  - first:
+      213: 4985949291360850556
+    second: Pastito_40
+  - first:
+      213: -3149933606288798285
+    second: Pastito_41
+  - first:
+      213: -7634214148741653060
+    second: Pastito_42
+  - first:
+      213: -8215276880426957919
+    second: Pastito_43
+  - first:
+      213: 2091790167044528310
+    second: Pastito_44
+  - first:
+      213: -7647788924759906600
+    second: Pastito_45
+  - first:
+      213: -4185412671903573383
+    second: Pastito_46
+  - first:
+      213: 8342804640802124594
+    second: Pastito_47
+  - first:
+      213: -7087759952431594839
+    second: Pastito_48
+  - first:
+      213: 3663025668751784077
+    second: Pastito_49
+  - first:
+      213: -505898251031020625
+    second: Pastito_50
+  - first:
+      213: -4823791821565194215
+    second: Pastito_51
+  - first:
+      213: 988069593982425895
+    second: Pastito_52
+  - first:
+      213: -8358413453545998971
+    second: Pastito_53
+  - first:
+      213: -1035448270517745455
+    second: Pastito_54
+  - first:
+      213: -7994293511320042833
+    second: Pastito_55
+  - first:
+      213: 5011281840978427737
+    second: Pastito_56
+  - first:
+      213: -4148418062729141887
+    second: Pastito_57
+  - first:
+      213: 3218717304316441189
+    second: Pastito_58
+  - first:
+      213: 2141593500436916992
+    second: Pastito_59
+  - first:
+      213: 80339503132716469
+    second: Pastito_60
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Pastito_0
+      rect:
+        serializedVersion: 2
+        x: 370
+        y: 1028
+        width: 9
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7f0a9a81e515e73e0800000000000000
+      internalID: -2054114915451821833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastito_1
+      rect:
+        serializedVersion: 2
+        x: 376
+        y: 1043
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: beaafc22f2ff00d90800000000000000
+      internalID: -7133421231842284821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastito_2
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 899
+        width: 271
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb37285700d1bd2e0800000000000000
+      internalID: -2100052913429515333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastito_3
+      rect:
+        serializedVersion: 2
+        x: 86
+        y: 1026
+        width: 38
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45a66931429468eb0800000000000000
+      internalID: -4718003140327740844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastito_4
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 898
+        width: 176
+        height: 133
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e620797c588d2ace0800000000000000
+      internalID: -1395314865440619922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastito_5
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 931
+        width: 79
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d93a65082ed978050800000000000000
+      internalID: 5802780241031504797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastito_6
+      rect:
+        serializedVersion: 2
+        x: 471
+        y: 888
+        width: 85
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de9f77bbce853d2e0800000000000000
+      internalID: -2102238827271161363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastito_7
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 48
+        width: 697
+        height: 845
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9129aa889c2496940800000000000000
+      internalID: 5289832670672097817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastito_8
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 894
+        width: 26
+        height: 46
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce04c4e89c37bea80800000000000000
+      internalID: -8436522167435509524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastito_9
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 880
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8ceb882b5b5e145d0800000000000000
+      internalID: -3079928101597561144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastito_10
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 899
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8df077eb91e15f4d0800000000000000
+      internalID: -3101539672456228904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastito_11
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 939
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec0ccea7883d34370800000000000000
+      internalID: 8305714720932675790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastito_12
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 899
+        width: 10
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac70d06e73c313a30800000000000000
+      internalID: 4193198938839123914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastito_13
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 967
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d48d6e193bf2ebc50800000000000000
+      internalID: 6682831345357871181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastito_14
+      rect:
+        serializedVersion: 2
+        x: 493
+        y: 888
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7de7612365863e130800000000000000
+      internalID: 3594831646988598999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastito_15
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 892
+        width: 74
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e58dbc76b4b5f9860800000000000000
+      internalID: 7538844680663586910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastito_16
+      rect:
+        serializedVersion: 2
+        x: 569
+        y: 884
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80e626a9ed00c3880800000000000000
+      internalID: -8630021829875831288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastito_17
+      rect:
+        serializedVersion: 2
+        x: 716
+        y: 70
+        width: 715
+        height: 818
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e9756664cd825d60800000000000000
+      internalID: 7877514572895451624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastito_18
+      rect:
+        serializedVersion: 2
+        x: 991
+        y: 884
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 560b8a90c7ee566a0800000000000000
+      internalID: -6456492274260332443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastito_19
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 929
+        width: 47
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48d8023536f846520800000000000000
+      internalID: 2694436133833575812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastito_20
+      rect:
+        serializedVersion: 2
+        x: 1125
+        y: 971
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69409287492705ec0800000000000000
+      internalID: -3580235721762863978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastito_21
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 955
+        width: 58
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13abc2264a46ade40800000000000000
+      internalID: 5681964537065814577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastito_22
+      rect:
+        serializedVersion: 2
+        x: 1140
+        y: 884
+        width: 209
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e89202edafeba53c0800000000000000
+      internalID: -4369970503731893874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastito_23
+      rect:
+        serializedVersion: 2
+        x: 1174
+        y: 882
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5a6bfc667e5af520800000000000000
+      internalID: 2736603586308565599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastito_24
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 866
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1117c02dd5e04680800000000000000
+      internalID: -8772759336217276133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastito_25
+      rect:
+        serializedVersion: 2
+        x: 563
+        y: 854
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 861e57a08dd398bb0800000000000000
+      internalID: -4933343918709939864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastito_26
+      rect:
+        serializedVersion: 2
+        x: 718
+        y: 818
+        width: 7
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b42d002e6a1cd450800000000000000
+      internalID: 6114791454348747955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastito_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 234
+        width: 15
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c308c521acc224670800000000000000
+      internalID: 8521422691341467708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastito_28
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 242
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec68bed754d3ace70800000000000000
+      internalID: 9136182162749097678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastito_29
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 168
+        width: 18
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d26c7d90cff6b1170800000000000000
+      internalID: 8150231078944622125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastito_30
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 179
+        width: 15
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0322729d7867e59f0800000000000000
+      internalID: -477814184618810832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastito_31
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 185
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 57605d7155d203460800000000000000
+      internalID: 7219320046170211957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastito_32
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 169
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09fe99c44811f8910800000000000000
+      internalID: 1841710032536334224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastito_33
+      rect:
+        serializedVersion: 2
+        x: 131
+        y: 151
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e967f39eb2b10bd0800000000000000
+      internalID: -2665652972830627359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastito_34
+      rect:
+        serializedVersion: 2
+        x: 141
+        y: 108
+        width: 59
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e4a18dafe1498bb0800000000000000
+      internalID: -4933339419143723804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastito_35
+      rect:
+        serializedVersion: 2
+        x: 179
+        y: 160
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f292de30aef98d010800000000000000
+      internalID: 1213895927013386543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastito_36
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 167
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f8ee414e48e739a0800000000000000
+      internalID: -6253274134779860746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastito_37
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 149
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee92f8f0a9aa49ca0800000000000000
+      internalID: -6010992023970043410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastito_38
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 153
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 22e3f3175b4632e50800000000000000
+      internalID: 6783376194201927202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastito_39
+      rect:
+        serializedVersion: 2
+        x: 1339
+        y: 153
+        width: 18
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e97c6c5b3a5f02f10800000000000000
+      internalID: 2243062697908684702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastito_40
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 139
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c729cabb676a13540800000000000000
+      internalID: 4985949291360850556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastito_41
+      rect:
+        serializedVersion: 2
+        x: 1303
+        y: 129
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bd471bf2103944d0800000000000000
+      internalID: -3149933606288798285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastito_42
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 98
+        width: 25
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cbd1ef4fda2dd0690800000000000000
+      internalID: -7634214148741653060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastito_43
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 78
+        width: 38
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a30ca224397dfd80800000000000000
+      internalID: -8215276880426957919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastito_44
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 119
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b8185bf218870d10800000000000000
+      internalID: 2091790167044528310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastito_45
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 114
+        width: 15
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d6e48e1e789dd590800000000000000
+      internalID: -7647788924759906600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastito_46
+      rect:
+        serializedVersion: 2
+        x: 867
+        y: 119
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97ad4c4a95d6ae5c0800000000000000
+      internalID: -4185412671903573383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastito_47
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 108
+        width: 27
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 233bd756e9897c370800000000000000
+      internalID: 8342804640802124594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastito_48
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 96
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a2431630e733ad90800000000000000
+      internalID: -7087759952431594839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastito_49
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 88
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d88761d207ea5d230800000000000000
+      internalID: 3663025668751784077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastito_50
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 78
+        width: 31
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fabfdc69830baf8f0800000000000000
+      internalID: -505898251031020625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastito_51
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 94
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9101c2555e27e0db0800000000000000
+      internalID: -4823791821565194215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastito_52
+      rect:
+        serializedVersion: 2
+        x: 957
+        y: 31
+        width: 136
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 72bdfaa8f0456bd00800000000000000
+      internalID: 988069593982425895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastito_53
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 64
+        width: 13
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5857b8faf33f00c80800000000000000
+      internalID: -8358413453545998971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastito_54
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 55
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d84f74b84951a1f0800000000000000
+      internalID: -1035448270517745455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastito_55
+      rect:
+        serializedVersion: 2
+        x: 1094
+        y: 0
+        width: 61
+        height: 65
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fa20f8338609e0190800000000000000
+      internalID: -7994293511320042833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastito_56
+      rect:
+        serializedVersion: 2
+        x: 1142
+        y: 59
+        width: 46
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95f72e09846ab8540800000000000000
+      internalID: 5011281840978427737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastito_57
+      rect:
+        serializedVersion: 2
+        x: 1195
+        y: 50
+        width: 29
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 181273f40cbdd66c0800000000000000
+      internalID: -4148418062729141887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastito_58
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 48
+        width: 15
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5623f24b55e2bac20800000000000000
+      internalID: 3218717304316441189
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastito_59
+      rect:
+        serializedVersion: 2
+        x: 1156
+        y: 50
+        width: 12
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00be3d621f778bd10800000000000000
+      internalID: 2141593500436916992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Pastito_60
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 23
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bd28a93a5c6d1100800000000000000
+      internalID: 80339503132716469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Pastito_0: -2054114915451821833
+      Pastito_1: -7133421231842284821
+      Pastito_10: -3101539672456228904
+      Pastito_11: 8305714720932675790
+      Pastito_12: 4193198938839123914
+      Pastito_13: 6682831345357871181
+      Pastito_14: 3594831646988598999
+      Pastito_15: 7538844680663586910
+      Pastito_16: -8630021829875831288
+      Pastito_17: 7877514572895451624
+      Pastito_18: -6456492274260332443
+      Pastito_19: 2694436133833575812
+      Pastito_2: -2100052913429515333
+      Pastito_20: -3580235721762863978
+      Pastito_21: 5681964537065814577
+      Pastito_22: -4369970503731893874
+      Pastito_23: 2736603586308565599
+      Pastito_24: -8772759336217276133
+      Pastito_25: -4933343918709939864
+      Pastito_26: 6114791454348747955
+      Pastito_27: 8521422691341467708
+      Pastito_28: 9136182162749097678
+      Pastito_29: 8150231078944622125
+      Pastito_3: -4718003140327740844
+      Pastito_30: -477814184618810832
+      Pastito_31: 7219320046170211957
+      Pastito_32: 1841710032536334224
+      Pastito_33: -2665652972830627359
+      Pastito_34: -4933339419143723804
+      Pastito_35: 1213895927013386543
+      Pastito_36: -6253274134779860746
+      Pastito_37: -6010992023970043410
+      Pastito_38: 6783376194201927202
+      Pastito_39: 2243062697908684702
+      Pastito_4: -1395314865440619922
+      Pastito_40: 4985949291360850556
+      Pastito_41: -3149933606288798285
+      Pastito_42: -7634214148741653060
+      Pastito_43: -8215276880426957919
+      Pastito_44: 2091790167044528310
+      Pastito_45: -7647788924759906600
+      Pastito_46: -4185412671903573383
+      Pastito_47: 8342804640802124594
+      Pastito_48: -7087759952431594839
+      Pastito_49: 3663025668751784077
+      Pastito_5: 5802780241031504797
+      Pastito_50: -505898251031020625
+      Pastito_51: -4823791821565194215
+      Pastito_52: 988069593982425895
+      Pastito_53: -8358413453545998971
+      Pastito_54: -1035448270517745455
+      Pastito_55: -7994293511320042833
+      Pastito_56: 5011281840978427737
+      Pastito_57: -4148418062729141887
+      Pastito_58: 3218717304316441189
+      Pastito_59: 2141593500436916992
+      Pastito_6: -2102238827271161363
+      Pastito_60: 80339503132716469
+      Pastito_7: 5289832670672097817
+      Pastito_8: -8436522167435509524
+      Pastito_9: -3079928101597561144
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
