@@ -32,18 +32,18 @@ public class PlayerMovement : MonoBehaviour
     {
         movimiento = Vector2.zero;
 
-        // WASD + Flechas
+        // WASD + flechas
         if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
-            movimiento.x = -1;
+            movimiento.x = -1f;
 
         if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
-            movimiento.x = 1;
+            movimiento.x = 1f;
 
         if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
-            movimiento.y = 1;
+            movimiento.y = 1f;
 
         if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
-            movimiento.y = -1;
+            movimiento.y = -1f;
 
         movimiento = movimiento.normalized;
 
@@ -72,17 +72,24 @@ public class PlayerMovement : MonoBehaviour
         {
             string nuevaAnimacion = animacionActual;
 
-            // Si hay movimiento horizontal, usa izquierda/derecha
-            if (movimiento.x > 0)
-                nuevaAnimacion = "WalkRight";
-            else if (movimiento.x < 0)
-                nuevaAnimacion = "WalkLeft";
-            else if (movimiento.y > 0)
+            // PRIORIDAD VERTICAL
+            if (movimiento.y > 0)
+            {
                 nuevaAnimacion = "WalkUp";
+            }
             else if (movimiento.y < 0)
+            {
                 nuevaAnimacion = "WalkDown";
+            }
+            else if (movimiento.x > 0)
+            {
+                nuevaAnimacion = "WalkRight";
+            }
+            else if (movimiento.x < 0)
+            {
+                nuevaAnimacion = "WalkLeft";
+            }
 
-            // Solo reinicia el clip cuando cambia de dirección
             if (nuevaAnimacion != animacionActual || !estabaMoviendose)
             {
                 animacionActual = nuevaAnimacion;
@@ -93,8 +100,6 @@ public class PlayerMovement : MonoBehaviour
         }
         else
         {
-            // Quieto: congelar el personaje mirando
-            // hacia la última dirección
             if (estabaMoviendose)
             {
                 animator.Play(animacionActual, 0, 0f);
