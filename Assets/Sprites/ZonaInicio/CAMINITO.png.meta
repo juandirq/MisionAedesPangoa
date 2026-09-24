@@ -1,0 +1,1079 @@
+fileFormatVersion: 2
+guid: a4976661fab67f74593e1b7f0829c04b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2363779889138941609
+    second: CAMINITO_0
+  - first:
+      213: -6009536082485005535
+    second: CAMINITO_1
+  - first:
+      213: -5805375139292058483
+    second: CAMINITO_2
+  - first:
+      213: 7465568959651495844
+    second: CAMINITO_3
+  - first:
+      213: 7901011270398403376
+    second: CAMINITO_4
+  - first:
+      213: 4368682137911924831
+    second: CAMINITO_5
+  - first:
+      213: 3619814470849346600
+    second: CAMINITO_6
+  - first:
+      213: 2545971483235560679
+    second: CAMINITO_7
+  - first:
+      213: -1695012549283954716
+    second: CAMINITO_8
+  - first:
+      213: -756717003762373449
+    second: CAMINITO_9
+  - first:
+      213: -2440679706403320377
+    second: CAMINITO_10
+  - first:
+      213: 9189502829356273097
+    second: CAMINITO_11
+  - first:
+      213: 8241360137129184303
+    second: CAMINITO_12
+  - first:
+      213: -5241129417764207812
+    second: CAMINITO_13
+  - first:
+      213: 6366048231837744643
+    second: CAMINITO_14
+  - first:
+      213: 353677926929884393
+    second: CAMINITO_15
+  - first:
+      213: 4168067260320407733
+    second: CAMINITO_16
+  - first:
+      213: 1696551905741934765
+    second: CAMINITO_17
+  - first:
+      213: -9016178853626302007
+    second: CAMINITO_18
+  - first:
+      213: -2303540744224469737
+    second: CAMINITO_19
+  - first:
+      213: -4731659005358863465
+    second: CAMINITO_20
+  - first:
+      213: 4712032673398905214
+    second: CAMINITO_21
+  - first:
+      213: 3530018441181581843
+    second: CAMINITO_22
+  - first:
+      213: 3035353502106313196
+    second: CAMINITO_23
+  - first:
+      213: -457430436403314943
+    second: CAMINITO_24
+  - first:
+      213: -5935392941015479792
+    second: CAMINITO_25
+  - first:
+      213: -5251169571493921278
+    second: CAMINITO_26
+  - first:
+      213: -1261929982121997250
+    second: CAMINITO_27
+  - first:
+      213: -7028574082746003615
+    second: CAMINITO_28
+  - first:
+      213: -354702417420993153
+    second: CAMINITO_29
+  - first:
+      213: 4210683663954013727
+    second: CAMINITO_30
+  - first:
+      213: 8672398003955313667
+    second: CAMINITO_31
+  - first:
+      213: -8288580132188879282
+    second: CAMINITO_32
+  - first:
+      213: -2972776057060899894
+    second: CAMINITO_33
+  - first:
+      213: -1687694332073734377
+    second: CAMINITO_34
+  - first:
+      213: -8810792962591282293
+    second: CAMINITO_35
+  - first:
+      213: -6098273394571122877
+    second: CAMINITO_36
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 20
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: CAMINITO_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 633
+        width: 202
+        height: 169
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9aeb65b0945ddc020800000000000000
+      internalID: 2363779889138941609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAMINITO_1
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 128
+        width: 1318
+        height: 912
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 123b69ad5c6d99ca0800000000000000
+      internalID: -6009536082485005535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAMINITO_2
+      rect:
+        serializedVersion: 2
+        x: 1333
+        y: 777
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8cec9aa11a2f6fa0800000000000000
+      internalID: -5805375139292058483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAMINITO_3
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 791
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4afb53e1a670b9760800000000000000
+      internalID: 7465568959651495844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAMINITO_4
+      rect:
+        serializedVersion: 2
+        x: 1335
+        y: 750
+        width: 15
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 033647a93e706ad60800000000000000
+      internalID: 7901011270398403376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAMINITO_5
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 743
+        width: 13
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5895d6124da0ac30800000000000000
+      internalID: 4368682137911924831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAMINITO_6
+      rect:
+        serializedVersion: 2
+        x: 1333
+        y: 703
+        width: 41
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82c3bc7251a2c3230800000000000000
+      internalID: 3619814470849346600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAMINITO_7
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 685
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7eca78a239b155320800000000000000
+      internalID: 2545971483235560679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAMINITO_8
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 653
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4efb916211b1a78e0800000000000000
+      internalID: -1695012549283954716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAMINITO_9
+      rect:
+        serializedVersion: 2
+        x: 1429
+        y: 645
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bcee33f4e99f75f0800000000000000
+      internalID: -756717003762373449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAMINITO_10
+      rect:
+        serializedVersion: 2
+        x: 1401
+        y: 623
+        width: 16
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7cd43510db6f02ed0800000000000000
+      internalID: -2440679706403320377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAMINITO_11
+      rect:
+        serializedVersion: 2
+        x: 1456
+        y: 615
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9cd4a3e922ca78f70800000000000000
+      internalID: 9189502829356273097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAMINITO_12
+      rect:
+        serializedVersion: 2
+        x: 1387
+        y: 603
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2c46af41613f5270800000000000000
+      internalID: 8241360137129184303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAMINITO_13
+      rect:
+        serializedVersion: 2
+        x: 1389
+        y: 595
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3380503094c347b0800000000000000
+      internalID: -5241129417764207812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAMINITO_14
+      rect:
+        serializedVersion: 2
+        x: 1417
+        y: 595
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30e31b9532fb85850800000000000000
+      internalID: 6366048231837744643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAMINITO_15
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 553
+        width: 36
+        height: 49
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e46d8f533488e400800000000000000
+      internalID: 353677926929884393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAMINITO_16
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 576
+        width: 36
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b065530713f7d930800000000000000
+      internalID: 4168067260320407733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAMINITO_17
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 577
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: da092c438fc5b8710800000000000000
+      internalID: 1696551905741934765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAMINITO_18
+      rect:
+        serializedVersion: 2
+        x: 72
+        y: 391
+        width: 85
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c137363a1910e280800000000000000
+      internalID: -9016178853626302007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAMINITO_19
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 415
+        width: 14
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71d8cd6d5ed2800e0800000000000000
+      internalID: -2303540744224469737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAMINITO_20
+      rect:
+        serializedVersion: 2
+        x: 1413
+        y: 367
+        width: 28
+        height: 51
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79b8e4b3435c55eb0800000000000000
+      internalID: -4731659005358863465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAMINITO_21
+      rect:
+        serializedVersion: 2
+        x: 1421
+        y: 435
+        width: 16
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e79d9f340c0846140800000000000000
+      internalID: 4712032673398905214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAMINITO_22
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 367
+        width: 25
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 312d435c1152df030800000000000000
+      internalID: 3530018441181581843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAMINITO_23
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 341
+        width: 25
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce1e8cc9dedbf1a20800000000000000
+      internalID: 3035353502106313196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAMINITO_24
+      rect:
+        serializedVersion: 2
+        x: 1421
+        y: 335
+        width: 6
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10f7ab01171e6a9f0800000000000000
+      internalID: -457430436403314943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAMINITO_25
+      rect:
+        serializedVersion: 2
+        x: 1434
+        y: 299
+        width: 35
+        height: 46
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 01a4964319f31ada0800000000000000
+      internalID: -5935392941015479792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAMINITO_26
+      rect:
+        serializedVersion: 2
+        x: 1431
+        y: 321
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20eb3cbb8191027b0800000000000000
+      internalID: -5251169571493921278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAMINITO_27
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 279
+        width: 51
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3c04340e59bc7ee0800000000000000
+      internalID: -1261929982121997250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAMINITO_28
+      rect:
+        serializedVersion: 2
+        x: 1423
+        y: 305
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16f48685c1d757e90800000000000000
+      internalID: -7028574082746003615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAMINITO_29
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 79
+        width: 140
+        height: 193
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7d36a8d708d31bf0800000000000000
+      internalID: -354702417420993153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAMINITO_30
+      rect:
+        serializedVersion: 2
+        x: 1345
+        y: 94
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1ee483bb7a5f6a30800000000000000
+      internalID: 4210683663954013727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAMINITO_31
+      rect:
+        serializedVersion: 2
+        x: 1375
+        y: 110
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30c2098490c8a5870800000000000000
+      internalID: 8672398003955313667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAMINITO_32
+      rect:
+        serializedVersion: 2
+        x: 1421
+        y: 206
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e468588d84c09fc80800000000000000
+      internalID: -8288580132188879282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAMINITO_33
+      rect:
+        serializedVersion: 2
+        x: 1421
+        y: 181
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ac349123de39eb6d0800000000000000
+      internalID: -2972776057060899894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAMINITO_34
+      rect:
+        serializedVersion: 2
+        x: 1436
+        y: 221
+        width: 11
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71f0e4f52fa1498e0800000000000000
+      internalID: -1687694332073734377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAMINITO_35
+      rect:
+        serializedVersion: 2
+        x: 1470
+        y: 233
+        width: 19
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8b2c3b6b76c9b580800000000000000
+      internalID: -8810792962591282293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CAMINITO_36
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 6
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3476f5d58a49e5ba0800000000000000
+      internalID: -6098273394571122877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: b863a6054a536e34184440ba4e936e24
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      CAMINITO_0: 2363779889138941609
+      CAMINITO_1: -6009536082485005535
+      CAMINITO_10: -2440679706403320377
+      CAMINITO_11: 9189502829356273097
+      CAMINITO_12: 8241360137129184303
+      CAMINITO_13: -5241129417764207812
+      CAMINITO_14: 6366048231837744643
+      CAMINITO_15: 353677926929884393
+      CAMINITO_16: 4168067260320407733
+      CAMINITO_17: 1696551905741934765
+      CAMINITO_18: -9016178853626302007
+      CAMINITO_19: -2303540744224469737
+      CAMINITO_2: -5805375139292058483
+      CAMINITO_20: -4731659005358863465
+      CAMINITO_21: 4712032673398905214
+      CAMINITO_22: 3530018441181581843
+      CAMINITO_23: 3035353502106313196
+      CAMINITO_24: -457430436403314943
+      CAMINITO_25: -5935392941015479792
+      CAMINITO_26: -5251169571493921278
+      CAMINITO_27: -1261929982121997250
+      CAMINITO_28: -7028574082746003615
+      CAMINITO_29: -354702417420993153
+      CAMINITO_3: 7465568959651495844
+      CAMINITO_30: 4210683663954013727
+      CAMINITO_31: 8672398003955313667
+      CAMINITO_32: -8288580132188879282
+      CAMINITO_33: -2972776057060899894
+      CAMINITO_34: -1687694332073734377
+      CAMINITO_35: -8810792962591282293
+      CAMINITO_36: -6098273394571122877
+      CAMINITO_4: 7901011270398403376
+      CAMINITO_5: 4368682137911924831
+      CAMINITO_6: 3619814470849346600
+      CAMINITO_7: 2545971483235560679
+      CAMINITO_8: -1695012549283954716
+      CAMINITO_9: -756717003762373449
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
