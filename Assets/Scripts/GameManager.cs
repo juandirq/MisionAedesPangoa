@@ -26,9 +26,9 @@ public class GameManager : MonoBehaviour
     [Header("Jugador")]
     public PlayerMovement playerMovement;
 
-    [Header("Configuración de la zona")]
-    public float tiempoRestante = 120f;
-    public int objetivosTotales = 4;
+    [Header("Configuración actual")]
+    public float tiempoRestante = 0f;
+    public int objetivosTotales = 0;
 
     private int objetivosCompletados = 0;
     private int riesgo = 100;
@@ -36,19 +36,23 @@ public class GameManager : MonoBehaviour
     private int errores = 0;
 
     private bool juegoTerminado = false;
+    private bool cronometroActivo = false;
 
-    // Permite que otros scripts sepan si la partida terminó
     public bool JuegoTerminado => juegoTerminado;
 
     void Start()
     {
-        ActualizarHUD();
+        Time.timeScale = 1f;
+
+        cronometroActivo = false;
 
         if (panelDerrota != null)
             panelDerrota.SetActive(false);
 
         if (panelVictoria != null)
             panelVictoria.SetActive(false);
+
+        ActualizarHUD();
     }
 
     void Update()
@@ -56,17 +60,56 @@ public class GameManager : MonoBehaviour
         if (juegoTerminado)
             return;
 
+        if (!cronometroActivo)
+            return;
+
         tiempoRestante -= Time.deltaTime;
 
-        if (tiempoRestante <= 0)
+        if (tiempoRestante <= 0f)
         {
-            tiempoRestante = 0;
+            tiempoRestante = 0f;
+
             ActualizarTiempo();
             Derrota();
+
             return;
         }
 
         ActualizarTiempo();
+    }
+
+    // NUEVO:
+    // Cada zona le envía su cantidad de objetivos y su tiempo.
+    public void IniciarZona(int cantidadObjetivos, float tiempoZona)
+    {
+        objetivosTotales = cantidadObjetivos;
+        tiempoRestante = tiempoZona;
+
+        objetivosCompletados = 0;
+        riesgo = 100;
+        aciertos = 0;
+        errores = 0;
+
+        juegoTerminado = false;
+        cronometroActivo = true;
+
+        if (panelDerrota != null)
+            panelDerrota.SetActive(false);
+
+        if (panelVictoria != null)
+            panelVictoria.SetActive(false);
+
+        if (playerMovement != null)
+            playerMovement.enabled = true;
+
+        ActualizarHUD();
+
+        Debug.Log(
+            "Zona iniciada. Objetivos: " +
+            objetivosTotales +
+            " | Tiempo: " +
+            tiempoRestante
+        );
     }
 
     public void RegistrarAcierto(int reduccionRiesgo)
@@ -96,14 +139,13 @@ public class GameManager : MonoBehaviour
         ActualizarHUD();
 
         if (errores >= 3)
-        {
             Derrota();
-        }
     }
 
     void ComprobarVictoria()
     {
-        if (objetivosCompletados >= objetivosTotales && riesgo <= 20)
+        if (objetivosCompletados >= objetivosTotales &&
+            riesgo <= 20)
         {
             Victoria();
         }
@@ -112,13 +154,16 @@ public class GameManager : MonoBehaviour
     void ActualizarHUD()
     {
         if (textoRiesgo != null)
-            textoRiesgo.text = "Riesgo: " + riesgo + "%";
+            textoRiesgo.text =
+                "Riesgo: " + riesgo + "%";
 
         if (textoAciertos != null)
-            textoAciertos.text = "Aciertos: " + aciertos;
+            textoAciertos.text =
+                "Aciertos: " + aciertos;
 
         if (textoErrores != null)
-            textoErrores.text = "Errores: " + errores;
+            textoErrores.text =
+                "Errores: " + errores;
 
         if (textoObjetivos != null)
         {
@@ -134,8 +179,11 @@ public class GameManager : MonoBehaviour
 
     void ActualizarTiempo()
     {
-        int minutos = Mathf.FloorToInt(tiempoRestante / 60);
-        int segundos = Mathf.FloorToInt(tiempoRestante % 60);
+        int minutos =
+            Mathf.FloorToInt(tiempoRestante / 60);
+
+        int segundos =
+            Mathf.FloorToInt(tiempoRestante % 60);
 
         if (textoTiempo != null)
         {
@@ -153,6 +201,7 @@ public class GameManager : MonoBehaviour
             return;
 
         juegoTerminado = true;
+        cronometroActivo = false;
 
         if (ventanaDecision != null)
             ventanaDecision.SetActive(false);
@@ -163,7 +212,6 @@ public class GameManager : MonoBehaviour
         if (playerMovement != null)
             playerMovement.enabled = false;
 
-        // Mostrar resultados reales
         if (resultadoRiesgo != null)
             resultadoRiesgo.text =
                 "Riesgo final: " + riesgo + "%";
@@ -195,6 +243,7 @@ public class GameManager : MonoBehaviour
             return;
 
         juegoTerminado = true;
+        cronometroActivo = false;
 
         if (ventanaDecision != null)
             ventanaDecision.SetActive(false);
@@ -211,6 +260,8 @@ public class GameManager : MonoBehaviour
 
     public void ReiniciarZona()
     {
+        Time.timeScale = 1f;
+
         SceneManager.LoadScene(
             SceneManager.GetActiveScene().buildIndex
         );
