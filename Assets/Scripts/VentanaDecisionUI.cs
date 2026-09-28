@@ -20,6 +20,11 @@ public class VentanaDecisionUI : MonoBehaviour
 
     private ObjetoInteractuable objetoActual;
 
+    // COLORES DEL FEEDBACK
+    private Color colorNormal = new Color32(85, 98, 74, 255);     // #55624A
+    private Color colorCorrecto = new Color32(47, 143, 58, 255);  // #2F8F3A
+    private Color colorIncorrecto = new Color32(201, 74, 67, 255);// #C94A43
+
     void Update()
     {
         if (ventanaDecision != null &&
@@ -44,7 +49,10 @@ public class VentanaDecisionUI : MonoBehaviour
         textoBoton2.text = objeto.opcion2;
         textoBoton3.text = objeto.opcion3;
 
-        textoFeedback.gameObject.SetActive(false);
+        // Mensaje inicial
+        textoFeedback.text = "Selecciona una opción";
+        textoFeedback.color = colorNormal;
+        textoFeedback.gameObject.SetActive(true);
 
         ventanaDecision.SetActive(true);
 
@@ -80,17 +88,21 @@ public class VentanaDecisionUI : MonoBehaviour
             textoFeedback.text =
                 objetoActual.feedbackCorrecto;
 
-            textoFeedback.color = Color.green;
+            // VERDE BONITO
+            textoFeedback.color = colorCorrecto;
             textoFeedback.gameObject.SetActive(true);
 
-            Invoke(nameof(CerrarVentana), 1.5f);
+            // Antes era 1.5 segundos.
+            // Ahora tiene 4 segundos para leer.
+            Invoke(nameof(CerrarVentana), 4f);
         }
         else
         {
             textoFeedback.text =
                 objetoActual.feedbackIncorrecto;
 
-            textoFeedback.color = Color.red;
+            // ROJO MÁS SUAVE Y LEGIBLE
+            textoFeedback.color = colorIncorrecto;
             textoFeedback.gameObject.SetActive(true);
         }
     }
