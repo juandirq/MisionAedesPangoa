@@ -30,6 +30,14 @@ public class ObjetoInteractuable : MonoBehaviour
 
     [Header("Riesgo")]
     public int reduccionRiesgo = 20;
+    [Tooltip("0 conserva compatibilidad. Asigna 1, 2 o 3 para impedir contar en otra zona.")]
+    [Range(0, 3)] public int indiceZona;
+    public bool Resuelto => resuelto;
+    public event System.Action AlResolverse;
+
+    public bool PuedeResponder => !resuelto && gameManager != null &&
+        gameManager.ZonaActiva && !gameManager.JuegoTerminado &&
+        (indiceZona == 0 || indiceZona == gameManager.indiceZonaActual);
 
     private bool jugadorCerca = false;
     private bool resuelto = false;
@@ -37,7 +45,7 @@ public class ObjetoInteractuable : MonoBehaviour
     void Update()
     {
         if (jugadorCerca &&
-            !resuelto &&
+            PuedeResponder && Time.timeScale > 0f &&
             Input.GetKeyDown(KeyCode.E))
         {
             AbrirInspeccion();
@@ -46,7 +54,7 @@ public class ObjetoInteractuable : MonoBehaviour
 
     void AbrirInspeccion()
     {
-        textoInteraccion.SetActive(false);
+        CambiarVisibilidadTextoInteraccion(false);
 
         if (ventanaUI != null)
         {
@@ -56,7 +64,7 @@ public class ObjetoInteractuable : MonoBehaviour
 
     public bool ProcesarRespuesta(int opcionElegida)
     {
-        if (resuelto)
+        if (!PuedeResponder)
             return false;
 
         if (opcionElegida == opcionCorrecta)
@@ -67,6 +75,7 @@ public class ObjetoInteractuable : MonoBehaviour
             {
                 gameManager.RegistrarAcierto(reduccionRiesgo);
             }
+            AlResolverse?.Invoke();
 
             return true;
         }
@@ -83,7 +92,16 @@ public class ObjetoInteractuable : MonoBehaviour
     {
         if (jugadorCerca && !resuelto)
         {
-            textoInteraccion.SetActive(true);
+            CambiarVisibilidadTextoInteraccion(true);
+        }
+    }
+
+    private void CambiarVisibilidadTextoInteraccion(bool visible)
+    {
+        // La comparacion de Unity tambien detecta objetos que ya fueron destruidos.
+        if (textoInteraccion != null)
+        {
+            textoInteraccion.SetActive(visible);
         }
     }
 
@@ -95,7 +113,7 @@ public class ObjetoInteractuable : MonoBehaviour
 
             if (!resuelto)
             {
-                textoInteraccion.SetActive(true);
+                CambiarVisibilidadTextoInteraccion(true);
             }
         }
     }
@@ -105,7 +123,7 @@ public class ObjetoInteractuable : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             jugadorCerca = false;
-            textoInteraccion.SetActive(false);
+            CambiarVisibilidadTextoInteraccion(false);
         }
     }
 }

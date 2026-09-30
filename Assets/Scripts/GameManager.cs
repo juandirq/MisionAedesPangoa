@@ -16,6 +16,16 @@ public class GameManager : MonoBehaviour
     public TextMeshProUGUI resultadoObjetivos;
     public TextMeshProUGUI resultadoAciertos;
     public TextMeshProUGUI resultadoErrores;
+    public TextMeshProUGUI resultadoTiempo;
+    public TextMeshProUGUI resultadoNombreZona;
+
+    [Header("Resultados de derrota opcionales")]
+    public TextMeshProUGUI derrotaRiesgo;
+    public TextMeshProUGUI derrotaObjetivos;
+    public TextMeshProUGUI derrotaAciertos;
+    public TextMeshProUGUI derrotaErrores;
+    public TextMeshProUGUI derrotaTiempo;
+    public TextMeshProUGUI derrotaNombreZona;
 
     [Header("Paneles")]
     public GameObject panelDerrota;
@@ -32,6 +42,9 @@ public class GameManager : MonoBehaviour
     [Header("Configuración actual")]
     public float tiempoRestante = 0f;
     public int objetivosTotales = 0;
+    public string nombreZonaActual = "Zona";
+    [Range(0, 3)] public int indiceZonaActual;
+    public ProgresoZonas progresoZonas;
 
     private int objetivosCompletados = 0;
     private int riesgo = 100;
@@ -40,14 +53,25 @@ public class GameManager : MonoBehaviour
 
     private bool juegoTerminado = false;
     private bool cronometroActivo = false;
+    private bool zonaActiva = false;
+    private bool cronometroPausado = false;
+    private bool victoriaPendiente = false;
+    private bool fueVictoria;
 
     public bool JuegoTerminado => juegoTerminado;
+    public bool ZonaActiva => zonaActiva;
+    public bool CronometroEnMarcha => cronometroActivo;
 
-    void Start()
+    void Awake()
     {
+        if (progresoZonas == null)
+            progresoZonas = FindAnyObjectByType<ProgresoZonas>();
         Time.timeScale = 1f;
 
         cronometroActivo = false;
+        zonaActiva = false;
+        cronometroPausado = false;
+        victoriaPendiente = false;
 
         if (panelDerrota != null)
             panelDerrota.SetActive(false);
@@ -84,8 +108,39 @@ public class GameManager : MonoBehaviour
 
     public void IniciarZona(int cantidadObjetivos, float tiempoZona)
     {
+        IniciarZona(cantidadObjetivos, tiempoZona, "Zona");
+    }
+
+    public void IniciarZona(int cantidadObjetivos, float tiempoZona,
+        string nombreZona)
+    {
+        IniciarZona(cantidadObjetivos, tiempoZona, nombreZona, 0);
+    }
+
+    public bool PuedeIniciarZona(int indice)
+    {
+        return !zonaActiva && !juegoTerminado && indice >= 0 && indice <= 3 &&
+            (indice == 0 || progresoZonas == null ||
+             (progresoZonas.EstaZonaDesbloqueada(indice) &&
+              !progresoZonas.EstaZonaCompletada(indice)));
+    }
+
+    public void IniciarZona(int cantidadObjetivos, float tiempoZona,
+        string nombreZona, int indiceZona)
+    {
+        if (!PuedeIniciarZona(indiceZona) || cantidadObjetivos <= 0 ||
+            tiempoZona <= 0f || float.IsNaN(tiempoZona) || float.IsInfinity(tiempoZona))
+        {
+            Debug.LogWarning("No se puede iniciar la zona: revisa progreso, estado y configuración.", this);
+            return;
+        }
+        indiceZonaActual = indiceZona;
+        fueVictoria = false;
         objetivosTotales = cantidadObjetivos;
         tiempoRestante = tiempoZona;
+        nombreZonaActual = string.IsNullOrWhiteSpace(nombreZona)
+            ? "Zona"
+            : nombreZona;
 
         objetivosCompletados = 0;
         riesgo = 100;
@@ -93,7 +148,10 @@ public class GameManager : MonoBehaviour
         errores = 0;
 
         juegoTerminado = false;
+        zonaActiva = true;
         cronometroActivo = true;
+        cronometroPausado = false;
+        victoriaPendiente = false;
 
         if (panelDerrota != null)
             panelDerrota.SetActive(false);
@@ -110,13 +168,33 @@ public class GameManager : MonoBehaviour
             "Zona iniciada. Objetivos: " +
             objetivosTotales +
             " | Tiempo: " +
-            tiempoRestante
+            tiempoRestante +
+            " | Nombre: " +
+            nombreZonaActual
         );
+    }
+
+    public void PausarCronometro()
+    {
+        if (!zonaActiva || juegoTerminado)
+            return;
+
+        cronometroPausado = true;
+        cronometroActivo = false;
+    }
+
+    public void ReanudarCronometro()
+    {
+        if (!zonaActiva || juegoTerminado || !cronometroPausado)
+            return;
+
+        cronometroPausado = false;
+        cronometroActivo = true;
     }
 
     public void RegistrarAcierto(int reduccionRiesgo)
     {
-        if (juegoTerminado)
+        if (juegoTerminado || !zonaActiva)
             return;
 
         aciertos++;
@@ -133,7 +211,7 @@ public class GameManager : MonoBehaviour
 
     public void RegistrarError()
     {
-        if (juegoTerminado)
+        if (juegoTerminado || !zonaActiva)
             return;
 
         errores++;
@@ -180,20 +258,67 @@ public class GameManager : MonoBehaviour
 
     void ActualizarTiempo()
     {
-        int minutos =
-            Mathf.FloorToInt(tiempoRestante / 60);
-
-        int segundos =
-            Mathf.FloorToInt(tiempoRestante % 60);
-
         if (textoTiempo != null)
         {
-            textoTiempo.text =
-                "Tiempo: " +
-                minutos.ToString("00") +
-                ":" +
-                segundos.ToString("00");
+            textoTiempo.text = "Tiempo: " + FormatearTiempo(tiempoRestante);
         }
+    }
+
+    string FormatearTiempo(float tiempo)
+    {
+        int minutos = Mathf.FloorToInt(Mathf.Max(0f, tiempo) / 60f);
+        int segundos = Mathf.FloorToInt(Mathf.Max(0f, tiempo) % 60f);
+        return minutos.ToString("00") + ":" + segundos.ToString("00");
+    }
+
+    void ActualizarResultados()
+    {
+        if (resultadoNombreZona != null)
+            resultadoNombreZona.text = nombreZonaActual;
+
+        if (resultadoRiesgo != null)
+            resultadoRiesgo.text = "Riesgo final: " + riesgo + "%";
+
+        if (resultadoObjetivos != null)
+        {
+            resultadoObjetivos.text =
+                "Objetivos: " + objetivosCompletados + "/" + objetivosTotales;
+        }
+
+        if (resultadoAciertos != null)
+            resultadoAciertos.text = "Aciertos: " + aciertos;
+
+        if (resultadoErrores != null)
+            resultadoErrores.text = "Errores: " + errores;
+
+        if (resultadoTiempo != null)
+            resultadoTiempo.text = "Tiempo restante: " +
+                                    FormatearTiempo(tiempoRestante);
+    }
+
+    void ActualizarResultadosDerrota()
+    {
+        if (derrotaNombreZona != null)
+            derrotaNombreZona.text = nombreZonaActual;
+
+        if (derrotaRiesgo != null)
+            derrotaRiesgo.text = "Riesgo final: " + riesgo + "%";
+
+        if (derrotaObjetivos != null)
+        {
+            derrotaObjetivos.text =
+                "Objetivos: " + objetivosCompletados + "/" + objetivosTotales;
+        }
+
+        if (derrotaAciertos != null)
+            derrotaAciertos.text = "Aciertos: " + aciertos;
+
+        if (derrotaErrores != null)
+            derrotaErrores.text = "Errores: " + errores;
+
+        if (derrotaTiempo != null)
+            derrotaTiempo.text = "Tiempo restante: " +
+                                  FormatearTiempo(tiempoRestante);
     }
 
     void Victoria()
@@ -202,10 +327,13 @@ public class GameManager : MonoBehaviour
             return;
 
         juegoTerminado = true;
+        zonaActiva = false;
         cronometroActivo = false;
-
-        if (ventanaDecision != null)
-            ventanaDecision.SetActive(false);
+        cronometroPausado = false;
+        victoriaPendiente = true;
+        fueVictoria = true;
+        if (progresoZonas != null && indiceZonaActual > 0)
+            progresoZonas.CompletarZona(indiceZonaActual);
 
         if (textoInteraccion != null)
             textoInteraccion.SetActive(false);
@@ -213,29 +341,41 @@ public class GameManager : MonoBehaviour
         if (playerMovement != null)
             playerMovement.enabled = false;
 
-        if (resultadoRiesgo != null)
-            resultadoRiesgo.text =
-                "Riesgo final: " + riesgo + "%";
+        ActualizarResultados();
 
-        if (resultadoObjetivos != null)
-        {
-            resultadoObjetivos.text =
-                "Objetivos: " +
-                objetivosCompletados +
-                "/" +
-                objetivosTotales;
-        }
+        // Si la victoria se produjo al responder la ultima pregunta, la ventana
+        // conserva el feedback durante sus 4 segundos antes de mostrar resultados.
+        if (ventanaDecision == null || !ventanaDecision.activeSelf)
+            MostrarVictoriaPendiente();
+    }
 
-        if (resultadoAciertos != null)
-            resultadoAciertos.text =
-                "Aciertos: " + aciertos;
+    public void MostrarVictoriaPendiente()
+    {
+        if (!victoriaPendiente)
+            return;
 
-        if (resultadoErrores != null)
-            resultadoErrores.text =
-                "Errores: " + errores;
+        victoriaPendiente = false;
 
         if (panelVictoria != null)
             panelVictoria.SetActive(true);
+    }
+
+    public void ContinuarDespuesDeVictoria()
+    {
+        if (!fueVictoria || victoriaPendiente)
+            return;
+        fueVictoria = false;
+        if (panelVictoria != null)
+            panelVictoria.SetActive(false);
+
+        victoriaPendiente = false;
+        juegoTerminado = false;
+        zonaActiva = false;
+        cronometroActivo = false;
+        cronometroPausado = false;
+
+        if (playerMovement != null)
+            playerMovement.enabled = true;
     }
 
     void Derrota(string motivo)
@@ -244,7 +384,10 @@ public class GameManager : MonoBehaviour
             return;
 
         juegoTerminado = true;
+        zonaActiva = false;
         cronometroActivo = false;
+        cronometroPausado = false;
+        victoriaPendiente = false;
 
         if (ventanaDecision != null)
             ventanaDecision.SetActive(false);
@@ -257,6 +400,8 @@ public class GameManager : MonoBehaviour
 
         if (textoMotivoDerrota != null)
             textoMotivoDerrota.text = motivo;
+
+        ActualizarResultadosDerrota();
 
         if (panelDerrota != null)
             panelDerrota.SetActive(true);

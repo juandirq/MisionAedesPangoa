@@ -61,6 +61,26 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
+    void OnDisable()
+    {
+        // Detiene inmediatamente cualquier movimiento pendiente
+        movimiento = Vector2.zero;
+
+        if (rb != null)
+        {
+            rb.linearVelocity = Vector2.zero;
+            rb.angularVelocity = 0f;
+        }
+
+        // Deja al personaje quieto visualmente
+        if (animator != null)
+        {
+            animator.speed = 0f;
+        }
+
+        estabaMoviendose = false;
+    }
+
     void ActualizarAnimacion()
     {
         if (animator == null)

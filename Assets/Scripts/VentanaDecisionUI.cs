@@ -19,6 +19,7 @@ public class VentanaDecisionUI : MonoBehaviour
     public GameManager gameManager;
 
     private ObjetoInteractuable objetoActual;
+    private bool respuestaCorrectaProcesada = false;
 
     // COLORES DEL FEEDBACK
     private Color colorNormal = new Color32(85, 98, 74, 255);     // #55624A
@@ -29,6 +30,7 @@ public class VentanaDecisionUI : MonoBehaviour
     {
         if (ventanaDecision != null &&
             ventanaDecision.activeSelf &&
+            !respuestaCorrectaProcesada &&
             Input.GetKeyDown(KeyCode.Escape))
         {
             CerrarVentana();
@@ -37,7 +39,18 @@ public class VentanaDecisionUI : MonoBehaviour
 
     public void AbrirVentana(ObjetoInteractuable objeto)
     {
+        if (objeto == null || !objeto.PuedeResponder || Time.timeScale <= 0f ||
+            (ventanaDecision != null && ventanaDecision.activeInHierarchy) ||
+            (playerMovement != null && !playerMovement.enabled))
+            return;
+        if (ventanaDecision == null || tituloObjeto == null || descripcionObjeto == null ||
+            textoFeedback == null || textoBoton1 == null || textoBoton2 == null || textoBoton3 == null)
+        {
+            Debug.LogWarning("Faltan referencias de VentanaDecisionUI.", this);
+            return;
+        }
         objetoActual = objeto;
+        respuestaCorrectaProcesada = false;
 
         if (objetoActual == null)
             return;
@@ -55,6 +68,9 @@ public class VentanaDecisionUI : MonoBehaviour
         textoFeedback.gameObject.SetActive(true);
 
         ventanaDecision.SetActive(true);
+
+        if (gameManager != null)
+            gameManager.PausarCronometro();
 
         if (playerMovement != null)
             playerMovement.enabled = false;
@@ -77,7 +93,7 @@ public class VentanaDecisionUI : MonoBehaviour
 
     void ProcesarOpcion(int opcionElegida)
     {
-        if (objetoActual == null)
+        if (objetoActual == null || respuestaCorrectaProcesada || !objetoActual.PuedeResponder)
             return;
 
         bool correcto =
@@ -85,6 +101,8 @@ public class VentanaDecisionUI : MonoBehaviour
 
         if (correcto)
         {
+            respuestaCorrectaProcesada = true;
+
             textoFeedback.text =
                 objetoActual.feedbackCorrecto;
 
@@ -133,5 +151,12 @@ public class VentanaDecisionUI : MonoBehaviour
         }
 
         objetoActual = null;
+        respuestaCorrectaProcesada = false;
+
+        if (gameManager != null)
+        {
+            gameManager.MostrarVictoriaPendiente();
+            gameManager.ReanudarCronometro();
+        }
     }
 }

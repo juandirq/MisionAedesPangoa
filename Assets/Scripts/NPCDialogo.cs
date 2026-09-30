@@ -8,6 +8,7 @@ public class NPCDialogo : MonoBehaviour
     public TextMeshProUGUI nombreNPC;
     public TextMeshProUGUI textoDialogo;
     public PlayerMovement playerMovement;
+    public GameManager gameManager;
 
     [Header("Datos del NPC")]
     public string nombre = "Docente";
@@ -18,10 +19,12 @@ public class NPCDialogo : MonoBehaviour
     private bool jugadorCerca = false;
     private bool hablando = false;
     private int dialogoActual = 0;
+    public bool Hablando => hablando;
 
     void Update()
     {
-        if (jugadorCerca && !hablando && Input.GetKeyDown(KeyCode.E))
+        if (jugadorCerca && !hablando && Time.timeScale > 0f &&
+            (playerMovement == null || playerMovement.enabled) && Input.GetKeyDown(KeyCode.E))
         {
             AbrirDialogo();
         }
@@ -29,10 +32,21 @@ public class NPCDialogo : MonoBehaviour
 
     void AbrirDialogo()
     {
+        if (dialogos == null || dialogos.Length == 0)
+        {
+            Debug.LogWarning("El NPC no tiene dialogos configurados.", this);
+            return;
+        }
+        if (panelDialogo == null || nombreNPC == null || textoDialogo == null)
+        {
+            Debug.LogWarning("Faltan referencias del diálogo.", this);
+            return;
+        }
+
         hablando = true;
         dialogoActual = 0;
 
-        textoHablar.SetActive(false);
+        if (textoHablar != null) textoHablar.SetActive(false);
         panelDialogo.SetActive(true);
 
         nombreNPC.text = nombre;
@@ -40,10 +54,17 @@ public class NPCDialogo : MonoBehaviour
 
         if (playerMovement != null)
             playerMovement.enabled = false;
+
+        if (gameManager == null)
+            gameManager = FindAnyObjectByType<GameManager>();
+
+        if (gameManager != null)
+            gameManager.PausarCronometro();
     }
 
     public void SiguienteDialogo()
     {
+        if (!hablando || dialogos == null || textoDialogo == null) return;
         dialogoActual++;
 
         if (dialogoActual < dialogos.Length)
@@ -58,13 +79,17 @@ public class NPCDialogo : MonoBehaviour
 
     public void CerrarDialogo()
     {
+        if (!hablando) return;
         hablando = false;
-        panelDialogo.SetActive(false);
+        if (panelDialogo != null) panelDialogo.SetActive(false);
 
-        if (playerMovement != null)
+        if (playerMovement != null && (gameManager == null || !gameManager.JuegoTerminado))
             playerMovement.enabled = true;
 
-        if (jugadorCerca)
+        if (gameManager != null)
+            gameManager.ReanudarCronometro();
+
+        if (jugadorCerca && textoHablar != null)
             textoHablar.SetActive(true);
     }
 
@@ -74,7 +99,7 @@ public class NPCDialogo : MonoBehaviour
         {
             jugadorCerca = true;
 
-            if (!hablando)
+            if (!hablando && textoHablar != null)
                 textoHablar.SetActive(true);
         }
     }
@@ -84,7 +109,7 @@ public class NPCDialogo : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             jugadorCerca = false;
-            textoHablar.SetActive(false);
+            if (textoHablar != null) textoHablar.SetActive(false);
         }
     }
 }
