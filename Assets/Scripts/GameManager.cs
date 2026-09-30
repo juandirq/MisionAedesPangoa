@@ -23,6 +23,9 @@ public class GameManager : MonoBehaviour
     public GameObject ventanaDecision;
     public GameObject textoInteraccion;
 
+    [Header("Texto de derrota")]
+    public TextMeshProUGUI textoMotivoDerrota;
+
     [Header("Jugador")]
     public PlayerMovement playerMovement;
 
@@ -70,7 +73,8 @@ public class GameManager : MonoBehaviour
             tiempoRestante = 0f;
 
             ActualizarTiempo();
-            Derrota();
+
+            Derrota("Se acabó el tiempo.");
 
             return;
         }
@@ -78,8 +82,6 @@ public class GameManager : MonoBehaviour
         ActualizarTiempo();
     }
 
-    // NUEVO:
-    // Cada zona le envía su cantidad de objetivos y su tiempo.
     public void IniciarZona(int cantidadObjetivos, float tiempoZona)
     {
         objetivosTotales = cantidadObjetivos;
@@ -139,7 +141,9 @@ public class GameManager : MonoBehaviour
         ActualizarHUD();
 
         if (errores >= 3)
-            Derrota();
+        {
+            Derrota("Alcanzaste 3 errores.");
+        }
     }
 
     void ComprobarVictoria()
@@ -154,16 +158,13 @@ public class GameManager : MonoBehaviour
     void ActualizarHUD()
     {
         if (textoRiesgo != null)
-            textoRiesgo.text =
-                "Riesgo: " + riesgo + "%";
+            textoRiesgo.text = "Riesgo: " + riesgo + "%";
 
         if (textoAciertos != null)
-            textoAciertos.text =
-                "Aciertos: " + aciertos;
+            textoAciertos.text = "Aciertos: " + aciertos;
 
         if (textoErrores != null)
-            textoErrores.text =
-                "Errores: " + errores;
+            textoErrores.text = "Errores: " + errores;
 
         if (textoObjetivos != null)
         {
@@ -237,7 +238,7 @@ public class GameManager : MonoBehaviour
             panelVictoria.SetActive(true);
     }
 
-    void Derrota()
+    void Derrota(string motivo)
     {
         if (juegoTerminado)
             return;
@@ -253,6 +254,9 @@ public class GameManager : MonoBehaviour
 
         if (playerMovement != null)
             playerMovement.enabled = false;
+
+        if (textoMotivoDerrota != null)
+            textoMotivoDerrota.text = motivo;
 
         if (panelDerrota != null)
             panelDerrota.SetActive(true);

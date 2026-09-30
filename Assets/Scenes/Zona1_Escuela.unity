@@ -1322,7 +1322,7 @@ GameObject:
   - component: {fileID: 99644111}
   - component: {fileID: 99644110}
   m_Layer: 5
-  m_Name: TextoDerrota
+  m_Name: TextoMotivoDerrota
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1367,7 +1367,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "\xA1Zona fallida! Alcanzaste 3 errores"
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -1433,7 +1433,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: -147.49066, w: 0}
+  m_margin: {x: -6.672188, y: 0, z: -161.66911, w: -30.85889}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -4164,6 +4164,112 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 444811842}
   m_CullTransparentMesh: 1
+--- !u!1 &470051181
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 470051184}
+  - component: {fileID: 470051183}
+  - component: {fileID: 470051182}
+  m_Layer: 0
+  m_Name: Zona2_Tanque
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &470051182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 470051181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef76521fcdda9ac48aba57f95d943d97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjetoInteractuable
+  textoInteraccion: {fileID: 1436406326}
+  ventanaUI: {fileID: 1137214053}
+  gameManager: {fileID: 1358346452}
+  tituloObjeto: Tanque de agua destapado
+  descripcionObjeto: "El tanque est\xE1 abierto y contiene agua almacenada. \xBFQu\xE9
+    acci\xF3n reduce mejor el riesgo de criadero?"
+  opcion1: Mantenerlo abierto para revisar el agua con frecuencia.
+  opcion2: Taparlo correctamente y mantenerlo cerrado.
+  opcion3: Cubrirlo parcialmente para que pueda ventilarse.
+  opcionCorrecta: 1
+  feedbackCorrecto: "\xA1Correcto! Mantener el tanque bien tapado evita que los mosquitos
+    entren y depositen sus huevos."
+  feedbackIncorrecto: Esa medida no elimina el riesgo. El tanque debe permanecer
+    correctamente tapado.
+  reduccionRiesgo: 15
+--- !u!61 &470051183
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 470051181}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.1437664, y: -0.14560509}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1.6816216, y: 2.0530357}
+  m_EdgeRadius: 0
+--- !u!4 &470051184
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 470051181}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -36.21, y: 18.46, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &472115975
 GameObject:
   m_ObjectHideFlags: 0
@@ -5935,7 +6041,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 161}
+  m_AnchoredPosition: {x: 0, y: 149.3}
   m_SizeDelta: {x: 300, y: 4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &601909995
@@ -6905,6 +7011,112 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 642186621}
   m_CullTransparentMesh: 1
+--- !u!1 &648540711
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 648540714}
+  - component: {fileID: 648540713}
+  - component: {fileID: 648540712}
+  m_Layer: 0
+  m_Name: Zona2_Canaleta
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &648540712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 648540711}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef76521fcdda9ac48aba57f95d943d97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjetoInteractuable
+  textoInteraccion: {fileID: 1436406326}
+  ventanaUI: {fileID: 1137214053}
+  gameManager: {fileID: 1358346452}
+  tituloObjeto: Canaleta con hojas y agua acumulada
+  descripcionObjeto: "La canaleta est\xE1 obstruida con hojas y agua estancada. \xBFQu\xE9
+    acci\xF3n previene mejor que se formen criaderos?"
+  opcion1: "Dejarla as\xED mientras el agua no rebalse."
+  opcion2: Quitar las hojas y limpiar la canaleta para que el agua escurra.
+  opcion3: Empujar un poco el agua, pero dejar la suciedad.
+  opcionCorrecta: 1
+  feedbackCorrecto: "\xA1Correcto! La canaleta debe quedar limpia y sin obstrucciones
+    para que el agua no se estanque."
+  feedbackIncorrecto: "Esa acci\xF3n no elimina el riesgo. La canaleta debe limpiarse
+    para evitar acumulaci\xF3n de agua."
+  reduccionRiesgo: 15
+--- !u!61 &648540713
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 648540711}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.71392345, y: -1.2801559}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 2.521059, y: 3.638329}
+  m_EdgeRadius: 0
+--- !u!4 &648540714
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 648540711}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -37.57, y: 2.38, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &649752718
 GameObject:
   m_ObjectHideFlags: 0
@@ -8418,6 +8630,112 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 2, y: 2}
   m_EdgeRadius: 0
+--- !u!1 &772777112
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 772777115}
+  - component: {fileID: 772777114}
+  - component: {fileID: 772777113}
+  m_Layer: 0
+  m_Name: Zona2_Maceta
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &772777113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 772777112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef76521fcdda9ac48aba57f95d943d97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjetoInteractuable
+  textoInteraccion: {fileID: 1436406326}
+  ventanaUI: {fileID: 1137214053}
+  gameManager: {fileID: 1358346452}
+  tituloObjeto: Maceta con agua acumulada
+  descripcionObjeto: "El plato de la maceta mantiene agua acumulada despu\xE9s del
+    riego. \xBFQu\xE9 acci\xF3n reduce mejor el riesgo de criadero?"
+  opcion1: "Agregar m\xE1s tierra para absorber parte del agua."
+  opcion2: Dejar el agua porque la planta puede utilizarla.
+  opcion3: Vaciar el plato y evitar que vuelva a acumular agua.
+  opcionCorrecta: 2
+  feedbackCorrecto: "\xA1Correcto! El plato debe mantenerse sin agua acumulada para
+    evitar posibles criaderos."
+  feedbackIncorrecto: "Esa acci\xF3n mantiene el riesgo. El agua acumulada en el
+    plato debe eliminarse."
+  reduccionRiesgo: 15
+--- !u!61 &772777114
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 772777112}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.1437664, y: -0.14560509}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1.6816216, y: 2.0530357}
+  m_EdgeRadius: 0
+--- !u!4 &772777115
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 772777112}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -15.76, y: 17.66, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &778985468
 GameObject:
   m_ObjectHideFlags: 0
@@ -15208,6 +15526,7 @@ MonoBehaviour:
   panelVictoria: {fileID: 1686580857}
   ventanaDecision: {fileID: 1895771826}
   textoInteraccion: {fileID: 1436406326}
+  textoMotivoDerrota: {fileID: 99644110}
   playerMovement: {fileID: 1800322753}
   tiempoRestante: 120
   objetivosTotales: 4
@@ -18337,7 +18656,7 @@ MonoBehaviour:
   panelInicioZona2: {fileID: 235780804}
   gameManager: {fileID: 1358346452}
   objetivosZona: 6
-  tiempoZona: 105
+  tiempoZona: 345
 --- !u!4 &1601722672
 Transform:
   m_ObjectHideFlags: 0
@@ -19122,7 +19441,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1686580858
 RectTransform:
   m_ObjectHideFlags: 0
@@ -19263,6 +19582,112 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1697239727}
   m_CullTransparentMesh: 1
+--- !u!1 &1705065543
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1705065546}
+  - component: {fileID: 1705065545}
+  - component: {fileID: 1705065544}
+  m_Layer: 0
+  m_Name: Zona2_Botella
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1705065544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705065543}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef76521fcdda9ac48aba57f95d943d97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjetoInteractuable
+  textoInteraccion: {fileID: 1436406326}
+  ventanaUI: {fileID: 1137214053}
+  gameManager: {fileID: 1358346452}
+  tituloObjeto: Botellas y latas con agua acumulada
+  descripcionObjeto: "Estos envases abandonados pueden acumular agua de lluvia y
+    convertirse en criaderos. \xBFQu\xE9 acci\xF3n previene mejor el riesgo?"
+  opcion1: Vaciar los envases y desecharlos o guardarlos en un lugar cubierto.
+  opcion2: Dejarlos en el suelo mientras tengan poca agua.
+  opcion3: Moverlos de lugar sin vaciar el agua.
+  opcionCorrecta: 0
+  feedbackCorrecto: "\xA1Correcto! Las botellas y latas deben vaciarse y desecharse
+    o guardarse bajo techo para que no acumulen agua."
+  feedbackIncorrecto: "Esa acci\xF3n no elimina el riesgo. Los envases deben quedar
+    sin agua y fuera de la intemperie."
+  reduccionRiesgo: 15
+--- !u!61 &1705065545
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705065543}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: -0.21898556, y: -0.14560509}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1.5311832, y: 1.3692274}
+  m_EdgeRadius: 0
+--- !u!4 &1705065546
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1705065543}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -18.88, y: 3.87, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1708139366
 GameObject:
   m_ObjectHideFlags: 0
@@ -24208,3 +24633,7 @@ SceneRoots:
   - {fileID: 1301173965}
   - {fileID: 778985471}
   - {fileID: 1736940664}
+  - {fileID: 470051184}
+  - {fileID: 772777115}
+  - {fileID: 1705065546}
+  - {fileID: 648540714}
