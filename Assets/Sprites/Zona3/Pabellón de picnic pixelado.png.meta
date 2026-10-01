@@ -1,0 +1,507 @@
+fileFormatVersion: 2
+guid: 8c217ddd75a6cc747a7dd20c4dc2790c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3043930285354253759
+    second: "Pabell\xF3n de picnic pixelado_0"
+  - first:
+      213: 7873490617931118544
+    second: "Pabell\xF3n de picnic pixelado_1"
+  - first:
+      213: -1259177647299146801
+    second: "Pabell\xF3n de picnic pixelado_2"
+  - first:
+      213: -3421386014337972564
+    second: "Pabell\xF3n de picnic pixelado_3"
+  - first:
+      213: -6555746435362328358
+    second: "Pabell\xF3n de picnic pixelado_4"
+  - first:
+      213: -6799046621887445937
+    second: "Pabell\xF3n de picnic pixelado_5"
+  - first:
+      213: -6170075737027238009
+    second: "Pabell\xF3n de picnic pixelado_6"
+  - first:
+      213: 1698835429844046150
+    second: "Pabell\xF3n de picnic pixelado_7"
+  - first:
+      213: -3841160981300011267
+    second: "Pabell\xF3n de picnic pixelado_8"
+  - first:
+      213: -7293917668461259126
+    second: "Pabell\xF3n de picnic pixelado_9"
+  - first:
+      213: -5069099215530698581
+    second: "Pabell\xF3n de picnic pixelado_10"
+  - first:
+      213: 8046471326222599266
+    second: "Pabell\xF3n de picnic pixelado_11"
+  - first:
+      213: 8734516160997405798
+    second: "Pabell\xF3n de picnic pixelado_12"
+  - first:
+      213: -7210334031215140742
+    second: "Pabell\xF3n de picnic pixelado_13"
+  - first:
+      213: 274697241821450921
+    second: "Pabell\xF3n de picnic pixelado_14"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "Pabell\xF3n de picnic pixelado_0"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1523
+        height: 1016
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 142086c6889c1c5d0800000000000000
+      internalID: -3043930285354253759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Pabell\xF3n de picnic pixelado_1"
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 879
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d7b7206002444d60800000000000000
+      internalID: 7873490617931118544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Pabell\xF3n de picnic pixelado_2"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 543
+        width: 17
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fcb4f97e990868ee0800000000000000
+      internalID: -1259177647299146801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Pabell\xF3n de picnic pixelado_3"
+      rect:
+        serializedVersion: 2
+        x: 1472
+        y: 561
+        width: 31
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca645e71c8bc480d0800000000000000
+      internalID: -3421386014337972564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Pabell\xF3n de picnic pixelado_4"
+      rect:
+        serializedVersion: 2
+        x: 1490
+        y: 505
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad0f1b2d95f4505a0800000000000000
+      internalID: -6555746435362328358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Pabell\xF3n de picnic pixelado_5"
+      rect:
+        serializedVersion: 2
+        x: 1494
+        y: 399
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f44441bce1fe4a1a0800000000000000
+      internalID: -6799046621887445937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Pabell\xF3n de picnic pixelado_6"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 150
+        width: 5
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7872c31cecc7f5aa0800000000000000
+      internalID: -6170075737027238009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Pabell\xF3n de picnic pixelado_7"
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 81
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 641d3b792d9739710800000000000000
+      internalID: 1698835429844046150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Pabell\xF3n de picnic pixelado_8"
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 69
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfe9588507471bac0800000000000000
+      internalID: -3841160981300011267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Pabell\xF3n de picnic pixelado_9"
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 25
+        width: 15
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a86db6e768cc6ca90800000000000000
+      internalID: -7293917668461259126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Pabell\xF3n de picnic pixelado_10"
+      rect:
+        serializedVersion: 2
+        x: 732
+        y: 45
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba8d417ee11f6a9b0800000000000000
+      internalID: -5069099215530698581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Pabell\xF3n de picnic pixelado_11"
+      rect:
+        serializedVersion: 2
+        x: 472
+        y: 17
+        width: 9
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2644dd60a0fcaaf60800000000000000
+      internalID: 8046471326222599266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Pabell\xF3n de picnic pixelado_12"
+      rect:
+        serializedVersion: 2
+        x: 612
+        y: 17
+        width: 19
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 664b825cb2c373970800000000000000
+      internalID: 8734516160997405798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Pabell\xF3n de picnic pixelado_13"
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 19
+        width: 9
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a70e28d866fbfeb90800000000000000
+      internalID: -7210334031215140742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Pabell\xF3n de picnic pixelado_14"
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 18
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a21c8f9fabefc300800000000000000
+      internalID: 274697241821450921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "Pabell\xF3n de picnic pixelado_0": -3043930285354253759
+      "Pabell\xF3n de picnic pixelado_1": 7873490617931118544
+      "Pabell\xF3n de picnic pixelado_10": -5069099215530698581
+      "Pabell\xF3n de picnic pixelado_11": 8046471326222599266
+      "Pabell\xF3n de picnic pixelado_12": 8734516160997405798
+      "Pabell\xF3n de picnic pixelado_13": -7210334031215140742
+      "Pabell\xF3n de picnic pixelado_14": 274697241821450921
+      "Pabell\xF3n de picnic pixelado_2": -1259177647299146801
+      "Pabell\xF3n de picnic pixelado_3": -3421386014337972564
+      "Pabell\xF3n de picnic pixelado_4": -6555746435362328358
+      "Pabell\xF3n de picnic pixelado_5": -6799046621887445937
+      "Pabell\xF3n de picnic pixelado_6": -6170075737027238009
+      "Pabell\xF3n de picnic pixelado_7": 1698835429844046150
+      "Pabell\xF3n de picnic pixelado_8": -3841160981300011267
+      "Pabell\xF3n de picnic pixelado_9": -7293917668461259126
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
