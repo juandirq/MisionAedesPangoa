@@ -1,0 +1,1235 @@
+fileFormatVersion: 2
+guid: 0b035650074e64046b7fc09418c3c1df
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3320412391278290072
+    second: Imagen de Codex 30 sept 2026, 21_51_32_0
+  - first:
+      213: -7063317043529637544
+    second: Imagen de Codex 30 sept 2026, 21_51_32_1
+  - first:
+      213: -8859938973257564932
+    second: Imagen de Codex 30 sept 2026, 21_51_32_2
+  - first:
+      213: -6412095884161570998
+    second: Imagen de Codex 30 sept 2026, 21_51_32_3
+  - first:
+      213: 2232717412747635832
+    second: Imagen de Codex 30 sept 2026, 21_51_32_4
+  - first:
+      213: 5916391498340330709
+    second: Imagen de Codex 30 sept 2026, 21_51_32_5
+  - first:
+      213: 4484051869862603992
+    second: Imagen de Codex 30 sept 2026, 21_51_32_6
+  - first:
+      213: 5743412445486289361
+    second: Imagen de Codex 30 sept 2026, 21_51_32_7
+  - first:
+      213: -7419993636691719190
+    second: Imagen de Codex 30 sept 2026, 21_51_32_8
+  - first:
+      213: -2642662957626144328
+    second: Imagen de Codex 30 sept 2026, 21_51_32_9
+  - first:
+      213: 141067202335359486
+    second: Imagen de Codex 30 sept 2026, 21_51_32_10
+  - first:
+      213: -6661078638989601576
+    second: Imagen de Codex 30 sept 2026, 21_51_32_11
+  - first:
+      213: -7571546576819156160
+    second: Imagen de Codex 30 sept 2026, 21_51_32_12
+  - first:
+      213: 5911085120025542140
+    second: Imagen de Codex 30 sept 2026, 21_51_32_13
+  - first:
+      213: -4756285530250673797
+    second: Imagen de Codex 30 sept 2026, 21_51_32_14
+  - first:
+      213: 5465727593662965379
+    second: Imagen de Codex 30 sept 2026, 21_51_32_15
+  - first:
+      213: -5307931301697449405
+    second: Imagen de Codex 30 sept 2026, 21_51_32_16
+  - first:
+      213: 7545216962672602950
+    second: Imagen de Codex 30 sept 2026, 21_51_32_17
+  - first:
+      213: 5277823269475913381
+    second: Imagen de Codex 30 sept 2026, 21_51_32_18
+  - first:
+      213: 8099801004778493830
+    second: Imagen de Codex 30 sept 2026, 21_51_32_19
+  - first:
+      213: -194505736752234216
+    second: Imagen de Codex 30 sept 2026, 21_51_32_20
+  - first:
+      213: -614366331060743685
+    second: Imagen de Codex 30 sept 2026, 21_51_32_21
+  - first:
+      213: 3075055027584222604
+    second: Imagen de Codex 30 sept 2026, 21_51_32_22
+  - first:
+      213: -4438557914212246148
+    second: Imagen de Codex 30 sept 2026, 21_51_32_23
+  - first:
+      213: 4775076527442772198
+    second: Imagen de Codex 30 sept 2026, 21_51_32_24
+  - first:
+      213: 3491528132851856008
+    second: Imagen de Codex 30 sept 2026, 21_51_32_25
+  - first:
+      213: 6334258317472382739
+    second: Imagen de Codex 30 sept 2026, 21_51_32_26
+  - first:
+      213: 1215754401454217702
+    second: Imagen de Codex 30 sept 2026, 21_51_32_27
+  - first:
+      213: -5492315400264402192
+    second: Imagen de Codex 30 sept 2026, 21_51_32_28
+  - first:
+      213: -5414793540012457459
+    second: Imagen de Codex 30 sept 2026, 21_51_32_29
+  - first:
+      213: 4893491320083924045
+    second: Imagen de Codex 30 sept 2026, 21_51_32_30
+  - first:
+      213: -9027665146523608159
+    second: Imagen de Codex 30 sept 2026, 21_51_32_31
+  - first:
+      213: -7113591040619707072
+    second: Imagen de Codex 30 sept 2026, 21_51_32_32
+  - first:
+      213: -3054222207383729751
+    second: Imagen de Codex 30 sept 2026, 21_51_32_33
+  - first:
+      213: 1071804709860188385
+    second: Imagen de Codex 30 sept 2026, 21_51_32_34
+  - first:
+      213: 7512353758000002990
+    second: Imagen de Codex 30 sept 2026, 21_51_32_35
+  - first:
+      213: 2953495859139815792
+    second: Imagen de Codex 30 sept 2026, 21_51_32_36
+  - first:
+      213: 3191747781543611032
+    second: Imagen de Codex 30 sept 2026, 21_51_32_37
+  - first:
+      213: 3763742106036633075
+    second: Imagen de Codex 30 sept 2026, 21_51_32_38
+  - first:
+      213: -1317775490791460178
+    second: Imagen de Codex 30 sept 2026, 21_51_32_39
+  - first:
+      213: 5829268001674985412
+    second: Imagen de Codex 30 sept 2026, 21_51_32_40
+  - first:
+      213: -1197628781435829919
+    second: Imagen de Codex 30 sept 2026, 21_51_32_41
+  - first:
+      213: 4991129622798759335
+    second: Imagen de Codex 30 sept 2026, 21_51_32_42
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Imagen de Codex 30 sept 2026, 21_51_32_0
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 157
+        width: 941
+        height: 1116
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 894a2f14a79741e20800000000000000
+      internalID: 3320412391278290072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagen de Codex 30 sept 2026, 21_51_32_1
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 1265
+        width: 35
+        height: 145
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 851247c629e0afd90800000000000000
+      internalID: -7063317043529637544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagen de Codex 30 sept 2026, 21_51_32_2
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 1367
+        width: 61
+        height: 131
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfcf75f127c2b0580800000000000000
+      internalID: -8859938973257564932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagen de Codex 30 sept 2026, 21_51_32_3
+      rect:
+        serializedVersion: 2
+        x: 174
+        y: 1235
+        width: 29
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a472ece14c8a307a0800000000000000
+      internalID: -6412095884161570998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagen de Codex 30 sept 2026, 21_51_32_4
+      rect:
+        serializedVersion: 2
+        x: 774
+        y: 1293
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87ce6ae48a43cfe10800000000000000
+      internalID: 2232717412747635832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagen de Codex 30 sept 2026, 21_51_32_5
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 1221
+        width: 85
+        height: 101
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dc67baa8be3b1250800000000000000
+      internalID: 5916391498340330709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagen de Codex 30 sept 2026, 21_51_32_6
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 1197
+        width: 21
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8dc26990b6d8a3e30800000000000000
+      internalID: 4484051869862603992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagen de Codex 30 sept 2026, 21_51_32_7
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 1001
+        width: 137
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1d194c37033b4bf40800000000000000
+      internalID: 5743412445486289361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagen de Codex 30 sept 2026, 21_51_32_8
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 711
+        width: 103
+        height: 195
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aebc459a913e60990800000000000000
+      internalID: -7419993636691719190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagen de Codex 30 sept 2026, 21_51_32_9
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 943
+        width: 47
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b94c9d9a00635bd0800000000000000
+      internalID: -2642662957626144328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagen de Codex 30 sept 2026, 21_51_32_10
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 901
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef148a48fdb25f100800000000000000
+      internalID: 141067202335359486
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagen de Codex 30 sept 2026, 21_51_32_11
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 895
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d4151e05481f83a0800000000000000
+      internalID: -6661078638989601576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagen de Codex 30 sept 2026, 21_51_32_12
+      rect:
+        serializedVersion: 2
+        x: 172
+        y: 1078
+        width: 31
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04b8e5011867ce690800000000000000
+      internalID: -7571546576819156160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagen de Codex 30 sept 2026, 21_51_32_13
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 877
+        width: 127
+        height: 316
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfd38303994680250800000000000000
+      internalID: 5911085120025542140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagen de Codex 30 sept 2026, 21_51_32_14
+      rect:
+        serializedVersion: 2
+        x: 812
+        y: 852
+        width: 31
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b71041792874efdb0800000000000000
+      internalID: -4756285530250673797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagen de Codex 30 sept 2026, 21_51_32_15
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 975
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 386e45ba94a2adb40800000000000000
+      internalID: 5465727593662965379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagen de Codex 30 sept 2026, 21_51_32_16
+      rect:
+        serializedVersion: 2
+        x: 846
+        y: 969
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 342952e8a907656b0800000000000000
+      internalID: -5307931301697449405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagen de Codex 30 sept 2026, 21_51_32_17
+      rect:
+        serializedVersion: 2
+        x: 814
+        y: 817
+        width: 13
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64f2a5de9def5b860800000000000000
+      internalID: 7545216962672602950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagen de Codex 30 sept 2026, 21_51_32_18
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 791
+        width: 17
+        height: 35
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ae076cec489e3940800000000000000
+      internalID: 5277823269475913381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagen de Codex 30 sept 2026, 21_51_32_19
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 813
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6879c296916486070800000000000000
+      internalID: 8099801004778493830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagen de Codex 30 sept 2026, 21_51_32_20
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 787
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8118b1e101afc4df0800000000000000
+      internalID: -194505736752234216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagen de Codex 30 sept 2026, 21_51_32_21
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 709
+        width: 115
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bf11a23b3155977f0800000000000000
+      internalID: -614366331060743685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagen de Codex 30 sept 2026, 21_51_32_22
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 652
+        width: 36
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c85cfe7514accaa20800000000000000
+      internalID: 3075055027584222604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagen de Codex 30 sept 2026, 21_51_32_23
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 517
+        width: 49
+        height: 111
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7d5160f7131762c0800000000000000
+      internalID: -4438557914212246148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagen de Codex 30 sept 2026, 21_51_32_24
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 595
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e048816dca744240800000000000000
+      internalID: 4775076527442772198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagen de Codex 30 sept 2026, 21_51_32_25
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 575
+        width: 27
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 882fae18656647030800000000000000
+      internalID: 3491528132851856008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagen de Codex 30 sept 2026, 21_51_32_26
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 509
+        width: 47
+        height: 45
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31f3180216ec7e750800000000000000
+      internalID: 6334258317472382739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagen de Codex 30 sept 2026, 21_51_32_27
+      rect:
+        serializedVersion: 2
+        x: 816
+        y: 347
+        width: 149
+        height: 223
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e9dbc0df2a3fd010800000000000000
+      internalID: 1215754401454217702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagen de Codex 30 sept 2026, 21_51_32_28
+      rect:
+        serializedVersion: 2
+        x: 822
+        y: 579
+        width: 27
+        height: 37
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0fa35d43e3067c3b0800000000000000
+      internalID: -5492315400264402192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagen de Codex 30 sept 2026, 21_51_32_29
+      rect:
+        serializedVersion: 2
+        x: 836
+        y: 499
+        width: 19
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d024a73d6f9cad4b0800000000000000
+      internalID: -5414793540012457459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagen de Codex 30 sept 2026, 21_51_32_30
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 405
+        width: 35
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d444f05cd6c29e340800000000000000
+      internalID: 4893491320083924045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagen de Codex 30 sept 2026, 21_51_32_31
+      rect:
+        serializedVersion: 2
+        x: 847
+        y: 252
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1ab194e316a47b280800000000000000
+      internalID: -9027665146523608159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagen de Codex 30 sept 2026, 21_51_32_32
+      rect:
+        serializedVersion: 2
+        x: 760
+        y: 231
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 045067253a2774d90800000000000000
+      internalID: -7113591040619707072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagen de Codex 30 sept 2026, 21_51_32_33
+      rect:
+        serializedVersion: 2
+        x: 832
+        y: 199
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a988c795193d95d0800000000000000
+      internalID: -3054222207383729751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagen de Codex 30 sept 2026, 21_51_32_34
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 207
+        width: 7
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e0aec774b0dfde00800000000000000
+      internalID: 1071804709860188385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagen de Codex 30 sept 2026, 21_51_32_35
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 160
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea739a4d0fd314860800000000000000
+      internalID: 7512353758000002990
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagen de Codex 30 sept 2026, 21_51_32_36
+      rect:
+        serializedVersion: 2
+        x: 848
+        y: 175
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 079ad99e5dcecf820800000000000000
+      internalID: 2953495859139815792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagen de Codex 30 sept 2026, 21_51_32_37
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 179
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 89a4c8b52bd5b4c20800000000000000
+      internalID: 3191747781543611032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagen de Codex 30 sept 2026, 21_51_32_38
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 148
+        width: 7
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fd7e78118f7b3430800000000000000
+      internalID: 3763742106036633075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagen de Codex 30 sept 2026, 21_51_32_39
+      rect:
+        serializedVersion: 2
+        x: 854
+        y: 143
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ea2b8a94c2256bde0800000000000000
+      internalID: -1317775490791460178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagen de Codex 30 sept 2026, 21_51_32_40
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 117
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cf736cdc58b5e050800000000000000
+      internalID: 5829268001674985412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagen de Codex 30 sept 2026, 21_51_32_41
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 70
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 161cbb5f7fa216fe0800000000000000
+      internalID: -1197628781435829919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Imagen de Codex 30 sept 2026, 21_51_32_42
+      rect:
+        serializedVersion: 2
+        x: 752
+        y: 55
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a579d2a2fd044540800000000000000
+      internalID: 4991129622798759335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Imagen de Codex 30 sept 2026, 21_51_32_0: 3320412391278290072
+      Imagen de Codex 30 sept 2026, 21_51_32_1: -7063317043529637544
+      Imagen de Codex 30 sept 2026, 21_51_32_10: 141067202335359486
+      Imagen de Codex 30 sept 2026, 21_51_32_11: -6661078638989601576
+      Imagen de Codex 30 sept 2026, 21_51_32_12: -7571546576819156160
+      Imagen de Codex 30 sept 2026, 21_51_32_13: 5911085120025542140
+      Imagen de Codex 30 sept 2026, 21_51_32_14: -4756285530250673797
+      Imagen de Codex 30 sept 2026, 21_51_32_15: 5465727593662965379
+      Imagen de Codex 30 sept 2026, 21_51_32_16: -5307931301697449405
+      Imagen de Codex 30 sept 2026, 21_51_32_17: 7545216962672602950
+      Imagen de Codex 30 sept 2026, 21_51_32_18: 5277823269475913381
+      Imagen de Codex 30 sept 2026, 21_51_32_19: 8099801004778493830
+      Imagen de Codex 30 sept 2026, 21_51_32_2: -8859938973257564932
+      Imagen de Codex 30 sept 2026, 21_51_32_20: -194505736752234216
+      Imagen de Codex 30 sept 2026, 21_51_32_21: -614366331060743685
+      Imagen de Codex 30 sept 2026, 21_51_32_22: 3075055027584222604
+      Imagen de Codex 30 sept 2026, 21_51_32_23: -4438557914212246148
+      Imagen de Codex 30 sept 2026, 21_51_32_24: 4775076527442772198
+      Imagen de Codex 30 sept 2026, 21_51_32_25: 3491528132851856008
+      Imagen de Codex 30 sept 2026, 21_51_32_26: 6334258317472382739
+      Imagen de Codex 30 sept 2026, 21_51_32_27: 1215754401454217702
+      Imagen de Codex 30 sept 2026, 21_51_32_28: -5492315400264402192
+      Imagen de Codex 30 sept 2026, 21_51_32_29: -5414793540012457459
+      Imagen de Codex 30 sept 2026, 21_51_32_3: -6412095884161570998
+      Imagen de Codex 30 sept 2026, 21_51_32_30: 4893491320083924045
+      Imagen de Codex 30 sept 2026, 21_51_32_31: -9027665146523608159
+      Imagen de Codex 30 sept 2026, 21_51_32_32: -7113591040619707072
+      Imagen de Codex 30 sept 2026, 21_51_32_33: -3054222207383729751
+      Imagen de Codex 30 sept 2026, 21_51_32_34: 1071804709860188385
+      Imagen de Codex 30 sept 2026, 21_51_32_35: 7512353758000002990
+      Imagen de Codex 30 sept 2026, 21_51_32_36: 2953495859139815792
+      Imagen de Codex 30 sept 2026, 21_51_32_37: 3191747781543611032
+      Imagen de Codex 30 sept 2026, 21_51_32_38: 3763742106036633075
+      Imagen de Codex 30 sept 2026, 21_51_32_39: -1317775490791460178
+      Imagen de Codex 30 sept 2026, 21_51_32_4: 2232717412747635832
+      Imagen de Codex 30 sept 2026, 21_51_32_40: 5829268001674985412
+      Imagen de Codex 30 sept 2026, 21_51_32_41: -1197628781435829919
+      Imagen de Codex 30 sept 2026, 21_51_32_42: 4991129622798759335
+      Imagen de Codex 30 sept 2026, 21_51_32_5: 5916391498340330709
+      Imagen de Codex 30 sept 2026, 21_51_32_6: 4484051869862603992
+      Imagen de Codex 30 sept 2026, 21_51_32_7: 5743412445486289361
+      Imagen de Codex 30 sept 2026, 21_51_32_8: -7419993636691719190
+      Imagen de Codex 30 sept 2026, 21_51_32_9: -2642662957626144328
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
