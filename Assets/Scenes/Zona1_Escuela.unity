@@ -468,8 +468,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef76521fcdda9ac48aba57f95d943d97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjetoInteractuable
-  textoInteraccion: {fileID: 0}
-  ventanaUI: {fileID: 0}
+  textoInteraccion: {fileID: 1574423064}
+  ventanaUI: {fileID: 538406065}
   gameManager: {fileID: 1358346452}
   tituloObjeto: Tacho de basura con agua acumulada
   descripcionObjeto: "El tacho est\xE1 sucio y tiene agua de lluvia acumulada. \xBFQu\xE9
@@ -3819,6 +3819,84 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 177598515}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &261250240
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 261250242}
+  - component: {fileID: 261250241}
+  m_Layer: 0
+  m_Name: TriggerEntradaZona1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!61 &261250241
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 261250240}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.7413001, y: 0.3464775}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 2.7082148, y: 1.692955}
+  m_EdgeRadius: 0
+--- !u!4 &261250242
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 261250240}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 11.68, y: 40.06, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &270353612
 GameObject:
@@ -10225,7 +10303,7 @@ GameObject:
   - component: {fileID: 603951568}
   - component: {fileID: 603951567}
   m_Layer: 0
-  m_Name: Zona1_Lavadero (1)
+  m_Name: Zona1_CuboPintura
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10258,8 +10336,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef76521fcdda9ac48aba57f95d943d97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjetoInteractuable
-  textoInteraccion: {fileID: 0}
-  ventanaUI: {fileID: 0}
+  textoInteraccion: {fileID: 1574423064}
+  ventanaUI: {fileID: 538406065}
   gameManager: {fileID: 1358346452}
   tituloObjeto: Cubo de pintura con agua acumulada
   descripcionObjeto: "Un cubo viejo qued\xF3 afuera y acumul\xF3 agua de lluvia.
@@ -14406,8 +14484,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef76521fcdda9ac48aba57f95d943d97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjetoInteractuable
-  textoInteraccion: {fileID: 0}
-  ventanaUI: {fileID: 0}
+  textoInteraccion: {fileID: 1574423064}
+  ventanaUI: {fileID: 538406065}
   gameManager: {fileID: 1358346452}
   tituloObjeto: Lavadero escolar con agua estancada
   descripcionObjeto: "El lavadero est\xE1 sucio y tiene agua acumulada desde hace
@@ -21906,6 +21984,63 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1177908981}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1323211591
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1323211593}
+  - component: {fileID: 1323211592}
+  m_Layer: 0
+  m_Name: ControlZona1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1323211592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1323211591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 96388136d13b44e087c383741bf21205, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ZonaConfigurable
+  nombreZona: Zona 1
+  indiceZona: 1
+  progresoZonas: {fileID: 0}
+  iniciarAutomaticamente: 0
+  mensajeZonaBloqueada: {fileID: 0}
+  panelZonaBloqueada: {fileID: 0}
+  banner: {fileID: 0}
+  subtituloBanner: 
+  panelInicio: {fileID: 0}
+  gameManager: {fileID: 1358346452}
+  playerMovement: {fileID: 1800322753}
+  cantidadObjetivos: 3
+  tiempoZona: 210
+--- !u!4 &1323211593
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1323211591}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 20.53427, y: 44.39399, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1325840727
 GameObject:
@@ -34105,3 +34240,5 @@ SceneRoots:
   - {fileID: 177598515}
   - {fileID: 880076064}
   - {fileID: 1943653816}
+  - {fileID: 1323211593}
+  - {fileID: 261250242}
