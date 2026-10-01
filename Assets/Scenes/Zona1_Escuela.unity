@@ -2810,7 +2810,7 @@ GameObject:
   - component: {fileID: 167596939}
   - component: {fileID: 167596938}
   m_Layer: 5
-  m_Name: TarjetaZona2
+  m_Name: TarjetaZona1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3505,7 +3505,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &218518776
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4099,6 +4099,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TriggerZonaConfigurable
   zona: {fileID: 1323211592}
+  panelInicio: {fileID: 218518775}
+  playerMovement: {fileID: 1800322753}
 --- !u!1 &270353612
 GameObject:
   m_ObjectHideFlags: 0
@@ -6267,7 +6269,7 @@ GameObject:
   - component: {fileID: 424619848}
   - component: {fileID: 424619847}
   m_Layer: 5
-  m_Name: BotonComenzarZona2
+  m_Name: BotonComenzarZona1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6336,7 +6338,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 424619848}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 261250243}
+        m_TargetAssemblyTypeName: TriggerZonaConfigurable, Assembly-CSharp
+        m_MethodName: ComenzarDesdePanel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &424619848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15361,7 +15375,7 @@ GameObject:
   - component: {fileID: 896934188}
   - component: {fileID: 896934187}
   m_Layer: 5
-  m_Name: PanelInfoZona2
+  m_Name: PanelInfoZona1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15926,7 +15940,7 @@ GameObject:
   - component: {fileID: 929725184}
   - component: {fileID: 929725183}
   m_Layer: 5
-  m_Name: DescripcionZona2
+  m_Name: DescripcionZona1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24686,7 +24700,7 @@ GameObject:
   - component: {fileID: 1472159317}
   - component: {fileID: 1472159316}
   m_Layer: 5
-  m_Name: TituloZona2
+  m_Name: TituloZona1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24823,7 +24837,7 @@ GameObject:
   - component: {fileID: 1472277433}
   - component: {fileID: 1472277432}
   m_Layer: 5
-  m_Name: InfoZona2
+  m_Name: InfoZona1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
