@@ -88,6 +88,20 @@ public class ZonaConfigurable : MonoBehaviour
         if (panelZonaBloqueada != null) panelZonaBloqueada.SetActive(false);
     }
 
+    public bool IntentarComenzarDesdeTrigger()
+    {
+        if (yaSeActivo) return false;
+
+        bool esperandoAntes = esperandoComenzar;
+        esperandoComenzar = true;
+        ComenzarZona();
+
+        if (!yaSeActivo)
+            esperandoComenzar = esperandoAntes;
+
+        return yaSeActivo;
+    }
+
     public void ComenzarZona()
     {
         if (!Disponible()) return;
