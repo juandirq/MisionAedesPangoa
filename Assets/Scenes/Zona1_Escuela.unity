@@ -471,19 +471,19 @@ MonoBehaviour:
   textoInteraccion: {fileID: 0}
   ventanaUI: {fileID: 0}
   gameManager: {fileID: 1358346452}
-  tituloObjeto: Tanque de agua destapado
-  descripcionObjeto: "El tanque est\xE1 abierto y contiene agua almacenada. \xBFQu\xE9
-    acci\xF3n reduce mejor el riesgo de criadero?"
-  opcion1: Mantenerlo abierto para revisar el agua con frecuencia.
-  opcion2: Taparlo correctamente y mantenerlo cerrado.
-  opcion3: Cubrirlo parcialmente para que pueda ventilarse.
-  opcionCorrecta: 1
-  feedbackCorrecto: "\xA1Correcto! Mantener el tanque bien tapado evita que los mosquitos
-    entren y depositen sus huevos."
-  feedbackIncorrecto: Esa medida no elimina el riesgo. El tanque debe permanecer
-    correctamente tapado.
-  reduccionRiesgo: 15
-  indiceZona: 0
+  tituloObjeto: Tacho de basura con agua acumulada
+  descripcionObjeto: "El tacho est\xE1 sucio y tiene agua de lluvia acumulada. \xBFQu\xE9
+    debes hacer?"
+  opcion1: Vaciar el agua, limpiar el tacho y mantenerlo tapado.
+  opcion2: Dejarlo abierto para que el agua se evapore sola.
+  opcion3: Moverlo de lugar sin vaciar el agua.
+  opcionCorrecta: 0
+  feedbackCorrecto: "\xA1Correcto! Vaciar y limpiar el tacho evita que el mosquito
+    encuentre agua para reproducirse."
+  feedbackIncorrecto: "Esa acci\xF3n no elimina el agua acumulada. Debes vaciar y
+    limpiar el tacho."
+  reduccionRiesgo: 30
+  indiceZona: 1
 --- !u!61 &15165919
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -546,7 +546,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &41408789
 Transform:
   m_ObjectHideFlags: 0
@@ -6748,8 +6748,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef76521fcdda9ac48aba57f95d943d97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjetoInteractuable
-  textoInteraccion: {fileID: 0}
-  ventanaUI: {fileID: 0}
+  textoInteraccion: {fileID: 1574423064}
+  ventanaUI: {fileID: 538406065}
   gameManager: {fileID: 1358346452}
   tituloObjeto: Tanque de agua destapado
   descripcionObjeto: "El tanque est\xE1 abierto y contiene agua almacenada. \xBFQu\xE9
@@ -8403,7 +8403,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1358346452}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: ContinuarDespuesDeVictoria
         m_Mode: 1
@@ -8584,8 +8584,8 @@ MonoBehaviour:
   textoBoton1: {fileID: 2105053672}
   textoBoton2: {fileID: 1227971018}
   textoBoton3: {fileID: 1561674019}
-  playerMovement: {fileID: 0}
-  gameManager: {fileID: 0}
+  playerMovement: {fileID: 1800322753}
+  gameManager: {fileID: 1358346452}
 --- !u!114 &538406066
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9324,7 +9324,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &580154200
 Transform:
   m_ObjectHideFlags: 0
@@ -10213,6 +10213,113 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!1 &603951565
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 603951566}
+  - component: {fileID: 603951568}
+  - component: {fileID: 603951567}
+  m_Layer: 0
+  m_Name: Zona1_Lavadero (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &603951566
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603951565}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 6.3, y: -4.09, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1943653816}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &603951567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603951565}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef76521fcdda9ac48aba57f95d943d97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjetoInteractuable
+  textoInteraccion: {fileID: 0}
+  ventanaUI: {fileID: 0}
+  gameManager: {fileID: 1358346452}
+  tituloObjeto: Cubo de pintura con agua acumulada
+  descripcionObjeto: "Un cubo viejo qued\xF3 afuera y acumul\xF3 agua de lluvia.
+    \xBFQu\xE9 debes hacer?"
+  opcion1: "Dejarlo ah\xED porque tiene poca agua."
+  opcion2: Taparlo sin vaciar el agua.
+  opcion3: Vaciarlo, limpiarlo y guardarlo boca abajo o bajo techo.
+  opcionCorrecta: 2
+  feedbackCorrecto: "\xA1Correcto! Mantener el cubo vac\xEDo y protegido evita que
+    vuelva a acumular agua."
+  feedbackIncorrecto: El cubo no debe quedarse con agua. Hay que vaciarlo y guardarlo
+    correctamente.
+  reduccionRiesgo: 40
+  indiceZona: 1
+--- !u!61 &603951568
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603951565}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.238698, y: -0.463459}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 1.6826954, y: 1.5237122}
+  m_EdgeRadius: 0
 --- !u!1 &608769955
 GameObject:
   m_ObjectHideFlags: 0
@@ -11098,8 +11205,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef76521fcdda9ac48aba57f95d943d97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjetoInteractuable
-  textoInteraccion: {fileID: 0}
-  ventanaUI: {fileID: 0}
+  textoInteraccion: {fileID: 1574423064}
+  ventanaUI: {fileID: 538406065}
   gameManager: {fileID: 1358346452}
   tituloObjeto: Canaleta con hojas y agua acumulada
   descripcionObjeto: "La canaleta est\xE1 obstruida con hojas y agua estancada. \xBFQu\xE9
@@ -13103,8 +13210,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef76521fcdda9ac48aba57f95d943d97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjetoInteractuable
-  textoInteraccion: {fileID: 0}
-  ventanaUI: {fileID: 0}
+  textoInteraccion: {fileID: 1574423064}
+  ventanaUI: {fileID: 538406065}
   gameManager: {fileID: 1358346452}
   tituloObjeto: Maceta con agua acumulada
   descripcionObjeto: "El plato de la maceta mantiene agua acumulada despu\xE9s del
@@ -13210,8 +13317,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef76521fcdda9ac48aba57f95d943d97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjetoInteractuable
-  textoInteraccion: {fileID: 0}
-  ventanaUI: {fileID: 0}
+  textoInteraccion: {fileID: 1574423064}
+  ventanaUI: {fileID: 538406065}
   gameManager: {fileID: 1358346452}
   tituloObjeto: Balde con agua estancada
   descripcionObjeto: "El balde ha permanecido con agua durante varios d\xEDas. \xBFQu\xE9
@@ -14254,6 +14361,113 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_SpriteSortPoint: 0
   m_BlendShapeWeights: []
+--- !u!1 &868505482
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 868505483}
+  - component: {fileID: 868505485}
+  - component: {fileID: 868505484}
+  m_Layer: 0
+  m_Name: Zona1_Lavadero
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &868505483
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 868505482}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 6.06, y: 7.26, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1943653816}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &868505484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 868505482}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef76521fcdda9ac48aba57f95d943d97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ObjetoInteractuable
+  textoInteraccion: {fileID: 0}
+  ventanaUI: {fileID: 0}
+  gameManager: {fileID: 1358346452}
+  tituloObjeto: Lavadero escolar con agua estancada
+  descripcionObjeto: "El lavadero est\xE1 sucio y tiene agua acumulada desde hace
+    varios d\xEDas. \xBFQu\xE9 acci\xF3n es la correcta?"
+  opcion1: "Agregar m\xE1s agua para que se vea m\xE1s limpio."
+  opcion2: Vaciar el agua, cepillar el lavadero y mantenerlo limpio.
+  opcion3: Cubrirlo sin retirar el agua acumulada.
+  opcionCorrecta: 1
+  feedbackCorrecto: "\xA1Correcto! Vaciar y cepillar el lavadero elimina el agua
+    estancada y reduce el riesgo de criaderos."
+  feedbackIncorrecto: "Esa acci\xF3n no elimina el agua acumulada. El lavadero debe
+    vaciarse y limpiarse correctamente."
+  reduccionRiesgo: 30
+  indiceZona: 1
+--- !u!61 &868505485
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 868505482}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0.40688038, y: -0.45391273}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 2.782915, y: 2.2939339}
+  m_EdgeRadius: 0
 --- !u!1 &880076063
 GameObject:
   m_ObjectHideFlags: 0
@@ -18534,7 +18748,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1601722671}
         m_TargetAssemblyTypeName: InicioZona2UI, Assembly-CSharp
         m_MethodName: ComenzarInspeccion
         m_Mode: 1
@@ -18908,7 +19122,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 1358346452}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: ReiniciarZona
         m_Mode: 1
@@ -21367,9 +21581,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cfa8943b687dc7e4cb9ed43c95b29387, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::TriggerZona2
-  panelInicioZona2: {fileID: 0}
+  panelInicioZona2: {fileID: 896300569}
   progresoZonas: {fileID: 0}
-  gameManager: {fileID: 0}
+  gameManager: {fileID: 1358346452}
   indiceZona: 2
 --- !u!61 &1301173964
 BoxCollider2D:
@@ -22412,15 +22626,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0bfb9f7f51ea5584985c608a397f3aa1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameManager
-  textoRiesgo: {fileID: 0}
-  textoAciertos: {fileID: 0}
-  textoErrores: {fileID: 0}
-  textoTiempo: {fileID: 0}
-  textoObjetivos: {fileID: 0}
-  resultadoRiesgo: {fileID: 0}
-  resultadoObjetivos: {fileID: 0}
-  resultadoAciertos: {fileID: 0}
-  resultadoErrores: {fileID: 0}
+  textoRiesgo: {fileID: 1766986252}
+  textoAciertos: {fileID: 1126690}
+  textoErrores: {fileID: 1228226016}
+  textoTiempo: {fileID: 48025963}
+  textoObjetivos: {fileID: 590822769}
+  resultadoRiesgo: {fileID: 312113222}
+  resultadoObjetivos: {fileID: 1728635411}
+  resultadoAciertos: {fileID: 505916539}
+  resultadoErrores: {fileID: 135322964}
   resultadoTiempo: {fileID: 0}
   resultadoNombreZona: {fileID: 0}
   derrotaRiesgo: {fileID: 0}
@@ -22429,11 +22643,11 @@ MonoBehaviour:
   derrotaErrores: {fileID: 0}
   derrotaTiempo: {fileID: 0}
   derrotaNombreZona: {fileID: 0}
-  panelDerrota: {fileID: 0}
-  panelVictoria: {fileID: 0}
-  ventanaDecision: {fileID: 0}
-  textoInteraccion: {fileID: 0}
-  textoMotivoDerrota: {fileID: 0}
+  panelDerrota: {fileID: 1304824400}
+  panelVictoria: {fileID: 1588107512}
+  ventanaDecision: {fileID: 939234740}
+  textoInteraccion: {fileID: 1574423064}
+  textoMotivoDerrota: {fileID: 1471362824}
   playerMovement: {fileID: 1800322753}
   tiempoRestante: 120
   objetivosTotales: 4
@@ -23120,7 +23334,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1837
+  m_SortingOrder: 1184
   m_MaskInteraction: 0
   m_Sprite: {fileID: 21300000, guid: 858dff011ab5066429457bf4ed6fbdb3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -23182,7 +23396,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.009739637, y: -3.1352026}
+  m_Offset: {x: 0.028734326, y: -2.945373}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -23192,7 +23406,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 2.9425058, y: 2.8762288}
+  m_Size: {x: 3.4341128, y: 3.0326107}
   m_EdgeRadius: 0
 --- !u!114 &1440987386
 MonoBehaviour:
@@ -23206,9 +23420,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64532c846b3341638f1923290fc40006, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::YSpriteSorter
-  offset: 250
+  offset: 1025
   actualizarMientrasSeMueve: 0
-  precision: 100
+  precision: 10
 --- !u!1 &1454556769
 GameObject:
   m_ObjectHideFlags: 0
@@ -24790,7 +25004,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1529950781
 Transform:
   m_ObjectHideFlags: 0
@@ -26246,7 +26460,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbe3560eb25773740932247378bd2b70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::InicioZona2UI
-  panelInicioZona2: {fileID: 0}
+  panelInicioZona2: {fileID: 896300569}
   gameManager: {fileID: 1358346452}
   indiceZona: 2
   banner: {fileID: 0}
@@ -27759,8 +27973,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef76521fcdda9ac48aba57f95d943d97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjetoInteractuable
-  textoInteraccion: {fileID: 0}
-  ventanaUI: {fileID: 0}
+  textoInteraccion: {fileID: 1574423064}
+  ventanaUI: {fileID: 538406065}
   gameManager: {fileID: 1358346452}
   tituloObjeto: Botellas y latas con agua acumulada
   descripcionObjeto: "Estos envases abandonados pueden acumular agua de lluvia y
@@ -28187,8 +28401,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef76521fcdda9ac48aba57f95d943d97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ObjetoInteractuable
-  textoInteraccion: {fileID: 0}
-  ventanaUI: {fileID: 0}
+  textoInteraccion: {fileID: 1574423064}
+  ventanaUI: {fileID: 538406065}
   gameManager: {fileID: 1358346452}
   tituloObjeto: Llanta con agua acumulada
   descripcionObjeto: "Una llanta ha acumulado agua de lluvia. \xBFQu\xE9 acci\xF3n
@@ -29797,7 +30011,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2023
+  m_SortingOrder: 1202
   m_MaskInteraction: 0
   m_Sprite: {fileID: -837618582217991748, guid: 994cf92afc67ef7459e3dbc3e0188d28, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -29872,9 +30086,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 64532c846b3341638f1923290fc40006, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::YSpriteSorter
-  offset: 0
+  offset: 1000
   actualizarMientrasSeMueve: 1
-  precision: 100
+  precision: 10
 --- !u!1 &1826080865
 GameObject:
   m_ObjectHideFlags: 0
@@ -31250,6 +31464,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 15165917}
+  - {fileID: 868505483}
+  - {fileID: 603951566}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1945094441
