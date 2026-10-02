@@ -1,0 +1,330 @@
+fileFormatVersion: 2
+guid: 97bed86cf3a735f488a4dcc3455e04c9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1106328834380683131
+    second: Sprites de profesora en pixel art_0
+  - first:
+      213: 29350160818981596
+    second: Sprites de profesora en pixel art_1
+  - first:
+      213: -3353769052088373764
+    second: Sprites de profesora en pixel art_2
+  - first:
+      213: 6232663741743856919
+    second: Sprites de profesora en pixel art_3
+  - first:
+      213: 3084307822875155374
+    second: Sprites de profesora en pixel art_4
+  - first:
+      213: 5247214988094618666
+    second: Sprites de profesora en pixel art_5
+  - first:
+      213: -5984332922010183682
+    second: Sprites de profesora en pixel art_6
+  - first:
+      213: -4640196941985978310
+    second: Sprites de profesora en pixel art_7
+  - first:
+      213: -8597291215638688038
+    second: Sprites de profesora en pixel art_8
+  - first:
+      213: 1794451668210291930
+    second: Sprites de profesora en pixel art_9
+  - first:
+      213: -2244158143940588360
+    second: Sprites de profesora en pixel art_10
+  - first:
+      213: 5026780252536386820
+    second: Sprites de profesora en pixel art_11
+  - first:
+      213: -2984320768819849175
+    second: Sprites de profesora en pixel art_12
+  - first:
+      213: 6490339486433518453
+    second: Sprites de profesora en pixel art_13
+  - first:
+      213: 4843354592929220999
+    second: Sprites de profesora en pixel art_14
+  - first:
+      213: 5371264595030769014
+    second: Sprites de profesora en pixel art_15
+  - first:
+      213: 1711043461406202518
+    second: Sprites de profesora en pixel art_16
+  - first:
+      213: -508618228095357822
+    second: Sprites de profesora en pixel art_17
+  - first:
+      213: 1935448026471716288
+    second: Sprites de profesora en pixel art_18
+  - first:
+      213: 737983813188165950
+    second: Sprites de profesora en pixel art_19
+  - first:
+      213: 7264505180993760728
+    second: Sprites de profesora en pixel art_20
+  - first:
+      213: 4343797154517144728
+    second: Sprites de profesora en pixel art_21
+  - first:
+      213: -7970030227990293199
+    second: Sprites de profesora en pixel art_22
+  - first:
+      213: -7682774145957494872
+    second: Sprites de profesora en pixel art_23
+  - first:
+      213: 8597640732216576984
+    second: Sprites de profesora en pixel art_24
+  - first:
+      213: -6326279187508473369
+    second: Sprites de profesora en pixel art_25
+  - first:
+      213: 2173779188806027747
+    second: Sprites de profesora en pixel art_26
+  - first:
+      213: 5091311748971053965
+    second: Sprites de profesora en pixel art_27
+  - first:
+      213: -1209827082065817576
+    second: Sprites de profesora en pixel art_28
+  - first:
+      213: 8875962432607005662
+    second: Sprites de profesora en pixel art_29
+  - first:
+      213: -7839641565413252553
+    second: Sprites de profesora en pixel art_30
+  - first:
+      213: 252348449086209757
+    second: Sprites de profesora en pixel art_31
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sprites de profesora en pixel art_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 396
+        height: 793
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b77580a96387a5f00800000000000000
+      internalID: 1106328834380683131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites de profesora en pixel art_1
+      rect:
+        serializedVersion: 2
+        x: 396
+        y: 0
+        width: 396
+        height: 793
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cda47b5d0d5486000800000000000000
+      internalID: 29350160818981596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites de profesora en pixel art_2
+      rect:
+        serializedVersion: 2
+        x: 792
+        y: 0
+        width: 396
+        height: 793
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfde29fe0d40571d0800000000000000
+      internalID: -3353769052088373764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites de profesora en pixel art_3
+      rect:
+        serializedVersion: 2
+        x: 1188
+        y: 0
+        width: 396
+        height: 793
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 71d791ba6aede7650800000000000000
+      internalID: 6232663741743856919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sprites de profesora en pixel art_4
+      rect:
+        serializedVersion: 2
+        x: 1584
+        y: 0
+        width: 396
+        height: 793
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eab9e60af99adca20800000000000000
+      internalID: 3084307822875155374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":5.0,"y":1.0},"gridSpriteSize":{"x":396.0,"y":793.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Sprites de profesora en pixel art_0: 1106328834380683131
+      Sprites de profesora en pixel art_1: 29350160818981596
+      Sprites de profesora en pixel art_2: -3353769052088373764
+      Sprites de profesora en pixel art_3: 6232663741743856919
+      Sprites de profesora en pixel art_4: 3084307822875155374
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

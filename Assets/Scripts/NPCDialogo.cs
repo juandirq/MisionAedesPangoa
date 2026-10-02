@@ -1,8 +1,10 @@
+using System.Collections;
 using UnityEngine;
 using TMPro;
 
 public class NPCDialogo : MonoBehaviour
 {
+    [Header("Referencias")]
     public GameObject textoHablar;
     public GameObject panelDialogo;
     public TextMeshProUGUI nombreNPC;
@@ -16,15 +18,25 @@ public class NPCDialogo : MonoBehaviour
     [TextArea(2, 5)]
     public string[] dialogos;
 
+    [Header("Efecto de texto")]
+    [SerializeField] private float velocidadTexto = 0.025f;
+
     private bool jugadorCerca = false;
     private bool hablando = false;
+    private bool escribiendo = false;
+
     private int dialogoActual = 0;
+    private Coroutine escrituraActual;
+
     public bool Hablando => hablando;
 
     void Update()
     {
-        if (jugadorCerca && !hablando && Time.timeScale > 0f &&
-            (playerMovement == null || playerMovement.enabled) && Input.GetKeyDown(KeyCode.E))
+        if (jugadorCerca &&
+            !hablando &&
+            Time.timeScale > 0f &&
+            (playerMovement == null || playerMovement.enabled) &&
+            Input.GetKeyDown(KeyCode.E))
         {
             AbrirDialogo();
         }
@@ -34,9 +46,10 @@ public class NPCDialogo : MonoBehaviour
     {
         if (dialogos == null || dialogos.Length == 0)
         {
-            Debug.LogWarning("El NPC no tiene dialogos configurados.", this);
+            Debug.LogWarning("El NPC no tiene diálogos configurados.", this);
             return;
         }
+
         if (panelDialogo == null || nombreNPC == null || textoDialogo == null)
         {
             Debug.LogWarning("Faltan referencias del diálogo.", this);
@@ -46,11 +59,14 @@ public class NPCDialogo : MonoBehaviour
         hablando = true;
         dialogoActual = 0;
 
-        if (textoHablar != null) textoHablar.SetActive(false);
+        if (textoHablar != null)
+            textoHablar.SetActive(false);
+
         panelDialogo.SetActive(true);
 
         nombreNPC.text = nombre;
-        textoDialogo.text = dialogos[dialogoActual];
+
+        MostrarDialogoActual();
 
         if (playerMovement != null)
             playerMovement.enabled = false;
@@ -62,14 +78,66 @@ public class NPCDialogo : MonoBehaviour
             gameManager.PausarCronometro();
     }
 
+    void MostrarDialogoActual()
+    {
+        if (escrituraActual != null)
+            StopCoroutine(escrituraActual);
+
+        escrituraActual = StartCoroutine(
+            EscribirTexto(dialogos[dialogoActual])
+        );
+    }
+
+    IEnumerator EscribirTexto(string mensaje)
+    {
+        escribiendo = true;
+        textoDialogo.text = "";
+
+        foreach (char letra in mensaje)
+        {
+            textoDialogo.text += letra;
+
+            yield return new WaitForSecondsRealtime(
+                velocidadTexto
+            );
+        }
+
+        escribiendo = false;
+        escrituraActual = null;
+    }
+
     public void SiguienteDialogo()
     {
-        if (!hablando || dialogos == null || textoDialogo == null) return;
+        if (!hablando ||
+            dialogos == null ||
+            textoDialogo == null)
+        {
+            return;
+        }
+
+        // Si el texto todavía se está escribiendo,
+        // el primer clic lo completa inmediatamente.
+        if (escribiendo)
+        {
+            if (escrituraActual != null)
+            {
+                StopCoroutine(escrituraActual);
+                escrituraActual = null;
+            }
+
+            textoDialogo.text = dialogos[dialogoActual];
+            escribiendo = false;
+
+            return;
+        }
+
+        // Si ya terminó de escribir,
+        // avanzar al siguiente mensaje.
         dialogoActual++;
 
         if (dialogoActual < dialogos.Length)
         {
-            textoDialogo.text = dialogos[dialogoActual];
+            MostrarDialogoActual();
         }
         else
         {
@@ -79,12 +147,26 @@ public class NPCDialogo : MonoBehaviour
 
     public void CerrarDialogo()
     {
-        if (!hablando) return;
-        hablando = false;
-        if (panelDialogo != null) panelDialogo.SetActive(false);
+        if (!hablando)
+            return;
 
-        if (playerMovement != null && (gameManager == null || !gameManager.JuegoTerminado))
+        hablando = false;
+        escribiendo = false;
+
+        if (escrituraActual != null)
+        {
+            StopCoroutine(escrituraActual);
+            escrituraActual = null;
+        }
+
+        if (panelDialogo != null)
+            panelDialogo.SetActive(false);
+
+        if (playerMovement != null &&
+            (gameManager == null || !gameManager.JuegoTerminado))
+        {
             playerMovement.enabled = true;
+        }
 
         if (gameManager != null)
             gameManager.ReanudarCronometro();
@@ -109,7 +191,9 @@ public class NPCDialogo : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             jugadorCerca = false;
-            if (textoHablar != null) textoHablar.SetActive(false);
+
+            if (textoHablar != null)
+                textoHablar.SetActive(false);
         }
     }
 }

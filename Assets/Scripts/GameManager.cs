@@ -33,6 +33,10 @@ public class GameManager : MonoBehaviour
     public GameObject ventanaDecision;
     public GameObject textoInteraccion;
 
+    [Header("Paneles HUD")]
+    public GameObject panelHUDIzquierdo;
+    public GameObject panelHUDDerecho;
+
     [Header("Texto de derrota")]
     public TextMeshProUGUI textoMotivoDerrota;
 
@@ -45,6 +49,9 @@ public class GameManager : MonoBehaviour
     public string nombreZonaActual = "Zona";
     [Range(0, 3)] public int indiceZonaActual;
     public ProgresoZonas progresoZonas;
+
+    [Header("Ruta lineal")]
+    public RutaLinealController rutaLineal;
 
     private int objetivosCompletados = 0;
     private int riesgo = 100;
@@ -335,11 +342,20 @@ public class GameManager : MonoBehaviour
         if (progresoZonas != null && indiceZonaActual > 0)
             progresoZonas.CompletarZona(indiceZonaActual);
 
+        if (rutaLineal != null)
+            rutaLineal.ZonaCompletada(indiceZonaActual);
+
         if (textoInteraccion != null)
             textoInteraccion.SetActive(false);
 
         if (playerMovement != null)
             playerMovement.enabled = false;
+
+        if (panelHUDIzquierdo != null)
+            panelHUDIzquierdo.SetActive(false);
+
+        if (panelHUDDerecho != null)
+            panelHUDDerecho.SetActive(false);
 
         ActualizarResultados();
 
@@ -367,6 +383,12 @@ public class GameManager : MonoBehaviour
         fueVictoria = false;
         if (panelVictoria != null)
             panelVictoria.SetActive(false);
+
+        if (panelHUDIzquierdo != null)
+            panelHUDIzquierdo.SetActive(true);
+
+        if (panelHUDDerecho != null)
+            panelHUDDerecho.SetActive(true);
 
         victoriaPendiente = false;
         juegoTerminado = false;
