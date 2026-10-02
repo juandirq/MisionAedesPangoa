@@ -87,6 +87,7 @@ public class GameManager : MonoBehaviour
             panelVictoria.SetActive(false);
 
         ActualizarHUD();
+        MostrarHUDExploracion(0);
     }
 
     void Update()
@@ -165,6 +166,12 @@ public class GameManager : MonoBehaviour
 
         if (panelVictoria != null)
             panelVictoria.SetActive(false);
+
+        if (panelHUDIzquierdo != null)
+            panelHUDIzquierdo.SetActive(true);
+
+        if (panelHUDDerecho != null)
+            panelHUDDerecho.SetActive(true);
 
         if (playerMovement != null)
             playerMovement.enabled = true;
@@ -261,6 +268,53 @@ public class GameManager : MonoBehaviour
         }
 
         ActualizarTiempo();
+    }
+
+    private void MostrarHUDExploracion(int zonaCompletada)
+    {
+        if (panelHUDIzquierdo != null)
+            panelHUDIzquierdo.SetActive(true);
+
+        if (panelHUDDerecho != null)
+            panelHUDDerecho.SetActive(true);
+
+        string destino;
+        string siguiente;
+        int progreso;
+
+        if (zonaCompletada == 1)
+        {
+            destino = "Zona 2";
+            siguiente = "Área residencial";
+            progreso = 1;
+        }
+        else if (zonaCompletada >= 2)
+        {
+            destino = "Zona 3";
+            siguiente = "Espacio comunitario";
+            progreso = 2;
+        }
+        else
+        {
+            destino = "Escuela";
+            siguiente = "Zona 1";
+            progreso = 0;
+        }
+
+        if (textoRiesgo != null)
+            textoRiesgo.text = "Destino: " + destino;
+
+        if (textoTiempo != null)
+            textoTiempo.text = "Estado: Explorando";
+
+        if (textoErrores != null)
+            textoErrores.text = "Progreso: " + progreso + "/3";
+
+        if (textoAciertos != null)
+            textoAciertos.text = "Siguiente: " + siguiente;
+
+        if (textoObjetivos != null)
+            textoObjetivos.text = "Objetivo: Llegar";
     }
 
     void ActualizarTiempo()
@@ -380,15 +434,12 @@ public class GameManager : MonoBehaviour
     {
         if (!fueVictoria || victoriaPendiente)
             return;
+        int zonaCompletada = indiceZonaActual;
         fueVictoria = false;
         if (panelVictoria != null)
             panelVictoria.SetActive(false);
 
-        if (panelHUDIzquierdo != null)
-            panelHUDIzquierdo.SetActive(true);
-
-        if (panelHUDDerecho != null)
-            panelHUDDerecho.SetActive(true);
+        MostrarHUDExploracion(zonaCompletada);
 
         victoriaPendiente = false;
         juegoTerminado = false;
@@ -419,6 +470,12 @@ public class GameManager : MonoBehaviour
 
         if (playerMovement != null)
             playerMovement.enabled = false;
+
+        if (panelHUDIzquierdo != null)
+            panelHUDIzquierdo.SetActive(false);
+
+        if (panelHUDDerecho != null)
+            panelHUDDerecho.SetActive(false);
 
         if (textoMotivoDerrota != null)
             textoMotivoDerrota.text = motivo;
