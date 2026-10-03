@@ -161,6 +161,8 @@ public class GameManager : MonoBehaviour
         cronometroPausado = false;
         victoriaPendiente = false;
 
+        AudioManager.Instancia?.ReproducirMusicaZona(indiceZonaActual);
+
         if (panelDerrota != null)
             panelDerrota.SetActive(false);
 
@@ -297,7 +299,7 @@ public class GameManager : MonoBehaviour
         else
         {
             destino = "Escuela";
-            siguiente = "Zona 1";
+            siguiente = "Sigue el cartel";
             progreso = 0;
         }
 
@@ -393,6 +395,7 @@ public class GameManager : MonoBehaviour
         cronometroPausado = false;
         victoriaPendiente = true;
         fueVictoria = true;
+        AudioManager.Instancia?.ReproducirVictoria();
         if (progresoZonas != null && indiceZonaActual > 0)
             progresoZonas.CompletarZona(indiceZonaActual);
 
@@ -441,6 +444,9 @@ public class GameManager : MonoBehaviour
 
         MostrarHUDExploracion(zonaCompletada);
 
+        if (zonaCompletada < 3)
+            AudioManager.Instancia?.ReproducirMusicaExploracion();
+
         victoriaPendiente = false;
         juegoTerminado = false;
         zonaActiva = false;
@@ -455,6 +461,8 @@ public class GameManager : MonoBehaviour
     {
         if (juegoTerminado)
             return;
+
+        AudioManager.Instancia?.ReproducirDerrota();
 
         juegoTerminado = true;
         zonaActiva = false;

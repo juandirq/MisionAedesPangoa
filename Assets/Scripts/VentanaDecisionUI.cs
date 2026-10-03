@@ -101,6 +101,7 @@ public class VentanaDecisionUI : MonoBehaviour
 
         if (correcto)
         {
+            AudioManager.Instancia?.ReproducirCorrecto();
             respuestaCorrectaProcesada = true;
 
             textoFeedback.text =
@@ -116,6 +117,7 @@ public class VentanaDecisionUI : MonoBehaviour
         }
         else
         {
+            AudioManager.Instancia?.ReproducirIncorrecto();
             textoFeedback.text =
                 objetoActual.feedbackIncorrecto;
 

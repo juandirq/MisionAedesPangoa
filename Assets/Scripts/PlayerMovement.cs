@@ -11,6 +11,8 @@ public class PlayerMovement : MonoBehaviour
     private string animacionActual = "WalkDown";
     private bool estabaMoviendose = false;
 
+    public bool EstaMoviendose => enabled && movimiento.sqrMagnitude > 0.001f;
+
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();

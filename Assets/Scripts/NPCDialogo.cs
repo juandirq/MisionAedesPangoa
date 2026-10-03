@@ -92,10 +92,18 @@ public class NPCDialogo : MonoBehaviour
     {
         escribiendo = true;
         textoDialogo.text = "";
+        int caracteresAudibles = 0;
 
         foreach (char letra in mensaje)
         {
             textoDialogo.text += letra;
+
+            if (char.IsLetterOrDigit(letra))
+            {
+                caracteresAudibles++;
+                if ((caracteresAudibles - 1) % 3 == 0)
+                    AudioManager.Instancia?.ReproducirBlipDialogo();
+            }
 
             yield return new WaitForSecondsRealtime(
                 velocidadTexto
