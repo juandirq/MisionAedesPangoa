@@ -16,6 +16,10 @@ public class RutaLinealController : MonoBehaviour
         {
             bloqueoPasoZona3.SetActive(false);
         }
+        else if (indiceZona == 3 && bloqueoPasoZona3 != null)
+        {
+            bloqueoPasoZona3.SetActive(false);
+        }
     }
 
     public void CerrarPasoAnterior(int indiceZona)
