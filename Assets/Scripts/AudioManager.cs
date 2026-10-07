@@ -178,6 +178,13 @@ public class AudioManager : MonoBehaviour
             volumenBlip * AjustesAudio.Sfx, offsetBlipNPC);
     }
 
+    public void DetenerBlipDialogo()
+    {
+        if (dialogo != null && dialogo.isPlaying)
+            dialogo.Stop();
+        proximoBlip = 0f;
+    }
+
     private static void ReproducirDesdeOffset(AudioSource fuente, AudioClip clip,
         float volumen, float offsetSegundos)
     {

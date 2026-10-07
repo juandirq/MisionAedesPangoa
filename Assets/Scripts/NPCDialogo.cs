@@ -83,6 +83,8 @@ public class NPCDialogo : MonoBehaviour
         if (escrituraActual != null)
             StopCoroutine(escrituraActual);
 
+        AudioManager.Instancia?.DetenerBlipDialogo();
+
         escrituraActual = StartCoroutine(
             EscribirTexto(dialogos[dialogoActual])
         );
@@ -110,6 +112,7 @@ public class NPCDialogo : MonoBehaviour
             );
         }
 
+        AudioManager.Instancia?.DetenerBlipDialogo();
         escribiendo = false;
         escrituraActual = null;
     }
@@ -135,6 +138,7 @@ public class NPCDialogo : MonoBehaviour
 
             textoDialogo.text = dialogos[dialogoActual];
             escribiendo = false;
+            AudioManager.Instancia?.DetenerBlipDialogo();
 
             return;
         }
@@ -167,6 +171,8 @@ public class NPCDialogo : MonoBehaviour
             escrituraActual = null;
         }
 
+        AudioManager.Instancia?.DetenerBlipDialogo();
+
         if (panelDialogo != null)
             panelDialogo.SetActive(false);
 
@@ -181,6 +187,18 @@ public class NPCDialogo : MonoBehaviour
 
         if (jugadorCerca && textoHablar != null)
             textoHablar.SetActive(true);
+    }
+
+    private void OnDisable()
+    {
+        if (escrituraActual != null)
+        {
+            StopCoroutine(escrituraActual);
+            escrituraActual = null;
+        }
+
+        escribiendo = false;
+        AudioManager.Instancia?.DetenerBlipDialogo();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
