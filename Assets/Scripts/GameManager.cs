@@ -30,6 +30,7 @@ public class GameManager : MonoBehaviour
     [Header("Paneles")]
     public GameObject panelDerrota;
     public GameObject panelVictoria;
+    public FinalGameUI panelFinalJuego;
     public GameObject ventanaDecision;
     public GameObject textoInteraccion;
 
@@ -429,8 +430,16 @@ public class GameManager : MonoBehaviour
 
         victoriaPendiente = false;
 
-        if (panelVictoria != null)
+        if (indiceZonaActual == 3 && panelFinalJuego != null)
+        {
+            if (panelVictoria != null) panelVictoria.SetActive(false);
+            if (ventanaDecision != null) ventanaDecision.SetActive(false);
+            panelFinalJuego.Mostrar();
+        }
+        else if (panelVictoria != null)
+        {
             panelVictoria.SetActive(true);
+        }
     }
 
     public void ContinuarDespuesDeVictoria()

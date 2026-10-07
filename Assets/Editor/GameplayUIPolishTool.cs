@@ -38,6 +38,19 @@ public static class GameplayUIPolishTool
         Debug.Log("GAMEPLAY_UI_POLISH_APPLIED");
     }
 
+    [MenuItem("Mision Aedes/UI/Aplicar pulido visual final solicitado")]
+    public static void ApplyRequestedPolish()
+    {
+        Scene scene = EditorSceneManager.OpenScene(ScenePath, OpenSceneMode.Single);
+        PolishZonePanel(Find(scene, "PanelInicioZona1"));
+        PolishZonePanel(Find(scene, "PanelInicioZona2"));
+        PolishZonePanel(Find(scene, "PanelInicioZona3"));
+        PolishDecision(Find(scene, "VentanaDecision"));
+        EditorSceneManager.MarkSceneDirty(scene);
+        EditorSceneManager.SaveScene(scene);
+        Debug.Log("REQUESTED_FINAL_UI_POLISH_APPLIED");
+    }
+
     [MenuItem("Mision Aedes/UI/Reemplazar solo adornos tropicales")]
     public static void ReplaceTropicalDecorOnly()
     {
@@ -132,13 +145,44 @@ public static class GameplayUIPolishTool
         foreach (Transform child in canvas.transform)
             child.gameObject.SetActive(false);
 
+        RenderPanel(camera, canvas, Find(scene, "PanelInicioZona2"), "FinePolishZone2.png");
+        RenderPanel(camera, canvas, Find(scene, "PanelInicioZona3"), "FinePolishZone3.png");
         RenderPanel(camera, canvas, decisionPanel, "FinePolishDecision.png");
+        RenderLongAnswerPreview(camera, canvas, decisionPanel,
+            "Lona con agua retenida",
+            "Estirarla o guardarla de manera que el\nagua pueda drenar y no forme\ncharcos.",
+            "LongAnswerLona_1366.png");
+        RenderLongAnswerPreview(camera, canvas, decisionPanel,
+            "Carretilla expuesta a la lluvia",
+            "Vaciarla y guardarla invertida o bajo\ntecho para evitar nuevo\nestancamiento.",
+            "LongAnswerCarretilla_1366.png");
         RenderPanel(camera, canvas, Find(scene, "PanelDialogo"), "FinePolishDialogue.png");
+        RenderPanel(camera, canvas, Find(scene, "PanelInicioZona2"), "FinePolishZone2_1920.png", 1920, 1080);
+        RenderPanel(camera, canvas, decisionPanel, "FinePolishDecision_1920.png", 1920, 1080);
         UnityEngine.Object.DestroyImmediate(cameraObject);
         Debug.Log("GAMEPLAY_UI_PREVIEWS_RENDERED");
     }
 
-    private static void RenderPanel(Camera camera, Canvas canvas, GameObject panel, string fileName)
+    private static void RenderLongAnswerPreview(Camera camera, Canvas canvas, GameObject panel,
+        string titleText, string answerText, string fileName)
+    {
+        VentanaDecisionUI ui = UnityEngine.Object.FindObjectsByType<VentanaDecisionUI>(FindObjectsInactive.Include)
+            .FirstOrDefault(v => v.ventanaDecision == panel);
+        if (ui == null) throw new InvalidOperationException("No se encontró el controlador para validar respuestas largas.");
+
+        TMP_Text title = panel.GetComponentsInChildren<TMP_Text>(true)
+            .FirstOrDefault(t => t.transform.parent != null && t.transform.parent.name == "PanelTitulo");
+        string previousTitle = title != null ? title.text : string.Empty;
+        string previousAnswer = ui.textoBoton1.text;
+        if (title != null) title.text = titleText;
+        ui.textoBoton1.text = answerText;
+        RenderPanel(camera, canvas, panel, fileName);
+        if (title != null) title.text = previousTitle;
+        ui.textoBoton1.text = previousAnswer;
+    }
+
+    private static void RenderPanel(Camera camera, Canvas canvas, GameObject panel, string fileName,
+        int width = 1366, int height = 768)
     {
         if (panel == null) throw new InvalidOperationException("No se encontró el panel para la previsualización.");
         foreach (Transform child in canvas.transform)
@@ -146,8 +190,6 @@ public static class GameplayUIPolishTool
         panel.SetActive(true);
         Canvas.ForceUpdateCanvases();
 
-        const int width = 1366;
-        const int height = 768;
         RenderTexture target = new RenderTexture(width, height, 24, RenderTextureFormat.ARGB32);
         Texture2D image = new Texture2D(width, height, TextureFormat.RGB24, false);
         camera.targetTexture = target;
@@ -182,18 +224,18 @@ public static class GameplayUIPolishTool
         RectTransform card = overlay.transform.Cast<Transform>()
             .Select(t => t as RectTransform).FirstOrDefault(t => t != null && t.GetComponent<Image>() != null);
         if (card == null) throw new InvalidOperationException(overlay.name + " no tiene tarjeta visual.");
-        SetRect(card, new Vector2(800f, 500f), Vector2.zero);
+        SetRect(card, new Vector2(840f, 540f), Vector2.zero);
         SetImage(card.GetComponent<Image>(), DarkPanelSprite(), Color.white);
         SetShadow(card.gameObject, new Color(0f, 0f, 0f, 0.42f), new Vector2(9f, -10f));
 
-        RectTransform inner = Layer(card, "Decor_Interior", PanelSprite(), Cream, new Vector2(770f, 470f), Vector2.zero);
+        RectTransform inner = Layer(card, "Decor_Interior", PanelSprite(), Cream, new Vector2(808f, 508f), Vector2.zero);
         inner.SetAsFirstSibling();
-        RectTransform header = Layer(card, "Decor_Cabecera", null, DeepGreen, new Vector2(744f, 104f), new Vector2(0f, 165f));
+        RectTransform header = Layer(card, "Decor_Cabecera", null, DeepGreen, new Vector2(780f, 112f), new Vector2(0f, 187f));
         header.SetSiblingIndex(1);
-        RectTransform line = Layer(card, "Decor_LineaDorada", null, WarmGold, new Vector2(650f, 4f), new Vector2(0f, 101f));
+        RectTransform line = Layer(card, "Decor_LineaDorada", null, WarmGold, new Vector2(690f, 4f), new Vector2(0f, 123f));
         line.SetSiblingIndex(2);
-        AddCorner(card, "Decor_EsquinaIzquierda", new Vector2(-343f, 211f));
-        AddCorner(card, "Decor_EsquinaDerecha", new Vector2(343f, 211f));
+        AddCorner(card, "Decor_EsquinaIzquierda", new Vector2(-362f, 231f));
+        AddCorner(card, "Decor_EsquinaDerecha", new Vector2(362f, 231f));
 
         TMP_Text title = card.GetComponentsInChildren<TMP_Text>(true)
             .FirstOrDefault(t => t.name.StartsWith("TituloZona", StringComparison.Ordinal));
@@ -206,33 +248,38 @@ public static class GameplayUIPolishTool
         if (title != null)
         {
             SetText(title, White, title.text.Contains("\n") ? 37f : 46f, FontStyles.Bold, TextAlignmentOptions.Center);
-            SetRect(title.rectTransform, new Vector2(680f, 90f), new Vector2(0f, 165f));
+            SetRect(title.rectTransform, new Vector2(720f, 98f), new Vector2(0f, 187f));
+            ConfigureResponsiveText(title, 31f, title.text.Contains("\n") ? 39f : 46f,
+                TextWrappingModes.Normal, 3f, new Vector4(14f, 5f, 14f, 5f));
             SetShadow(title.gameObject, new Color(0f, 0f, 0f, 0.35f), new Vector2(2f, -2f));
             title.transform.SetAsLastSibling();
         }
         if (description != null)
         {
             SetText(description, Ink, 25f, FontStyles.Normal, TextAlignmentOptions.Center);
-            SetRect(description.rectTransform, new Vector2(650f, 86f), new Vector2(0f, 58f));
-            description.textWrappingMode = TextWrappingModes.Normal;
+            SetRect(description.rectTransform, new Vector2(700f, 112f), new Vector2(0f, 70f));
+            ConfigureResponsiveText(description, 20f, 25f, TextWrappingModes.Normal, 7f,
+                new Vector4(18f, 7f, 18f, 7f));
             description.transform.SetAsLastSibling();
         }
         if (info != null)
         {
-            SetRect(info.rectTransform, new Vector2(620f, 62f), new Vector2(0f, -42f));
+            SetRect(info.rectTransform, new Vector2(660f, 68f), new Vector2(0f, -57f));
             SetImage(info, PanelSprite(), PaleGreen);
             SetOutline(info.gameObject, new Color32(119, 151, 82, 210), new Vector2(2f, -2f));
             TMP_Text infoText = info.GetComponentInChildren<TMP_Text>(true);
             if (infoText != null)
             {
-                SetRect(infoText.rectTransform, new Vector2(580f, 48f), Vector2.zero);
+                SetRect(infoText.rectTransform, new Vector2(620f, 52f), Vector2.zero);
                 SetText(infoText, DeepGreen, 22f, FontStyles.Bold, TextAlignmentOptions.Center);
+                ConfigureResponsiveText(infoText, 18f, 22f, TextWrappingModes.Normal, 2f,
+                    new Vector4(12f, 4f, 12f, 4f));
             }
             info.transform.SetAsLastSibling();
         }
         if (button != null)
         {
-            SetRect((RectTransform)button.transform, new Vector2(410f, 72f), new Vector2(0f, -161f));
+            SetRect((RectTransform)button.transform, new Vector2(430f, 74f), new Vector2(0f, -188f));
             StyleWoodButton(button, 22f);
             button.transform.SetAsLastSibling();
         }
@@ -241,7 +288,7 @@ public static class GameplayUIPolishTool
     private static void PolishDecision(GameObject panel)
     {
         if (panel == null) throw new InvalidOperationException("No se encontró VentanaDecision.");
-        SetRect((RectTransform)panel.transform, new Vector2(760f, 680f), new Vector2(0f, -10f));
+        SetRect((RectTransform)panel.transform, new Vector2(800f, 760f), new Vector2(0f, -8f));
         Image rootImage = panel.GetComponent<Image>();
         if (rootImage != null) rootImage.color = Color.clear;
         RectTransform border = ChildRect(panel.transform, "BordeMarron");
@@ -250,28 +297,28 @@ public static class GameplayUIPolishTool
         RectTransform line = ChildRect(panel.transform, "LineaTitulo");
         if (border != null)
         {
-            SetRect(border, new Vector2(740f, 660f), Vector2.zero);
+            SetRect(border, new Vector2(780f, 740f), Vector2.zero);
             SetImage(border.GetComponent<Image>(), DarkPanelSprite(), Color.white);
             SetShadow(border.gameObject, new Color(0f, 0f, 0f, 0.38f), new Vector2(9f, -10f));
             border.SetAsFirstSibling();
         }
         if (background != null)
         {
-            SetRect(background, new Vector2(710f, 630f), Vector2.zero);
+            SetRect(background, new Vector2(750f, 710f), Vector2.zero);
             SetImage(background.GetComponent<Image>(), PanelSprite(), Cream);
             background.SetSiblingIndex(1);
         }
         RectTransform titleBackground = Layer((RectTransform)panel.transform, "Decor_CabeceraDecision",
-            null, DeepGreen, new Vector2(690f, 88f), new Vector2(0f, 267f));
+            null, DeepGreen, new Vector2(730f, 92f), new Vector2(0f, 307f));
         titleBackground.SetSiblingIndex(2);
         if (titlePanel != null)
         {
-            SetRect(titlePanel, new Vector2(690f, 88f), new Vector2(0f, 267f));
+            SetRect(titlePanel, new Vector2(730f, 92f), new Vector2(0f, 307f));
             SetImage(titlePanel.GetComponent<Image>(), null, Color.clear);
             TMP_Text title = titlePanel.GetComponentInChildren<TMP_Text>(true);
             if (title != null)
             {
-                SetRect(title.rectTransform, new Vector2(590f, 72f), Vector2.zero);
+                SetRect(title.rectTransform, new Vector2(626f, 76f), Vector2.zero);
                 SetText(title, White, 30f, FontStyles.Bold, TextAlignmentOptions.Center);
                 ConfigureResponsiveText(title, 22f, 30f, TextWrappingModes.Normal, 0f,
                     new Vector4(8f, 4f, 8f, 4f));
@@ -280,39 +327,39 @@ public static class GameplayUIPolishTool
         }
         if (line != null)
         {
-            SetRect(line, new Vector2(590f, 4f), new Vector2(0f, 105f));
+            SetRect(line, new Vector2(630f, 4f), new Vector2(0f, 132f));
             SetImage(line.GetComponent<Image>(), null, WarmGold);
         }
 
         VentanaDecisionUI ui = UnityEngine.Object.FindObjectsByType<VentanaDecisionUI>(FindObjectsInactive.Include)
             .FirstOrDefault(v => v.ventanaDecision == panel);
         if (ui == null) throw new InvalidOperationException("VentanaDecision no conserva su controlador.");
-        SetRect(ui.descripcionObjeto.rectTransform, new Vector2(620f, 112f), new Vector2(0f, 169f));
+        SetRect(ui.descripcionObjeto.rectTransform, new Vector2(670f, 120f), new Vector2(0f, 204f));
         SetText(ui.descripcionObjeto, Ink, 21f, FontStyles.Normal, TextAlignmentOptions.Center);
         ConfigureResponsiveText(ui.descripcionObjeto, 17f, 21f, TextWrappingModes.Normal, 3f,
-            new Vector4(12f, 5f, 12f, 5f));
+            new Vector4(18f, 7f, 18f, 7f));
 
         TMP_Text[] labels = { ui.textoBoton1, ui.textoBoton2, ui.textoBoton3 };
-        float[] ys = { 62f, -14f, -90f };
+        float[] ys = { 55f, -75f, -205f };
         for (int index = 0; index < labels.Length; index++)
         {
-            Button button = labels[index].GetComponentInParent<Button>();
+            Button button = labels[index].GetComponentInParent<Button>(true);
             if (button == null) continue;
-            SetRect((RectTransform)button.transform, new Vector2(540f, 62f), new Vector2(0f, ys[index]));
+            SetRect((RectTransform)button.transform, new Vector2(600f, 120f), new Vector2(0f, ys[index]));
             StyleAnswerButton(button);
             SetText(labels[index], DeepGreen, 20f, FontStyles.Bold, TextAlignmentOptions.Center);
-            ConfigureResponsiveText(labels[index], 16f, 20f, TextWrappingModes.Normal, 0f,
-                new Vector4(20f, 5f, 20f, 5f));
+            ConfigureResponsiveText(labels[index], 16f, 20f, TextWrappingModes.Normal, 1f,
+                new Vector4(26f, 10f, 26f, 10f));
         }
 
         RectTransform feedback = ui.textoFeedback.transform.parent as RectTransform;
         if (feedback != null)
         {
-            SetRect(feedback, new Vector2(620f, 86f), new Vector2(0f, -231f));
+            SetRect(feedback, new Vector2(660f, 78f), new Vector2(0f, -311f));
             SetImage(feedback.GetComponent<Image>(), PanelSprite(), CreamSoft);
             SetOutline(feedback.gameObject, new Color32(204, 164, 81, 180), new Vector2(2f, -2f));
         }
-        SetRect(ui.textoFeedback.rectTransform, new Vector2(570f, 64f), Vector2.zero);
+        SetRect(ui.textoFeedback.rectTransform, new Vector2(610f, 58f), Vector2.zero);
         ui.textoFeedback.fontSize = 21f;
         ui.textoFeedback.fontStyle = FontStyles.Bold;
         ui.textoFeedback.alignment = TextAlignmentOptions.Center;
@@ -370,8 +417,8 @@ public static class GameplayUIPolishTool
         RectTransform root = (RectTransform)panel.transform;
         RemoveDecor(root, "Decor_AcentoIzquierdo");
         RemoveDecor(root, "Decor_AcentoDerecho");
-        SetTropicalSprite(root, "Decor_HojasDecisionIzq", new Vector2(-326f, 267f), 28f, false);
-        SetTropicalSprite(root, "Decor_HojasDecisionDer", new Vector2(326f, 267f), 28f, true);
+        SetTropicalSprite(root, "Decor_HojasDecisionIzq", new Vector2(-350f, 307f), 26f, false);
+        SetTropicalSprite(root, "Decor_HojasDecisionDer", new Vector2(350f, 307f), 26f, true);
     }
 
     private static void ReplaceDialogueDecor(GameObject panel)
