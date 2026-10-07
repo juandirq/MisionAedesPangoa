@@ -120,6 +120,33 @@ public class AudioManager : MonoBehaviour
     public void ReproducirMusicaExploracion() =>
         CambiarMusica(musicaInicio, true, offsetMusicaInicio);
 
+    public void ReiniciarMusicaExploracion()
+    {
+        if (musicaInicio == null || musicaA == null || musicaB == null) return;
+        if (crossfadeActual != null)
+        {
+            StopCoroutine(crossfadeActual);
+            crossfadeActual = null;
+        }
+        musicaA.Stop();
+        musicaB.Stop();
+        musicaB.volume = 0f;
+        musicaA.clip = musicaInicio;
+        musicaA.loop = true;
+        musicaA.volume = VolumenMusicaActual;
+        AplicarOffset(musicaA, musicaInicio, offsetMusicaInicio);
+        musicaA.Play();
+        musicaActiva = musicaA;
+    }
+
+    public void AplicarAjustesGuardados()
+    {
+        if (musicaA != null)
+            musicaA.volume = musicaA == musicaActiva && musicaA.isPlaying ? VolumenMusicaActual : 0f;
+        if (musicaB != null)
+            musicaB.volume = musicaB == musicaActiva && musicaB.isPlaying ? VolumenMusicaActual : 0f;
+    }
+
     public void ReproducirMusicaZona(int indice)
     {
         AudioClip clip = indice == 1 ? musicaZona1 : indice == 2 ? musicaZona2 :
@@ -134,17 +161,21 @@ public class AudioManager : MonoBehaviour
     public void ReproducirDerrota() =>
         CambiarMusica(musicaDerrota, false, offsetMusicaDerrota, true);
     public void ReproducirBoton() =>
-        ReproducirDesdeOffset(sfxGeneral, efectoBoton, volumenBoton, offsetBoton);
+        ReproducirDesdeOffset(sfxGeneral, efectoBoton,
+            volumenBoton * AjustesAudio.Sfx, offsetBoton);
     public void ReproducirCorrecto() =>
-        ReproducirDesdeOffset(sfxGeneral, efectoCorrecto, volumenRespuesta, offsetCorrecto);
+        ReproducirDesdeOffset(sfxGeneral, efectoCorrecto,
+            volumenRespuesta * AjustesAudio.Sfx, offsetCorrecto);
     public void ReproducirIncorrecto() =>
-        ReproducirDesdeOffset(sfxGeneral, efectoIncorrecto, volumenRespuesta, offsetIncorrecto);
+        ReproducirDesdeOffset(sfxGeneral, efectoIncorrecto,
+            volumenRespuesta * AjustesAudio.Sfx, offsetIncorrecto);
 
     public void ReproducirBlipDialogo()
     {
         if (Time.unscaledTime < proximoBlip || dialogo == null || efectoEscribirNPC == null) return;
         proximoBlip = Time.unscaledTime + cooldownBlip;
-        ReproducirDesdeOffset(dialogo, efectoEscribirNPC, volumenBlip, offsetBlipNPC);
+        ReproducirDesdeOffset(dialogo, efectoEscribirNPC,
+            volumenBlip * AjustesAudio.Sfx, offsetBlipNPC);
     }
 
     private static void ReproducirDesdeOffset(AudioSource fuente, AudioClip clip,
@@ -167,6 +198,7 @@ public class AudioManager : MonoBehaviour
             musicaActiva.clip == clip && musicaActiva.isPlaying)
         {
             musicaActiva.loop = loop;
+            musicaActiva.volume = VolumenMusicaActual;
             return;
         }
 
@@ -192,7 +224,7 @@ public class AudioManager : MonoBehaviour
         {
             destino.Stop();
             destino.clip = clip;
-            destino.volume = entradaInmediata ? volumenMusica : 0f;
+            destino.volume = entradaInmediata ? VolumenMusicaActual : 0f;
             AplicarOffset(destino, clip, offsetSegundos);
             destino.Play();
         }
@@ -204,11 +236,11 @@ public class AudioManager : MonoBehaviour
         {
             tiempo += Time.unscaledDeltaTime;
             float t = Mathf.Clamp01(tiempo / duracionCrossfade);
-            destino.volume = Mathf.Lerp(inicialDestino, volumenMusica, t);
+            destino.volume = Mathf.Lerp(inicialDestino, VolumenMusicaActual, t);
             if (anterior != null) anterior.volume = Mathf.Lerp(inicialAnterior, 0f, t);
             yield return null;
         }
-        destino.volume = volumenMusica;
+        destino.volume = VolumenMusicaActual;
         if (anterior != null) { anterior.Stop(); anterior.volume = 0f; }
         musicaActiva = destino;
         crossfadeActual = null;
@@ -227,7 +259,7 @@ public class AudioManager : MonoBehaviour
             if (caminar && !estabaCaminandoAudio)
             {
                 fuentePisadas.Stop();
-                fuentePisadas.volume = volumenPisadas;
+                fuentePisadas.volume = volumenPisadas * AjustesAudio.Sfx;
                 AplicarOffset(fuentePisadas, pisadas, offsetPisadas);
                 fuentePisadas.Play();
             }
@@ -238,7 +270,7 @@ public class AudioManager : MonoBehaviour
             }
             else if (caminar && !fuentePisadas.isPlaying)
             {
-                fuentePisadas.volume = volumenPisadas;
+                fuentePisadas.volume = volumenPisadas * AjustesAudio.Sfx;
                 AplicarOffset(fuentePisadas, pisadas, offsetPisadas);
                 fuentePisadas.Play();
             }
@@ -246,7 +278,7 @@ public class AudioManager : MonoBehaviour
         else if (caminar && Time.time >= proximaPisada)
         {
             proximaPisada = Time.time + intervaloPisada;
-            fuentePisadas.PlayOneShot(pisadas, volumenPisadas);
+            fuentePisadas.PlayOneShot(pisadas, volumenPisadas * AjustesAudio.Sfx);
         }
         estabaCaminandoAudio = caminar;
     }
@@ -259,7 +291,7 @@ public class AudioManager : MonoBehaviour
         foreach (Transform rio in referenciasRio)
             if (rio != null) menor = Mathf.Min(menor, Vector2.Distance(jugador, rio.position));
         float t = Mathf.InverseLerp(distanciaRioSilencio, distanciaRioMaximo, menor);
-        float objetivo = Mathf.Clamp01(t) * volumenRioMaximo;
+        float objetivo = Mathf.Clamp01(t) * volumenRioMaximo * AjustesAudio.Sfx;
         fuenteRio.volume = Mathf.MoveTowards(fuenteRio.volume, objetivo,
             Time.unscaledDeltaTime * suavizadoRio);
     }
@@ -270,6 +302,8 @@ public class AudioManager : MonoBehaviour
         fuente.playOnAwake = false;
         fuente.spatialBlend = 0f;
     }
+
+    private float VolumenMusicaActual => volumenMusica * AjustesAudio.Musica;
 
     private static void AplicarOffset(AudioSource fuente, AudioClip clip, float segundos)
     {
