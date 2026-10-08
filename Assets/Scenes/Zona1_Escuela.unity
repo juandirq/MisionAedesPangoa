@@ -24300,6 +24300,7 @@ GameObject:
   - component: {fileID: 598868147}
   - component: {fileID: 598868146}
   - component: {fileID: 598868148}
+  - component: {fileID: 598868149}
   m_Layer: 0
   m_Name: RIO_3
   m_TagString: Untagged
@@ -24333,7 +24334,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 3ed8d9e6ed335b44eb8f13896d1ed715, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -24782,6 +24783,26 @@ PolygonCollider2D:
       - {x: 1.8, y: -7.3199997}
       - {x: 1.8199999, y: -7.3599997}
   m_UseDelaunayMesh: 1
+--- !u!114 &598868149
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 598868145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46636da69de88494dae1d5c7e89fd89d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RiverWaterAnimator
+  fase: 1.46
+  cantidadCascadas: 3
+  caida1: {x: 0.4, y: 0.68, z: 0.61, w: 0.84}
+  caida2: {x: 0.23, y: 0.29, z: 0.43, w: 0.39}
+  caida3: {x: 0.43, y: 0.12, z: 0.62, w: 0.23}
+  base1: {x: 0.38, y: 0.62, z: 0.64, w: 0.72}
+  base2: {x: 0.21, y: 0.24, z: 0.48, w: 0.33}
+  base3: {x: 0.4, y: 0.08, z: 0.66, w: 0.16}
 --- !u!1 &603825650
 GameObject:
   m_ObjectHideFlags: 0
@@ -64294,6 +64315,7 @@ GameObject:
   - component: {fileID: 1613292148}
   - component: {fileID: 1613292147}
   - component: {fileID: 1613292149}
+  - component: {fileID: 1613292150}
   m_Layer: 0
   m_Name: RIO_4
   m_TagString: Untagged
@@ -64327,7 +64349,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 3ed8d9e6ed335b44eb8f13896d1ed715, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -64774,6 +64796,26 @@ PolygonCollider2D:
       - {x: -0.53, y: -4.54}
       - {x: -0.44, y: -4.44}
   m_UseDelaunayMesh: 1
+--- !u!114 &1613292150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1613292146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46636da69de88494dae1d5c7e89fd89d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RiverWaterAnimator
+  fase: 2.19
+  cantidadCascadas: 2
+  caida1: {x: 0.12, y: 0.42, z: 0.29, w: 0.64}
+  caida2: {x: 0.62, y: 0.43, z: 0.77, w: 0.61}
+  caida3: {x: 0, y: 0, z: 0, w: 0}
+  base1: {x: 0.12, y: 0.31, z: 0.37, w: 0.48}
+  base2: {x: 0.57, y: 0.34, z: 0.82, w: 0.49}
+  base3: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1615046419
 GameObject:
   m_ObjectHideFlags: 0
@@ -74040,6 +74082,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1857787407}
   - component: {fileID: 1857787406}
+  - component: {fileID: 1857787408}
   m_Layer: 0
   m_Name: RIO_2
   m_TagString: Untagged
@@ -74073,7 +74116,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 3ed8d9e6ed335b44eb8f13896d1ed715, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -74122,6 +74165,26 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1177908981}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -38.004}
+--- !u!114 &1857787408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1857787405}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46636da69de88494dae1d5c7e89fd89d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RiverWaterAnimator
+  fase: 0.73
+  cantidadCascadas: 3
+  caida1: {x: 0.4, y: 0.68, z: 0.61, w: 0.84}
+  caida2: {x: 0.23, y: 0.29, z: 0.43, w: 0.39}
+  caida3: {x: 0.43, y: 0.12, z: 0.62, w: 0.23}
+  base1: {x: 0.38, y: 0.62, z: 0.64, w: 0.72}
+  base2: {x: 0.21, y: 0.24, z: 0.48, w: 0.33}
+  base3: {x: 0.4, y: 0.08, z: 0.66, w: 0.16}
 --- !u!1 &1861163910
 GameObject:
   m_ObjectHideFlags: 0
@@ -75309,6 +75372,7 @@ GameObject:
   - component: {fileID: 1900213590}
   - component: {fileID: 1900213589}
   - component: {fileID: 1900213591}
+  - component: {fileID: 1900213592}
   m_Layer: 0
   m_Name: RIO_1
   m_TagString: Untagged
@@ -75342,7 +75406,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 3ed8d9e6ed335b44eb8f13896d1ed715, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -75437,6 +75501,26 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 9.064213, y: 4.8891387}
   m_EdgeRadius: 0
+--- !u!114 &1900213592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1900213588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46636da69de88494dae1d5c7e89fd89d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RiverWaterAnimator
+  fase: 0
+  cantidadCascadas: 2
+  caida1: {x: 0.12, y: 0.42, z: 0.29, w: 0.64}
+  caida2: {x: 0.62, y: 0.43, z: 0.77, w: 0.61}
+  caida3: {x: 0, y: 0, z: 0, w: 0}
+  base1: {x: 0.12, y: 0.31, z: 0.37, w: 0.48}
+  base2: {x: 0.57, y: 0.34, z: 0.82, w: 0.49}
+  base3: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1902545651
 GameObject:
   m_ObjectHideFlags: 0
@@ -76385,6 +76469,7 @@ GameObject:
   - component: {fileID: 1945094443}
   - component: {fileID: 1945094442}
   - component: {fileID: 1945094444}
+  - component: {fileID: 1945094445}
   m_Layer: 0
   m_Name: RIO_5
   m_TagString: Untagged
@@ -76418,7 +76503,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 3ed8d9e6ed335b44eb8f13896d1ed715, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -76823,6 +76908,26 @@ PolygonCollider2D:
       - {x: -3.05, y: -5.5}
       - {x: -3, y: -5.44}
   m_UseDelaunayMesh: 1
+--- !u!114 &1945094445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1945094441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46636da69de88494dae1d5c7e89fd89d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::RiverWaterAnimator
+  fase: 2.92
+  cantidadCascadas: 1
+  caida1: {x: 0.38, y: 0.56, z: 0.65, w: 0.79}
+  caida2: {x: 0, y: 0, z: 0, w: 0}
+  caida3: {x: 0, y: 0, z: 0, w: 0}
+  base1: {x: 0.31, y: 0.43, z: 0.72, w: 0.6}
+  base2: {x: 0, y: 0, z: 0, w: 0}
+  base3: {x: 0, y: 0, z: 0, w: 0}
 --- !u!1 &1946336661
 GameObject:
   m_ObjectHideFlags: 0

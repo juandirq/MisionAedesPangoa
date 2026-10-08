@@ -11,6 +11,8 @@ using UnityEngine.UI;
 public static class ResolvedObjectVisualSetup
 {
     private const string ScenePath = "Assets/Scenes/Zona1_Escuela.unity";
+    private const string RiverMaterialPath = "Assets/Materials/RiverWaterSubtle.mat";
+    private static readonly string[] RiverNames = { "RIO_1", "RIO_2", "RIO_3", "RIO_4", "RIO_5" };
 
     private sealed class Mapping
     {
@@ -115,6 +117,124 @@ public static class ResolvedObjectVisualSetup
         EditorSceneManager.SaveScene(SceneManager.GetActiveScene());
         AssetDatabase.SaveAssets();
         Debug.Log("PAUSE_VOLUME_APPLY_OK sliders=2 sources=6");
+    }
+
+    [MenuItem("Mision Aedes/Ambiente/Aplicar animacion sutil de rios")]
+    public static void ApplyRiverWaterAnimation()
+    {
+        OpenScene();
+
+        Shader shader = Shader.Find("MisionAedes/RiverWaterSubtle");
+        if (shader == null) throw new InvalidOperationException("No se encontro el shader de agua sutil.");
+
+        Material material = AssetDatabase.LoadAssetAtPath<Material>(RiverMaterialPath);
+        if (material == null)
+        {
+            if (!AssetDatabase.IsValidFolder("Assets/Materials"))
+                AssetDatabase.CreateFolder("Assets", "Materials");
+            material = new Material(shader) { name = "RiverWaterSubtle" };
+            material.SetFloat("_WaterIntensity", 0.72f);
+            material.SetFloat("_WaterSpeed", 0.68f);
+            AssetDatabase.CreateAsset(material, RiverMaterialPath);
+        }
+        else if (material.shader != shader)
+        {
+            material.shader = shader;
+            EditorUtility.SetDirty(material);
+        }
+
+        material.SetFloat("_WaterIntensity", 0.72f);
+        material.SetFloat("_WaterSpeed", 0.68f);
+        EditorUtility.SetDirty(material);
+
+        for (int index = 0; index < RiverNames.Length; index++)
+        {
+            GameObject river = FindUnique(RiverNames[index]);
+            SpriteRenderer renderer = river.GetComponent<SpriteRenderer>();
+            if (renderer == null || renderer.sprite == null)
+                throw new InvalidOperationException("Falta SpriteRenderer o sprite en " + river.name);
+
+            Undo.RecordObject(renderer, "Asignar material de agua sutil");
+            renderer.sharedMaterial = material;
+            EditorUtility.SetDirty(renderer);
+
+            RiverWaterAnimator animator = river.GetComponent<RiverWaterAnimator>();
+            if (animator == null) animator = Undo.AddComponent<RiverWaterAnimator>(river);
+            Undo.RecordObject(animator, "Configurar animacion de agua sutil");
+            animator.ConfigurarFase(index * 0.73f);
+            ConfigureWaterfalls(animator, renderer.sprite.texture.width, renderer.sprite.texture.height);
+            EditorUtility.SetDirty(animator);
+        }
+
+        EditorSceneManager.MarkSceneDirty(SceneManager.GetActiveScene());
+        EditorSceneManager.SaveScene(SceneManager.GetActiveScene());
+        AssetDatabase.SaveAssets();
+        Debug.Log("RIVER_WATER_APPLY_OK rivers=5 material=RiverWaterSubtle");
+    }
+
+    private static void ConfigureWaterfalls(RiverWaterAnimator animator, int textureWidth, int textureHeight)
+    {
+        Vector4 zero = Vector4.zero;
+        if (textureWidth == 1448 && textureHeight == 1086)
+        {
+            animator.ConfigurarCascadas(2,
+                new Vector4(0.12f, 0.42f, 0.29f, 0.64f), new Vector4(0.12f, 0.31f, 0.37f, 0.48f),
+                new Vector4(0.62f, 0.43f, 0.77f, 0.61f), new Vector4(0.57f, 0.34f, 0.82f, 0.49f),
+                zero, zero);
+        }
+        else if (textureWidth == 1024 && textureHeight == 1536)
+        {
+            animator.ConfigurarCascadas(3,
+                new Vector4(0.40f, 0.68f, 0.61f, 0.84f), new Vector4(0.38f, 0.62f, 0.64f, 0.72f),
+                new Vector4(0.23f, 0.29f, 0.43f, 0.39f), new Vector4(0.21f, 0.24f, 0.48f, 0.33f),
+                new Vector4(0.43f, 0.12f, 0.62f, 0.23f), new Vector4(0.40f, 0.08f, 0.66f, 0.16f));
+        }
+        else if (textureWidth == 1254 && textureHeight == 1254)
+        {
+            animator.ConfigurarCascadas(1,
+                new Vector4(0.38f, 0.56f, 0.65f, 0.79f), new Vector4(0.31f, 0.43f, 0.72f, 0.60f),
+                zero, zero, zero, zero);
+        }
+        else
+        {
+            animator.ConfigurarCascadas(0, zero, zero, zero, zero, zero, zero);
+        }
+    }
+
+    public static void ValidateRiverWaterAnimation()
+    {
+        OpenScene();
+        Material material = AssetDatabase.LoadAssetAtPath<Material>(RiverMaterialPath);
+        if (material == null || material.shader == null || material.shader.name != "MisionAedes/RiverWaterSubtle")
+            throw new InvalidOperationException("Material de rios ausente o incorrecto.");
+
+        RiverWaterAnimator[] all = Resources.FindObjectsOfTypeAll<RiverWaterAnimator>()
+            .Where(item => item.gameObject.scene.IsValid() && item.gameObject.scene.isLoaded)
+            .ToArray();
+        if (all.Length != RiverNames.Length)
+            throw new InvalidOperationException($"Se esperaban 5 animadores de rio y se encontraron {all.Length}.");
+
+        foreach (string riverName in RiverNames)
+        {
+            GameObject river = FindUnique(riverName);
+            SpriteRenderer renderer = river.GetComponent<SpriteRenderer>();
+            RiverWaterAnimator animator = river.GetComponent<RiverWaterAnimator>();
+            if (renderer == null || animator == null || renderer.sharedMaterial != material)
+                throw new InvalidOperationException("Configuracion de agua incorrecta: " + riverName);
+            int expectedFalls = riverName == "RIO_5" ? 1 :
+                (riverName == "RIO_1" || riverName == "RIO_4" ? 2 : 3);
+            if (animator.CantidadCascadas != expectedFalls)
+                throw new InvalidOperationException($"Perfil de cascada incorrecto: {riverName}, esperado={expectedFalls}.");
+        }
+
+        Collider2D[] colliders = Resources.FindObjectsOfTypeAll<Collider2D>()
+            .Where(collider => collider.gameObject.scene.IsValid() && collider.gameObject.scene.isLoaded)
+            .ToArray();
+        int triggers = colliders.Count(collider => collider.isTrigger);
+        if (colliders.Length != 215 || triggers != 25)
+            throw new InvalidOperationException($"Conteo fisico inesperado: colliders={colliders.Length}, triggers={triggers}.");
+
+        Debug.Log("RIVER_WATER_VALIDATE_OK rivers=5 waterfallProfiles=5 colliders=215 triggers=25");
     }
 
     public static void ApplyPendingFinals()
