@@ -1,0 +1,429 @@
+fileFormatVersion: 2
+guid: 9d3ad721f93a9154dbcfc1cca383bc71
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 8227131110872781908
+    second: LONA ARREGLADA FINAL_0
+  - first:
+      213: -5008644426037428280
+    second: LONA ARREGLADA FINAL_1
+  - first:
+      213: -7601085772006388666
+    second: LONA ARREGLADA FINAL_2
+  - first:
+      213: 2927724773907393593
+    second: LONA ARREGLADA FINAL_3
+  - first:
+      213: -4747089035749141390
+    second: LONA ARREGLADA FINAL_4
+  - first:
+      213: -8816997894800612830
+    second: LONA ARREGLADA FINAL_5
+  - first:
+      213: 8563246678972891374
+    second: LONA ARREGLADA FINAL_6
+  - first:
+      213: -6371571426803844799
+    second: LONA ARREGLADA FINAL_7
+  - first:
+      213: -7698202727957475019
+    second: LONA ARREGLADA FINAL_8
+  - first:
+      213: -7651387473881195245
+    second: LONA ARREGLADA FINAL_9
+  - first:
+      213: -6996471107399779712
+    second: LONA ARREGLADA FINAL_10
+  - first:
+      213: 5818166203664640835
+    second: LONA ARREGLADA FINAL_11
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LONA ARREGLADA FINAL_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1435
+        height: 1074
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4541328f724ac2270800000000000000
+      internalID: 8227131110872781908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LONA ARREGLADA FINAL_1
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 1030
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8cf7cc37e68bd7ab0800000000000000
+      internalID: -5008644426037428280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LONA ARREGLADA FINAL_2
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 1036
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64c884c33c4838690800000000000000
+      internalID: -7601085772006388666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LONA ARREGLADA FINAL_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 771
+        width: 5
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93c6cdc8b2e51a820800000000000000
+      internalID: 2927724773907393593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LONA ARREGLADA FINAL_4
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 87
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 27455035ca3fe1eb0800000000000000
+      internalID: -4747089035749141390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LONA ARREGLADA FINAL_5
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 82
+        width: 17
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 222ea0f012bb3a580800000000000000
+      internalID: -8816997894800612830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LONA ARREGLADA FINAL_6
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 78
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee009380c73c6d670800000000000000
+      internalID: 8563246678972891374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LONA ARREGLADA FINAL_7
+      rect:
+        serializedVersion: 2
+        x: 587
+        y: 66
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 149f35c9b81a397a0800000000000000
+      internalID: -6371571426803844799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LONA ARREGLADA FINAL_8
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 34
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 531d62fd76d7a2590800000000000000
+      internalID: -7698202727957475019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LONA ARREGLADA FINAL_9
+      rect:
+        serializedVersion: 2
+        x: 826
+        y: 33
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 31d107c91afc0d590800000000000000
+      internalID: -7651387473881195245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LONA ARREGLADA FINAL_10
+      rect:
+        serializedVersion: 2
+        x: 1341
+        y: 40
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08af622c89a87ee90800000000000000
+      internalID: -6996471107399779712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LONA ARREGLADA FINAL_11
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 23
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 34b2d9516574eb050800000000000000
+      internalID: 5818166203664640835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      LONA ARREGLADA FINAL_0: 8227131110872781908
+      LONA ARREGLADA FINAL_1: -5008644426037428280
+      LONA ARREGLADA FINAL_10: -6996471107399779712
+      LONA ARREGLADA FINAL_11: 5818166203664640835
+      LONA ARREGLADA FINAL_2: -7601085772006388666
+      LONA ARREGLADA FINAL_3: 2927724773907393593
+      LONA ARREGLADA FINAL_4: -4747089035749141390
+      LONA ARREGLADA FINAL_5: -8816997894800612830
+      LONA ARREGLADA FINAL_6: 8563246678972891374
+      LONA ARREGLADA FINAL_7: -6371571426803844799
+      LONA ARREGLADA FINAL_8: -7698202727957475019
+      LONA ARREGLADA FINAL_9: -7651387473881195245
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

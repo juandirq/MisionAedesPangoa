@@ -1,6 +1,5 @@
 using UnityEngine;
 using TMPro;
-using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -72,6 +71,12 @@ public class GameManager : MonoBehaviour
     private bool cronometroPausado = false;
     private bool victoriaPendiente = false;
     private bool fueVictoria;
+
+    private bool checkpointDisponible;
+    private Vector3 posicionCheckpoint;
+    private int objetivosCheckpoint;
+    private float tiempoCheckpoint;
+    private string nombreCheckpoint;
 
     public bool JuegoTerminado => juegoTerminado;
     public bool ZonaActiva => zonaActiva;
@@ -185,6 +190,11 @@ public class GameManager : MonoBehaviour
 
         if (playerMovement != null)
             playerMovement.enabled = true;
+
+        if (rutaLineal != null && rutaLineal.IntentarObtenerPuntoSeguro(indiceZonaActual, out Vector3 puntoSeguro))
+            ReubicarJugador(puntoSeguro);
+        GuardarCheckpointZona();
+        rutaLineal?.CerrarZonaAlIniciar(indiceZonaActual);
 
         ActualizarHUD();
 
@@ -520,9 +530,96 @@ public class GameManager : MonoBehaviour
     public void ReiniciarZona()
     {
         Time.timeScale = 1f;
+        AudioListener.pause = false;
 
-        SceneManager.LoadScene(
-            SceneManager.GetActiveScene().buildIndex
-        );
+        if (!checkpointDisponible)
+        {
+            Debug.LogWarning("No hay un checkpoint de zona activo para reiniciar.", this);
+            return;
+        }
+
+        VentanaDecisionUI[] decisiones = FindObjectsByType<VentanaDecisionUI>(FindObjectsInactive.Include);
+        foreach (VentanaDecisionUI decision in decisiones)
+            if (decision != null) decision.CancelarParaReinicio();
+
+        if (panelDerrota != null) panelDerrota.SetActive(false);
+        if (panelVictoria != null) panelVictoria.SetActive(false);
+        if (ventanaDecision != null) ventanaDecision.SetActive(false);
+        if (textoInteraccion != null) textoInteraccion.SetActive(false);
+
+        ObjetoInteractuable[] objetos = FindObjectsByType<ObjetoInteractuable>(FindObjectsInactive.Include);
+        foreach (ObjetoInteractuable objeto in objetos)
+        {
+            if (objeto != null && objeto.indiceZona == indiceZonaActual)
+                objeto.RestablecerParaReintento();
+        }
+
+        ObjetoResueltoVisual[] visuales = FindObjectsByType<ObjetoResueltoVisual>(FindObjectsInactive.Include);
+        foreach (ObjetoResueltoVisual visual in visuales)
+        {
+            if (visual != null && visual.interactuable != null &&
+                visual.interactuable.indiceZona == indiceZonaActual)
+                visual.RestablecerParaReintento();
+        }
+
+        objetivosTotales = objetivosCheckpoint;
+        tiempoRestante = tiempoCheckpoint;
+        nombreZonaActual = nombreCheckpoint;
+        objetivosCompletados = 0;
+        riesgo = 100;
+        aciertos = 0;
+        errores = 0;
+        juegoTerminado = false;
+        zonaActiva = true;
+        cronometroActivo = true;
+        cronometroPausado = false;
+        victoriaPendiente = false;
+        fueVictoria = false;
+
+        if (rutaLineal != null) rutaLineal.RestaurarBloqueosDeZona(indiceZonaActual);
+        ReubicarJugadorEnCheckpoint();
+        if (panelHUDIzquierdo != null) panelHUDIzquierdo.SetActive(true);
+        if (panelHUDDerecho != null) panelHUDDerecho.SetActive(true);
+        AudioManager.Instancia?.ReproducirMusicaZona(indiceZonaActual);
+        ActualizarHUD();
+        Debug.Log("CHECKPOINT_RESTAURADO zona=" + indiceZonaActual);
+    }
+
+    public void PrepararNuevaPartida()
+    {
+        progresoZonas?.RestablecerNuevaPartida();
+        checkpointDisponible = false;
+        indiceZonaActual = 0;
+        if (rutaLineal != null) rutaLineal.PrepararNuevaPartida();
+    }
+
+    private void GuardarCheckpointZona()
+    {
+        checkpointDisponible = true;
+        objetivosCheckpoint = objetivosTotales;
+        tiempoCheckpoint = tiempoRestante;
+        nombreCheckpoint = nombreZonaActual;
+        if (playerMovement != null) posicionCheckpoint = playerMovement.transform.position;
+        Debug.Log("CHECKPOINT_GUARDADO zona=" + indiceZonaActual + " posicion=" + posicionCheckpoint);
+    }
+
+    private void ReubicarJugadorEnCheckpoint()
+    {
+        ReubicarJugador(posicionCheckpoint);
+    }
+
+    private void ReubicarJugador(Vector3 posicion)
+    {
+        if (playerMovement == null) return;
+        Rigidbody2D cuerpo = playerMovement.GetComponent<Rigidbody2D>();
+        playerMovement.transform.position = posicion;
+        if (cuerpo != null)
+        {
+            cuerpo.position = posicion;
+            cuerpo.linearVelocity = Vector2.zero;
+            cuerpo.angularVelocity = 0f;
+        }
+        Physics2D.SyncTransforms();
+        playerMovement.enabled = true;
     }
 }

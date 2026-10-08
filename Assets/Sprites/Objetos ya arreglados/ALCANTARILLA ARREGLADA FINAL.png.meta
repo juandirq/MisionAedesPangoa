@@ -1,0 +1,741 @@
+fileFormatVersion: 2
+guid: 30b3aba3b3cf846438ed9fb043b07f48
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1524555911155276317
+    second: ALCANTARILLA ARREGLADA FINAL_0
+  - first:
+      213: -7019669049967022374
+    second: ALCANTARILLA ARREGLADA FINAL_1
+  - first:
+      213: 4401653511415788886
+    second: ALCANTARILLA ARREGLADA FINAL_2
+  - first:
+      213: 3962607987886514957
+    second: ALCANTARILLA ARREGLADA FINAL_3
+  - first:
+      213: -6792861546010572280
+    second: ALCANTARILLA ARREGLADA FINAL_4
+  - first:
+      213: 4423506299736598628
+    second: ALCANTARILLA ARREGLADA FINAL_5
+  - first:
+      213: 1921053170043566298
+    second: ALCANTARILLA ARREGLADA FINAL_6
+  - first:
+      213: 1111924946867267458
+    second: ALCANTARILLA ARREGLADA FINAL_7
+  - first:
+      213: -5009284911494673112
+    second: ALCANTARILLA ARREGLADA FINAL_8
+  - first:
+      213: 5396388289834388348
+    second: ALCANTARILLA ARREGLADA FINAL_9
+  - first:
+      213: 6278155335596431420
+    second: ALCANTARILLA ARREGLADA FINAL_10
+  - first:
+      213: 1608598581714901275
+    second: ALCANTARILLA ARREGLADA FINAL_11
+  - first:
+      213: -1855717282523916430
+    second: ALCANTARILLA ARREGLADA FINAL_12
+  - first:
+      213: -7676734987047947733
+    second: ALCANTARILLA ARREGLADA FINAL_13
+  - first:
+      213: -226380618143113179
+    second: ALCANTARILLA ARREGLADA FINAL_14
+  - first:
+      213: 1146412271865096493
+    second: ALCANTARILLA ARREGLADA FINAL_15
+  - first:
+      213: -7925726980849758446
+    second: ALCANTARILLA ARREGLADA FINAL_16
+  - first:
+      213: 1869216616140518388
+    second: ALCANTARILLA ARREGLADA FINAL_17
+  - first:
+      213: -3334928910600398617
+    second: ALCANTARILLA ARREGLADA FINAL_18
+  - first:
+      213: -271685735544558590
+    second: ALCANTARILLA ARREGLADA FINAL_19
+  - first:
+      213: 4017621338950742345
+    second: ALCANTARILLA ARREGLADA FINAL_20
+  - first:
+      213: -4920548268286028322
+    second: ALCANTARILLA ARREGLADA FINAL_21
+  - first:
+      213: 5164221336922742598
+    second: ALCANTARILLA ARREGLADA FINAL_22
+  - first:
+      213: 5506772499977013322
+    second: ALCANTARILLA ARREGLADA FINAL_23
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ALCANTARILLA ARREGLADA FINAL_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1371
+        height: 1074
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e52e5be970b7dae0800000000000000
+      internalID: -1524555911155276317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALCANTARILLA ARREGLADA FINAL_1
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 1002
+        width: 11
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ade69ebd030259e90800000000000000
+      internalID: -7019669049967022374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALCANTARILLA ARREGLADA FINAL_2
+      rect:
+        serializedVersion: 2
+        x: 263
+        y: 1020
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 655f9443c80d51d30800000000000000
+      internalID: 4401653511415788886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALCANTARILLA ARREGLADA FINAL_3
+      rect:
+        serializedVersion: 2
+        x: 1287
+        y: 939
+        width: 31
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d03e91e58f20ef630800000000000000
+      internalID: 3962607987886514957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALCANTARILLA ARREGLADA FINAL_4
+      rect:
+        serializedVersion: 2
+        x: 1323
+        y: 801
+        width: 72
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80a01adf968eab1a0800000000000000
+      internalID: -6792861546010572280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALCANTARILLA ARREGLADA FINAL_5
+      rect:
+        serializedVersion: 2
+        x: 1311
+        y: 729
+        width: 34
+        height: 41
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 468a089fa83736d30800000000000000
+      internalID: 4423506299736598628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALCANTARILLA ARREGLADA FINAL_6
+      rect:
+        serializedVersion: 2
+        x: 1341
+        y: 763
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad8b5131ea3f8aa10800000000000000
+      internalID: 1921053170043566298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALCANTARILLA ARREGLADA FINAL_7
+      rect:
+        serializedVersion: 2
+        x: 1349
+        y: 763
+        width: 14
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2872be219d95e6f00800000000000000
+      internalID: 1111924946867267458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALCANTARILLA ARREGLADA FINAL_8
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 633
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82dc2afc9e17b7ab0800000000000000
+      internalID: -5009284911494673112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALCANTARILLA ARREGLADA FINAL_9
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 647
+        width: 22
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7b08adee82d3ea40800000000000000
+      internalID: 5396388289834388348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALCANTARILLA ARREGLADA FINAL_10
+      rect:
+        serializedVersion: 2
+        x: 1367
+        y: 649
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c38d2feb30d702750800000000000000
+      internalID: 6278155335596431420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALCANTARILLA ARREGLADA FINAL_11
+      rect:
+        serializedVersion: 2
+        x: 1303
+        y: 518
+        width: 102
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b19505923e3e25610800000000000000
+      internalID: 1608598581714901275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALCANTARILLA ARREGLADA FINAL_12
+      rect:
+        serializedVersion: 2
+        x: 1054
+        y: 70
+        width: 7
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 277db9ba6fa2f36e0800000000000000
+      internalID: -1855717282523916430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALCANTARILLA ARREGLADA FINAL_13
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 39
+        width: 17
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b22b13ec332c67590800000000000000
+      internalID: -7676734987047947733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALCANTARILLA ARREGLADA FINAL_14
+      rect:
+        serializedVersion: 2
+        x: 1088
+        y: 29
+        width: 19
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 520eb87f60cbbdcf0800000000000000
+      internalID: -226380618143113179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALCANTARILLA ARREGLADA FINAL_15
+      rect:
+        serializedVersion: 2
+        x: 1000
+        y: 41
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d29eaa623efd8ef00800000000000000
+      internalID: 1146412271865096493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALCANTARILLA ARREGLADA FINAL_16
+      rect:
+        serializedVersion: 2
+        x: 1072
+        y: 17
+        width: 21
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 21f88bf9d49220290800000000000000
+      internalID: -7925726980849758446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALCANTARILLA ARREGLADA FINAL_17
+      rect:
+        serializedVersion: 2
+        x: 1100
+        y: 44
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f3305ddb9ac0f910800000000000000
+      internalID: 1869216616140518388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALCANTARILLA ARREGLADA FINAL_18
+      rect:
+        serializedVersion: 2
+        x: 1132
+        y: 31
+        width: 32
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e89b7433d3f7b1d0800000000000000
+      internalID: -3334928910600398617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALCANTARILLA ARREGLADA FINAL_19
+      rect:
+        serializedVersion: 2
+        x: 1174
+        y: 37
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20c63525347ca3cf0800000000000000
+      internalID: -271685735544558590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALCANTARILLA ARREGLADA FINAL_20
+      rect:
+        serializedVersion: 2
+        x: 754
+        y: 17
+        width: 14
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 941303e425571c730800000000000000
+      internalID: 4017621338950742345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALCANTARILLA ARREGLADA FINAL_21
+      rect:
+        serializedVersion: 2
+        x: 802
+        y: 0
+        width: 70
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed5d5a09b63b6bbb0800000000000000
+      internalID: -4920548268286028322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALCANTARILLA ARREGLADA FINAL_22
+      rect:
+        serializedVersion: 2
+        x: 1164
+        y: 31
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64fd5c8d1fffaa740800000000000000
+      internalID: 5164221336922742598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ALCANTARILLA ARREGLADA FINAL_23
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 15
+        width: 13
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a480500a96cfb6c40800000000000000
+      internalID: 5506772499977013322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      ALCANTARILLA ARREGLADA FINAL_0: -1524555911155276317
+      ALCANTARILLA ARREGLADA FINAL_1: -7019669049967022374
+      ALCANTARILLA ARREGLADA FINAL_10: 6278155335596431420
+      ALCANTARILLA ARREGLADA FINAL_11: 1608598581714901275
+      ALCANTARILLA ARREGLADA FINAL_12: -1855717282523916430
+      ALCANTARILLA ARREGLADA FINAL_13: -7676734987047947733
+      ALCANTARILLA ARREGLADA FINAL_14: -226380618143113179
+      ALCANTARILLA ARREGLADA FINAL_15: 1146412271865096493
+      ALCANTARILLA ARREGLADA FINAL_16: -7925726980849758446
+      ALCANTARILLA ARREGLADA FINAL_17: 1869216616140518388
+      ALCANTARILLA ARREGLADA FINAL_18: -3334928910600398617
+      ALCANTARILLA ARREGLADA FINAL_19: -271685735544558590
+      ALCANTARILLA ARREGLADA FINAL_2: 4401653511415788886
+      ALCANTARILLA ARREGLADA FINAL_20: 4017621338950742345
+      ALCANTARILLA ARREGLADA FINAL_21: -4920548268286028322
+      ALCANTARILLA ARREGLADA FINAL_22: 5164221336922742598
+      ALCANTARILLA ARREGLADA FINAL_23: 5506772499977013322
+      ALCANTARILLA ARREGLADA FINAL_3: 3962607987886514957
+      ALCANTARILLA ARREGLADA FINAL_4: -6792861546010572280
+      ALCANTARILLA ARREGLADA FINAL_5: 4423506299736598628
+      ALCANTARILLA ARREGLADA FINAL_6: 1921053170043566298
+      ALCANTARILLA ARREGLADA FINAL_7: 1111924946867267458
+      ALCANTARILLA ARREGLADA FINAL_8: -5009284911494673112
+      ALCANTARILLA ARREGLADA FINAL_9: 5396388289834388348
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

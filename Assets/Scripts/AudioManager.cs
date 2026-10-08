@@ -145,6 +145,16 @@ public class AudioManager : MonoBehaviour
             musicaA.volume = musicaA == musicaActiva && musicaA.isPlaying ? VolumenMusicaActual : 0f;
         if (musicaB != null)
             musicaB.volume = musicaB == musicaActiva && musicaB.isPlaying ? VolumenMusicaActual : 0f;
+        if (sfxGeneral != null && sfxGeneral.isPlaying)
+        {
+            float baseSfx = sfxGeneral.clip == efectoBoton ? volumenBoton : volumenRespuesta;
+            sfxGeneral.volume = baseSfx * AjustesAudio.Sfx;
+        }
+        if (dialogo != null && dialogo.isPlaying)
+            dialogo.volume = volumenBlip * AjustesAudio.Sfx;
+        if (fuentePisadas != null && fuentePisadas.isPlaying)
+            fuentePisadas.volume = volumenPisadas * AjustesAudio.Sfx;
+        ActualizarRio();
     }
 
     public void ReproducirMusicaZona(int indice)

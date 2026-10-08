@@ -1,0 +1,377 @@
+fileFormatVersion: 2
+guid: 3446d66cd8c315a4bae3f79c6b741139
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1437283016779540838
+    second: LAVADERO ARREGLADA FINAL_0
+  - first:
+      213: 8643316425097446968
+    second: LAVADERO ARREGLADA FINAL_1
+  - first:
+      213: 2259065539346532441
+    second: LAVADERO ARREGLADA FINAL_2
+  - first:
+      213: 2076785520283465329
+    second: LAVADERO ARREGLADA FINAL_3
+  - first:
+      213: -9130827708237256962
+    second: LAVADERO ARREGLADA FINAL_4
+  - first:
+      213: -2324109060775168573
+    second: LAVADERO ARREGLADA FINAL_5
+  - first:
+      213: -8368641217381329988
+    second: LAVADERO ARREGLADA FINAL_6
+  - first:
+      213: -5070436276444786342
+    second: LAVADERO ARREGLADA FINAL_7
+  - first:
+      213: -3687504533276908398
+    second: LAVADERO ARREGLADA FINAL_8
+  - first:
+      213: -6807284391897045496
+    second: LAVADERO ARREGLADA FINAL_9
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: LAVADERO ARREGLADA FINAL_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 25
+        width: 1236
+        height: 1221
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a96572716bebd0ce0800000000000000
+      internalID: -1437283016779540838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LAVADERO ARREGLADA FINAL_1
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 1223
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8368b3f8e7a33f770800000000000000
+      internalID: 8643316425097446968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LAVADERO ARREGLADA FINAL_2
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 1225
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95883159320d95f10800000000000000
+      internalID: 2259065539346532441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LAVADERO ARREGLADA FINAL_3
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 1221
+        width: 13
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 176bb2b6d6932dc10800000000000000
+      internalID: 2076785520283465329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LAVADERO ARREGLADA FINAL_4
+      rect:
+        serializedVersion: 2
+        x: 659
+        y: 1194
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef669399398c84180800000000000000
+      internalID: -9130827708237256962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LAVADERO ARREGLADA FINAL_5
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 1189
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c5ba357f1b1fbfd0800000000000000
+      internalID: -2324109060775168573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LAVADERO ARREGLADA FINAL_6
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 1189
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb31b49d62d9cdb80800000000000000
+      internalID: -8368641217381329988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LAVADERO ARREGLADA FINAL_7
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 891
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a511146221132a9b0800000000000000
+      internalID: -5070436276444786342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LAVADERO ARREGLADA FINAL_8
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 464
+        width: 8
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 294236a0a2a53dcc0800000000000000
+      internalID: -3687504533276908398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: LAVADERO ARREGLADA FINAL_9
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 17
+        width: 16
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8066aef79eaa781a0800000000000000
+      internalID: -6807284391897045496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      LAVADERO ARREGLADA FINAL_0: -1437283016779540838
+      LAVADERO ARREGLADA FINAL_1: 8643316425097446968
+      LAVADERO ARREGLADA FINAL_2: 2259065539346532441
+      LAVADERO ARREGLADA FINAL_3: 2076785520283465329
+      LAVADERO ARREGLADA FINAL_4: -9130827708237256962
+      LAVADERO ARREGLADA FINAL_5: -2324109060775168573
+      LAVADERO ARREGLADA FINAL_6: -8368641217381329988
+      LAVADERO ARREGLADA FINAL_7: -5070436276444786342
+      LAVADERO ARREGLADA FINAL_8: -3687504533276908398
+      LAVADERO ARREGLADA FINAL_9: -6807284391897045496
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

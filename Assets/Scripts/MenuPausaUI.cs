@@ -1,6 +1,8 @@
 using UnityEngine;
+using TMPro;
+using UnityEngine.UI;
 
-// Lee ESC antes que las ventanas: cerrar decisión nunca abre pausa ese mismo frame.
+// Lee TAB/ESC antes que las ventanas: cerrar decisión nunca abre pausa ese mismo frame.
 [DefaultExecutionOrder(-1000)]
 public class MenuPausaUI : MonoBehaviour
 {
@@ -8,6 +10,12 @@ public class MenuPausaUI : MonoBehaviour
     public GameManager gameManager;
     public PlayerMovement playerMovement;
     public GameObject[] otrosPanelesModales;
+    [Header("Volumen")]
+    public Slider sliderMusica;
+    public Slider sliderEfectos;
+    public TMP_Text valorMusica;
+    public TMP_Text valorEfectos;
+    public AudioManager audioManager;
     private NPCDialogo[] dialogos;
     private bool pausado;
     private bool reanudarReloj;
@@ -23,12 +31,14 @@ public class MenuPausaUI : MonoBehaviour
             return;
         }
         dialogos = FindObjectsByType<NPCDialogo>(FindObjectsInactive.Include);
+        if (audioManager == null) audioManager = FindAnyObjectByType<AudioManager>();
+        ConfigurarVolumen();
         if (panelPausa != null && panelPausa != gameObject) panelPausa.SetActive(false);
     }
 
     private void Update()
     {
-        if (!Input.GetKeyDown(KeyCode.Escape)) return;
+        if (!Input.GetKeyDown(KeyCode.Tab) && !Input.GetKeyDown(KeyCode.Escape)) return;
         if (pausado) { Reanudar(); return; }
         if (panelPausa == null || panelPausa == gameObject || gameManager == null ||
             playerMovement == null || !playerMovement.enabled || gameManager.JuegoTerminado ||
@@ -77,4 +87,41 @@ public class MenuPausaUI : MonoBehaviour
 
     public void SalirDelJuego() { Reanudar(); Application.Quit(); }
     private void OnDisable() { Reanudar(); }
+
+    private void ConfigurarVolumen()
+    {
+        if (sliderMusica != null)
+        {
+            sliderMusica.SetValueWithoutNotify(AjustesAudio.Musica);
+            sliderMusica.onValueChanged.RemoveListener(CambiarMusica);
+            sliderMusica.onValueChanged.AddListener(CambiarMusica);
+        }
+        if (sliderEfectos != null)
+        {
+            sliderEfectos.SetValueWithoutNotify(AjustesAudio.Sfx);
+            sliderEfectos.onValueChanged.RemoveListener(CambiarEfectos);
+            sliderEfectos.onValueChanged.AddListener(CambiarEfectos);
+        }
+        ActualizarValores();
+    }
+
+    public void CambiarMusica(float valor)
+    {
+        AjustesAudio.GuardarMusica(valor);
+        audioManager?.AplicarAjustesGuardados();
+        ActualizarValores();
+    }
+
+    public void CambiarEfectos(float valor)
+    {
+        AjustesAudio.GuardarSfx(valor);
+        audioManager?.AplicarAjustesGuardados();
+        ActualizarValores();
+    }
+
+    private void ActualizarValores()
+    {
+        if (valorMusica != null) valorMusica.text = Mathf.RoundToInt(AjustesAudio.Musica * 100f) + "%";
+        if (valorEfectos != null) valorEfectos.text = Mathf.RoundToInt(AjustesAudio.Sfx * 100f) + "%";
+    }
 }

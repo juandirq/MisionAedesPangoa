@@ -199,4 +199,12 @@ public class VentanaDecisionUI : MonoBehaviour
             gameManager.ReanudarCronometro();
         }
     }
+
+    public void CancelarParaReinicio()
+    {
+        CancelInvoke();
+        if (ventanaDecision != null) ventanaDecision.SetActive(false);
+        objetoActual = null;
+        respuestaCorrectaProcesada = false;
+    }
 }

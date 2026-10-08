@@ -42,6 +42,13 @@ public class ObjetoInteractuable : MonoBehaviour
     private bool jugadorCerca = false;
     private bool resuelto = false;
 
+    public void RestablecerParaReintento()
+    {
+        jugadorCerca = false;
+        resuelto = false;
+        CambiarVisibilidadTextoInteraccion(false);
+    }
+
     void Update()
     {
         if (jugadorCerca &&

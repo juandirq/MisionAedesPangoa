@@ -163,6 +163,7 @@ public class MainMenuController : MonoBehaviour
     private IEnumerator IniciarGameplay()
     {
         iniciandoJuego = true;
+        gameManager?.PrepararNuevaPartida();
         ReproducirClick();
         HabilitarBotones(false);
 

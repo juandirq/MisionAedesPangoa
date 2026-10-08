@@ -5,15 +5,15 @@ public class ObjetoResueltoVisual : MonoBehaviour
 {
     public ObjetoInteractuable interactuable;
     public SpriteRenderer spriteObjetivo;
+    public Sprite spriteResuelto;
     public GameObject iconoResuelto;
-    [Min(0.01f)] public float duracion = 0.4f;
-    [Range(1f, 1.3f)] public float escalaMaxima = 1.1f;
-    public bool cambiarColor = true;
-    public Color colorResuelto = new Color(0.75f, 0.9f, 0.75f, 1f);
-    private Vector3 escalaOriginal;
+    [Min(0.01f)] public float duracionDesvanecerOriginal = 0.14f;
+    [Min(0.01f)] public float duracionAparecerResuelto = 0.16f;
+
     private Color colorOriginal;
+    private Sprite spriteOriginal;
     private bool inicializado;
-    private bool animarEscala;
+    private bool transicionIniciada;
     private Coroutine rutina;
 
     private void Awake()
@@ -21,12 +21,9 @@ public class ObjetoResueltoVisual : MonoBehaviour
         if (interactuable == null) interactuable = GetComponent<ObjetoInteractuable>();
         if (spriteObjetivo == null) spriteObjetivo = GetComponent<SpriteRenderer>();
         if (spriteObjetivo == null) return;
-        escalaOriginal = spriteObjetivo.transform.localScale;
         colorOriginal = spriteObjetivo.color;
+        spriteOriginal = spriteObjetivo.sprite;
         inicializado = true;
-        // Escalar un Transform con colliders también cambia su geometría física.
-        // El punch solo se aplica a un sprite visual sin colliders en su rama.
-        animarEscala = spriteObjetivo.GetComponentInChildren<Collider2D>(true) == null;
     }
 
     private void OnEnable()
@@ -40,34 +37,61 @@ public class ObjetoResueltoVisual : MonoBehaviour
 
     private void Animar()
     {
-        if (!isActiveAndEnabled || !inicializado) return;
-        if (rutina != null) StopCoroutine(rutina);
+        if (!isActiveAndEnabled || !inicializado || transicionIniciada) return;
+        transicionIniciada = true;
         rutina = StartCoroutine(Transicion());
     }
 
     private IEnumerator Transicion()
     {
         if (IconoSeguro()) iconoResuelto.SetActive(true);
+        yield return CambiarAlfa(colorOriginal.a, 0f, duracionDesvanecerOriginal);
+        if (spriteObjetivo == null) yield break;
+
+        if (spriteResuelto != null) spriteObjetivo.sprite = spriteResuelto;
+        yield return CambiarAlfa(0f, colorOriginal.a, duracionAparecerResuelto);
+
+        AplicarFinal();
+        rutina = null;
+    }
+
+    private IEnumerator CambiarAlfa(float desde, float hasta, float duracion)
+    {
         float tiempo = Mathf.Max(0.01f, duracion);
         for (float t = 0f; t < tiempo; t += Time.unscaledDeltaTime)
         {
             if (spriteObjetivo == null) yield break;
-            float p = t / tiempo;
-            if (animarEscala)
-                spriteObjetivo.transform.localScale = escalaOriginal *
-                    (1f + (escalaMaxima - 1f) * Mathf.Sin(p * Mathf.PI));
-            if (cambiarColor) spriteObjetivo.color = Color.Lerp(colorOriginal, colorResuelto, p);
+            Color color = colorOriginal;
+            color.a = Mathf.Lerp(desde, hasta, t / tiempo);
+            spriteObjetivo.color = color;
             yield return null;
         }
-        AplicarFinal();
-        rutina = null;
+
+        if (spriteObjetivo != null)
+        {
+            Color color = colorOriginal;
+            color.a = hasta;
+            spriteObjetivo.color = color;
+        }
     }
 
     private void AplicarFinal()
     {
         if (spriteObjetivo == null) return;
-        if (animarEscala) spriteObjetivo.transform.localScale = escalaOriginal;
-        if (cambiarColor) spriteObjetivo.color = colorResuelto;
+        if (spriteResuelto != null) spriteObjetivo.sprite = spriteResuelto;
+        spriteObjetivo.color = colorOriginal;
+        transicionIniciada = true;
+    }
+
+    public void RestablecerParaReintento()
+    {
+        if (!inicializado || spriteObjetivo == null) return;
+        if (rutina != null) StopCoroutine(rutina);
+        rutina = null;
+        transicionIniciada = false;
+        spriteObjetivo.sprite = spriteOriginal;
+        spriteObjetivo.color = colorOriginal;
+        if (IconoSeguro()) iconoResuelto.SetActive(false);
     }
 
     private void OnDisable()
@@ -75,11 +99,8 @@ public class ObjetoResueltoVisual : MonoBehaviour
         if (interactuable != null) interactuable.AlResolverse -= Animar;
         if (rutina != null) StopCoroutine(rutina);
         rutina = null;
-        if (inicializado && spriteObjetivo != null)
-        {
-            if (animarEscala) spriteObjetivo.transform.localScale = escalaOriginal;
-            if (interactuable != null && interactuable.Resuelto) AplicarFinal();
-        }
+        if (inicializado && spriteObjetivo != null && interactuable != null && interactuable.Resuelto)
+            AplicarFinal();
     }
 
     private bool IconoSeguro()

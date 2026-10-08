@@ -23,5 +23,11 @@ public class ProgresoZonas : MonoBehaviour
         completadas[indiceZona - 1] = true;
     }
 
+    public void RestablecerNuevaPartida()
+    {
+        for (int i = 0; i < completadas.Length; i++)
+            completadas[i] = false;
+    }
+
     public bool TodasCompletadas => EstaZonaCompletada(3);
 }
