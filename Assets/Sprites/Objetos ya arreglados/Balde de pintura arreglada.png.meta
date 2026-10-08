@@ -1,0 +1,533 @@
+fileFormatVersion: 2
+guid: afffaf43ca3da6c448f8b0fd4dc227de
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2195689509929921131
+    second: Balde de pintura arreglada_0
+  - first:
+      213: -8149146936385287083
+    second: Balde de pintura arreglada_1
+  - first:
+      213: 6409706436008765120
+    second: Balde de pintura arreglada_2
+  - first:
+      213: -287329001543077731
+    second: Balde de pintura arreglada_3
+  - first:
+      213: -5086975523773414003
+    second: Balde de pintura arreglada_4
+  - first:
+      213: -7958314694144218831
+    second: Balde de pintura arreglada_5
+  - first:
+      213: 652507693342771092
+    second: Balde de pintura arreglada_6
+  - first:
+      213: -1030176286849818170
+    second: Balde de pintura arreglada_7
+  - first:
+      213: -7457939492826642702
+    second: Balde de pintura arreglada_8
+  - first:
+      213: -4887730003807555484
+    second: Balde de pintura arreglada_9
+  - first:
+      213: -7838930957138711676
+    second: Balde de pintura arreglada_10
+  - first:
+      213: 5846268186468130337
+    second: Balde de pintura arreglada_11
+  - first:
+      213: 8413957905662000652
+    second: Balde de pintura arreglada_12
+  - first:
+      213: 3429969449125019109
+    second: Balde de pintura arreglada_13
+  - first:
+      213: -7909186270214355652
+    second: Balde de pintura arreglada_14
+  - first:
+      213: -6951766871119124405
+    second: Balde de pintura arreglada_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Balde de pintura arreglada_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 13
+        width: 1223
+        height: 1223
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 595539326085781e0800000000000000
+      internalID: -2195689509929921131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Balde de pintura arreglada_1
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 1227
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 55cca42990a68ee80800000000000000
+      internalID: -8149146936385287083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Balde de pintura arreglada_2
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 996
+        width: 17
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c666d02b0ad3f850800000000000000
+      internalID: 6409706436008765120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Balde de pintura arreglada_3
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 994
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d907b51abc3330cf0800000000000000
+      internalID: -287329001543077731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Balde de pintura arreglada_4
+      rect:
+        serializedVersion: 2
+        x: 1083
+        y: 988
+        width: 9
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d85016c86be6769b0800000000000000
+      internalID: -5086975523773414003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Balde de pintura arreglada_5
+      rect:
+        serializedVersion: 2
+        x: 1069
+        y: 821
+        width: 17
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 13923cc53f26e8190800000000000000
+      internalID: -7958314694144218831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Balde de pintura arreglada_6
+      rect:
+        serializedVersion: 2
+        x: 1123
+        y: 489
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 497c7ea3a4c2e0900800000000000000
+      internalID: 652507693342771092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Balde de pintura arreglada_7
+      rect:
+        serializedVersion: 2
+        x: 1131
+        y: 487
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c1294e002414b1f0800000000000000
+      internalID: -1030176286849818170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Balde de pintura arreglada_8
+      rect:
+        serializedVersion: 2
+        x: 1134
+        y: 489
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2f606bd8b83108890800000000000000
+      internalID: -7457939492826642702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Balde de pintura arreglada_9
+      rect:
+        serializedVersion: 2
+        x: 1133
+        y: 470
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4603805357b4b2cb0800000000000000
+      internalID: -4887730003807555484
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Balde de pintura arreglada_10
+      rect:
+        serializedVersion: 2
+        x: 1139
+        y: 306
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 48b2fe0b3d5863390800000000000000
+      internalID: -7838930957138711676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Balde de pintura arreglada_11
+      rect:
+        serializedVersion: 2
+        x: 1147
+        y: 310
+        width: 22
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12e9914d0fd122150800000000000000
+      internalID: 5846268186468130337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Balde de pintura arreglada_12
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 283
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0eb21ad22264c470800000000000000
+      internalID: 8413957905662000652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Balde de pintura arreglada_13
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 290
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5edf98d8a03b99f20800000000000000
+      internalID: 3429969449125019109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Balde de pintura arreglada_14
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 232
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c350a7dedfcec3290800000000000000
+      internalID: -7909186270214355652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Balde de pintura arreglada_15
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 81
+        width: 15
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b48ad9ddcdc568f90800000000000000
+      internalID: -6951766871119124405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Balde de pintura arreglada_0: -2195689509929921131
+      Balde de pintura arreglada_1: -8149146936385287083
+      Balde de pintura arreglada_10: -7838930957138711676
+      Balde de pintura arreglada_11: 5846268186468130337
+      Balde de pintura arreglada_12: 8413957905662000652
+      Balde de pintura arreglada_13: 3429969449125019109
+      Balde de pintura arreglada_14: -7909186270214355652
+      Balde de pintura arreglada_15: -6951766871119124405
+      Balde de pintura arreglada_2: 6409706436008765120
+      Balde de pintura arreglada_3: -287329001543077731
+      Balde de pintura arreglada_4: -5086975523773414003
+      Balde de pintura arreglada_5: -7958314694144218831
+      Balde de pintura arreglada_6: 652507693342771092
+      Balde de pintura arreglada_7: -1030176286849818170
+      Balde de pintura arreglada_8: -7457939492826642702
+      Balde de pintura arreglada_9: -4887730003807555484
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

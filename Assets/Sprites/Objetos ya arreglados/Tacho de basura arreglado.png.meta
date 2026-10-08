@@ -1,0 +1,559 @@
+fileFormatVersion: 2
+guid: 4aa337fcc4356d449a00684a1f082b27
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6881787704263333613
+    second: Tacho de basura arreglado_0
+  - first:
+      213: -8478233681344458965
+    second: Tacho de basura arreglado_1
+  - first:
+      213: 6906201248044249128
+    second: Tacho de basura arreglado_2
+  - first:
+      213: 5967876077796754073
+    second: Tacho de basura arreglado_3
+  - first:
+      213: 2865250033356263418
+    second: Tacho de basura arreglado_4
+  - first:
+      213: -6563753552259526539
+    second: Tacho de basura arreglado_5
+  - first:
+      213: -4182634632268418184
+    second: Tacho de basura arreglado_6
+  - first:
+      213: 5076821525413692093
+    second: Tacho de basura arreglado_7
+  - first:
+      213: -5502235130529739823
+    second: Tacho de basura arreglado_8
+  - first:
+      213: 5177592547672996098
+    second: Tacho de basura arreglado_9
+  - first:
+      213: -3351619045087613203
+    second: Tacho de basura arreglado_10
+  - first:
+      213: 253415231893599657
+    second: Tacho de basura arreglado_11
+  - first:
+      213: 7235902741013846343
+    second: Tacho de basura arreglado_12
+  - first:
+      213: -7665417777110400352
+    second: Tacho de basura arreglado_13
+  - first:
+      213: 2093016734937041454
+    second: Tacho de basura arreglado_14
+  - first:
+      213: -6571470234591081997
+    second: Tacho de basura arreglado_15
+  - first:
+      213: 4531099038129614526
+    second: Tacho de basura arreglado_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Tacho de basura arreglado_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1105
+        height: 1222
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 319abb35b8afe70a0800000000000000
+      internalID: -6881787704263333613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tacho de basura arreglado_1
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 949
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2f06bce263475a80800000000000000
+      internalID: -8478233681344458965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tacho de basura arreglado_2
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 945
+        width: 58
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8207909c171c7df50800000000000000
+      internalID: 6906201248044249128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tacho de basura arreglado_3
+      rect:
+        serializedVersion: 2
+        x: 1133
+        y: 905
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 99280a07ca722d250800000000000000
+      internalID: 5967876077796754073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tacho de basura arreglado_4
+      rect:
+        serializedVersion: 2
+        x: 1131
+        y: 778
+        width: 46
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aff40ee79b963c720800000000000000
+      internalID: 2865250033356263418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tacho de basura arreglado_5
+      rect:
+        serializedVersion: 2
+        x: 1141
+        y: 730
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 570dc54abecd8e4a0800000000000000
+      internalID: -6563753552259526539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tacho de basura arreglado_6
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 724
+        width: 68
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 873f46666fb44f5c0800000000000000
+      internalID: -4182634632268418184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tacho de basura arreglado_7
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 722
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db2075a774e747640800000000000000
+      internalID: 5076821525413692093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tacho de basura arreglado_8
+      rect:
+        serializedVersion: 2
+        x: 1157
+        y: 726
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1db89160d4224a3b0800000000000000
+      internalID: -5502235130529739823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tacho de basura arreglado_9
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 678
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20932c37df08ad740800000000000000
+      internalID: 5177592547672996098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tacho de basura arreglado_10
+      rect:
+        serializedVersion: 2
+        x: 1117
+        y: 690
+        width: 52
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dee6e137c38ac71d0800000000000000
+      internalID: -3351619045087613203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tacho de basura arreglado_11
+      rect:
+        serializedVersion: 2
+        x: 1133
+        y: 676
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a5f0bd8fcf448300800000000000000
+      internalID: 253415231893599657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tacho de basura arreglado_12
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 449
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 749d76b94371b6460800000000000000
+      internalID: 7235902741013846343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tacho de basura arreglado_13
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 449
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a2ce541527fe9590800000000000000
+      internalID: -7665417777110400352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tacho de basura arreglado_14
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 375
+        width: 94
+        height: 61
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2aced291a3eb0d10800000000000000
+      internalID: 2093016734937041454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tacho de basura arreglado_15
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 87
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f9452783a27dc4a0800000000000000
+      internalID: -6571470234591081997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tacho de basura arreglado_16
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 16
+        width: 38
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ebe64d18192b1ee30800000000000000
+      internalID: 4531099038129614526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Tacho de basura arreglado_0: -6881787704263333613
+      Tacho de basura arreglado_1: -8478233681344458965
+      Tacho de basura arreglado_10: -3351619045087613203
+      Tacho de basura arreglado_11: 253415231893599657
+      Tacho de basura arreglado_12: 7235902741013846343
+      Tacho de basura arreglado_13: -7665417777110400352
+      Tacho de basura arreglado_14: 2093016734937041454
+      Tacho de basura arreglado_15: -6571470234591081997
+      Tacho de basura arreglado_16: 4531099038129614526
+      Tacho de basura arreglado_2: 6906201248044249128
+      Tacho de basura arreglado_3: 5967876077796754073
+      Tacho de basura arreglado_4: 2865250033356263418
+      Tacho de basura arreglado_5: -6563753552259526539
+      Tacho de basura arreglado_6: -4182634632268418184
+      Tacho de basura arreglado_7: 5076821525413692093
+      Tacho de basura arreglado_8: -5502235130529739823
+      Tacho de basura arreglado_9: 5177592547672996098
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

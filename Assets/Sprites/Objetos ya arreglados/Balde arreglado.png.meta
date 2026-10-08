@@ -1,0 +1,507 @@
+fileFormatVersion: 2
+guid: eee2d0c899856ed40bb93262b7194e53
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -853843721097294699
+    second: Balde arreglado_0
+  - first:
+      213: -6701448052898041351
+    second: Balde arreglado_1
+  - first:
+      213: 6638545710697228405
+    second: Balde arreglado_2
+  - first:
+      213: -960774216075918937
+    second: Balde arreglado_3
+  - first:
+      213: -81299275227510863
+    second: Balde arreglado_4
+  - first:
+      213: -3785149569576984615
+    second: Balde arreglado_5
+  - first:
+      213: 4845995335283422797
+    second: Balde arreglado_6
+  - first:
+      213: 7027475155613042489
+    second: Balde arreglado_7
+  - first:
+      213: -6746148420158782416
+    second: Balde arreglado_8
+  - first:
+      213: 726495736687910429
+    second: Balde arreglado_9
+  - first:
+      213: 5178638882628829816
+    second: Balde arreglado_10
+  - first:
+      213: -6583439448152513786
+    second: Balde arreglado_11
+  - first:
+      213: 1077456943734524843
+    second: Balde arreglado_12
+  - first:
+      213: 40429182000431009
+    second: Balde arreglado_13
+  - first:
+      213: 5669574891249365785
+    second: Balde arreglado_14
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Balde arreglado_0
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 0
+        width: 1127
+        height: 1246
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59c4c46d8a98624f0800000000000000
+      internalID: -853843721097294699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Balde arreglado_1
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 811
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f1774e608caff2a0800000000000000
+      internalID: -6701448052898041351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Balde arreglado_2
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 742
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5782d4fb62ad02c50800000000000000
+      internalID: 6638545710697228405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Balde arreglado_3
+      rect:
+        serializedVersion: 2
+        x: 1155
+        y: 634
+        width: 62
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a1c07dd0f4aaa2f0800000000000000
+      internalID: -960774216075918937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Balde arreglado_4
+      rect:
+        serializedVersion: 2
+        x: 1165
+        y: 618
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b7419b6dba2fdef0800000000000000
+      internalID: -81299275227510863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Balde arreglado_5
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 616
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9df14a36582787bc0800000000000000
+      internalID: -3785149569576984615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Balde arreglado_6
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 548
+        width: 47
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d46b4ce051f604340800000000000000
+      internalID: 4845995335283422797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Balde arreglado_7
+      rect:
+        serializedVersion: 2
+        x: 1180
+        y: 617
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 937c23ebb6b968160800000000000000
+      internalID: 7027475155613042489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Balde arreglado_8
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 595
+        width: 8
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0348f5621cdd062a0800000000000000
+      internalID: -6746148420158782416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Balde arreglado_9
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 441
+        width: 25
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d1e5e1cf508051a00800000000000000
+      internalID: 726495736687910429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Balde arreglado_10
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 160
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8720e1b40a83ed740800000000000000
+      internalID: 5178638882628829816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Balde arreglado_11
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 47
+        width: 21
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6036394d3bce2a4a0800000000000000
+      internalID: -6583439448152513786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Balde arreglado_12
+      rect:
+        serializedVersion: 2
+        x: 619
+        y: 23
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bab0318b165e3fe00800000000000000
+      internalID: 1077456943734524843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Balde arreglado_13
+      rect:
+        serializedVersion: 2
+        x: 683
+        y: 18
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1aff1b77022af8000800000000000000
+      internalID: 40429182000431009
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Balde arreglado_14
+      rect:
+        serializedVersion: 2
+        x: 689
+        y: 15
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 913746c23506eae40800000000000000
+      internalID: 5669574891249365785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Balde arreglado_0: -853843721097294699
+      Balde arreglado_1: -6701448052898041351
+      Balde arreglado_10: 5178638882628829816
+      Balde arreglado_11: -6583439448152513786
+      Balde arreglado_12: 1077456943734524843
+      Balde arreglado_13: 40429182000431009
+      Balde arreglado_14: 5669574891249365785
+      Balde arreglado_2: 6638545710697228405
+      Balde arreglado_3: -960774216075918937
+      Balde arreglado_4: -81299275227510863
+      Balde arreglado_5: -3785149569576984615
+      Balde arreglado_6: 4845995335283422797
+      Balde arreglado_7: 7027475155613042489
+      Balde arreglado_8: -6746148420158782416
+      Balde arreglado_9: 726495736687910429
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
