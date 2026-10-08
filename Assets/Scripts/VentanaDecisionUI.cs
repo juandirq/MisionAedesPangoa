@@ -1,5 +1,7 @@
 using UnityEngine;
 using TMPro;
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class VentanaDecisionUI : MonoBehaviour
 {
@@ -62,18 +64,54 @@ public class VentanaDecisionUI : MonoBehaviour
         textoBoton2.text = objeto.opcion2;
         textoBoton3.text = objeto.opcion3;
 
+        AjustarLayoutOpciones();
+
         // Mensaje inicial
         textoFeedback.text = "Selecciona una opción";
         textoFeedback.color = colorNormal;
         textoFeedback.gameObject.SetActive(true);
 
         ventanaDecision.SetActive(true);
+        if (EventSystem.current != null)
+            EventSystem.current.SetSelectedGameObject(null);
 
         if (gameManager != null)
             gameManager.PausarCronometro();
 
         if (playerMovement != null)
             playerMovement.enabled = false;
+    }
+
+    public void AjustarLayoutOpciones()
+    {
+        TextMeshProUGUI[] textos = { textoBoton1, textoBoton2, textoBoton3 };
+        RectTransform[] botones = new RectTransform[textos.Length];
+        float[] alturas = new float[textos.Length];
+        const float espacio = 8f;
+        const float limiteSuperior = 100f;
+        const float limiteInferior = -155f;
+
+        Canvas.ForceUpdateCanvases();
+        float alturaTotal = espacio * (textos.Length - 1);
+        for (int i = 0; i < textos.Length; i++)
+        {
+            if (textos[i] == null) return;
+            Button boton = textos[i].GetComponentInParent<Button>(true);
+            if (boton == null) return;
+            botones[i] = boton.transform as RectTransform;
+            textos[i].ForceMeshUpdate();
+            alturas[i] = Mathf.Clamp(textos[i].preferredHeight + 20f, 54f, 78f);
+            alturaTotal += alturas[i];
+        }
+
+        float cursor = (limiteSuperior + limiteInferior + alturaTotal) * 0.5f;
+        for (int i = 0; i < botones.Length; i++)
+        {
+            botones[i].anchorMin = botones[i].anchorMax = new Vector2(0.5f, 0.5f);
+            botones[i].sizeDelta = new Vector2(600f, alturas[i]);
+            botones[i].anchoredPosition = new Vector2(0f, cursor - alturas[i] * 0.5f);
+            cursor -= alturas[i] + espacio;
+        }
     }
 
     public void Opcion1()

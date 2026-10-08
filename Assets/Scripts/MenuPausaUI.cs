@@ -41,6 +41,11 @@ public class MenuPausaUI : MonoBehaviour
         if (otrosPanelesModales != null)
             foreach (GameObject panel in otrosPanelesModales)
                 if (panel != null && panel.activeInHierarchy) return;
+        AbrirPausa();
+    }
+
+    private void AbrirPausa()
+    {
         pausado = true;
         escalaAnterior = Time.timeScale;
         movimientoAnterior = playerMovement.enabled;

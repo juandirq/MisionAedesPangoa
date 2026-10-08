@@ -4,6 +4,12 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
+    public enum MotivoDerrota
+    {
+        Tiempo,
+        Errores
+    }
+
     [Header("HUD")]
     public TextMeshProUGUI textoRiesgo;
     public TextMeshProUGUI textoAciertos;
@@ -39,6 +45,7 @@ public class GameManager : MonoBehaviour
     public GameObject panelHUDDerecho;
 
     [Header("Texto de derrota")]
+    public TextMeshProUGUI tituloDerrota;
     public TextMeshProUGUI textoMotivoDerrota;
 
     [Header("Jugador")]
@@ -107,7 +114,7 @@ public class GameManager : MonoBehaviour
 
             ActualizarTiempo();
 
-            Derrota("Se acabó el tiempo.");
+            Derrota(MotivoDerrota.Tiempo);
 
             return;
         }
@@ -237,7 +244,7 @@ public class GameManager : MonoBehaviour
 
         if (errores >= 3)
         {
-            Derrota("Alcanzaste 3 errores.");
+            Derrota(MotivoDerrota.Errores);
         }
     }
 
@@ -466,7 +473,7 @@ public class GameManager : MonoBehaviour
             playerMovement.enabled = true;
     }
 
-    void Derrota(string motivo)
+    void Derrota(MotivoDerrota motivo)
     {
         if (juegoTerminado)
             return;
@@ -494,8 +501,15 @@ public class GameManager : MonoBehaviour
         if (panelHUDDerecho != null)
             panelHUDDerecho.SetActive(false);
 
+        if (tituloDerrota != null)
+            tituloDerrota.text = motivo == MotivoDerrota.Tiempo
+                ? "¡TIEMPO AGOTADO!"
+                : "¡INSPECCIÓN INTERRUMPIDA!";
+
         if (textoMotivoDerrota != null)
-            textoMotivoDerrota.text = motivo;
+            textoMotivoDerrota.text = motivo == MotivoDerrota.Tiempo
+                ? "Se terminó el tiempo de inspección. Inténtalo de nuevo y revisa los riesgos con mayor rapidez."
+                : "Alcanzaste el máximo de errores permitidos. Inténtalo nuevamente y observa cada situación con atención.";
 
         ActualizarResultadosDerrota();
 

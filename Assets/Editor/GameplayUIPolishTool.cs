@@ -1,6 +1,7 @@
 using System;
 using System.IO;
 using System.Linq;
+using System.Reflection;
 using TMPro;
 using UnityEditor;
 using UnityEditor.SceneManagement;
@@ -46,6 +47,9 @@ public static class GameplayUIPolishTool
         PolishZonePanel(Find(scene, "PanelInicioZona2"));
         PolishZonePanel(Find(scene, "PanelInicioZona3"));
         PolishDecision(Find(scene, "VentanaDecision"));
+        PolishPause(Find(scene, "PanelPausa"));
+        PolishVictory(Find(scene, "PanelVictoria"));
+        PolishDefeat(Find(scene, "PanelDerrota"));
         EditorSceneManager.MarkSceneDirty(scene);
         EditorSceneManager.SaveScene(scene);
         Debug.Log("REQUESTED_FINAL_UI_POLISH_APPLIED");
@@ -66,7 +70,7 @@ public static class GameplayUIPolishTool
     {
         Scene scene = EditorSceneManager.OpenScene(ScenePath, OpenSceneMode.Single);
         int errors = 0;
-        foreach (string name in new[] { "PanelInicioZona1", "PanelInicioZona2", "PanelInicioZona3", "VentanaDecision", "PanelDialogo" })
+        foreach (string name in new[] { "PanelInicioZona1", "PanelInicioZona2", "PanelInicioZona3", "VentanaDecision", "PanelDialogo", "PanelPausa", "PanelVictoria", "PanelDerrota" })
         {
             if (Find(scene, name) != null) continue;
             Debug.LogError("Falta el objeto UI requerido: " + name);
@@ -103,6 +107,38 @@ public static class GameplayUIPolishTool
             errors++;
         }
 
+        if (decision != null)
+        {
+            foreach (TMP_Text label in new TMP_Text[] { decision.textoBoton1, decision.textoBoton2, decision.textoBoton3 })
+            {
+                Button answer = label != null ? label.GetComponentInParent<Button>(true) : null;
+                if (answer != null && answer.colors.selectedColor == answer.colors.normalColor) continue;
+                Debug.LogError("Una respuesta conserva un color Selected diferente de Normal.", answer);
+                errors++;
+            }
+        }
+
+        MenuPausaUI pause = UnityEngine.Object.FindAnyObjectByType<MenuPausaUI>(FindObjectsInactive.Include);
+        GameManager game = UnityEngine.Object.FindAnyObjectByType<GameManager>(FindObjectsInactive.Include);
+        if (pause == null || pause.panelPausa == null || pause.gameManager != game || pause.playerMovement == null ||
+            pause.panelPausa.GetComponentsInChildren<Button>(true).Length != 3)
+        {
+            Debug.LogError("MenuPausaUI perdió referencias o botones.", pause);
+            errors++;
+        }
+        if (game == null || game.panelVictoria == null || game.panelDerrota == null || game.tituloDerrota == null ||
+            game.textoMotivoDerrota == null || game.panelVictoria.GetComponentsInChildren<Button>(true).Length != 1 ||
+            game.panelDerrota.GetComponentsInChildren<Button>(true).Length != 1)
+        {
+            Debug.LogError("Victoria/derrota perdió referencias o botones.", game);
+            errors++;
+        }
+        if (UnityEngine.Object.FindObjectsByType<UnityEngine.EventSystems.EventSystem>(FindObjectsInactive.Include).Length != 1)
+        {
+            Debug.LogError("Debe existir exactamente un EventSystem.");
+            errors++;
+        }
+
         if (UnityEngine.Object.FindObjectsByType<Collider2D>(FindObjectsInactive.Include)
             .Any(c => c.gameObject.name.StartsWith("Decor_", StringComparison.Ordinal)))
         {
@@ -112,6 +148,113 @@ public static class GameplayUIPolishTool
 
         Debug.Log("GAMEPLAY_UI_VALIDATION errors=" + errors + " npc=" + dialogues.Length);
         if (errors > 0) throw new InvalidOperationException("Falló la validación segura de la UI.");
+    }
+
+    public static void ValidateRequestedRuntimeFlows()
+    {
+        ValidatePauseFlow();
+        ValidateTimeoutDefeat();
+        ValidateErrorsDefeat();
+        ValidateNormalVictory();
+        Time.timeScale = 1f;
+        Debug.Log("REQUESTED_RUNTIME_FLOWS pause=ok timeout=ok errors=ok victory=ok");
+    }
+
+    private static void ValidatePauseFlow()
+    {
+        EditorSceneManager.OpenScene(ScenePath, OpenSceneMode.Single);
+        GameManager game = UnityEngine.Object.FindAnyObjectByType<GameManager>(FindObjectsInactive.Include);
+        MenuPausaUI pause = UnityEngine.Object.FindAnyObjectByType<MenuPausaUI>(FindObjectsInactive.Include);
+        PlayerMovement player = UnityEngine.Object.FindAnyObjectByType<PlayerMovement>(FindObjectsInactive.Include);
+        SetPrivate(game, "juegoTerminado", false);
+        SetPrivate(game, "zonaActiva", true);
+        SetPrivate(game, "cronometroActivo", true);
+        SetPrivate(game, "cronometroPausado", false);
+        player.enabled = true;
+        pause.panelPausa.SetActive(false);
+        Time.timeScale = 1f;
+        InvokePrivate(pause, "Start");
+        InvokePrivate(pause, "AbrirPausa");
+        if (!pause.panelPausa.activeSelf || player.enabled || game.CronometroEnMarcha || Time.timeScale != 0f)
+            throw new InvalidOperationException("La apertura real de pausa no bloqueó correctamente el gameplay.");
+        pause.Reanudar();
+        if (pause.panelPausa.activeSelf || !player.enabled || !game.CronometroEnMarcha || Time.timeScale != 1f)
+            throw new InvalidOperationException("Reanudar no restauró correctamente gameplay y cronómetro.");
+    }
+
+    private static void ValidateTimeoutDefeat()
+    {
+        EditorSceneManager.OpenScene(ScenePath, OpenSceneMode.Single);
+        GameManager game = PrepareActiveGame();
+        game.tiempoRestante = 0f;
+        InvokePrivate(game, "Update");
+        AssertDefeat(game, "TIEMPO AGOTADO", "tiempo de inspección");
+    }
+
+    private static void ValidateErrorsDefeat()
+    {
+        EditorSceneManager.OpenScene(ScenePath, OpenSceneMode.Single);
+        GameManager game = PrepareActiveGame();
+        game.RegistrarError();
+        game.RegistrarError();
+        game.RegistrarError();
+        AssertDefeat(game, "INSPECCIÓN INTERRUMPIDA", "máximo de errores");
+    }
+
+    private static void ValidateNormalVictory()
+    {
+        EditorSceneManager.OpenScene(ScenePath, OpenSceneMode.Single);
+        GameManager game = PrepareActiveGame();
+        game.indiceZonaActual = 1;
+        game.objetivosTotales = 1;
+        SetPrivate(game, "riesgo", 100);
+        SetPrivate(game, "objetivosCompletados", 0);
+        game.RegistrarAcierto(80);
+        if (!game.JuegoTerminado || !game.panelVictoria.activeSelf || game.panelDerrota.activeSelf ||
+            (game.panelFinalJuego != null && game.panelFinalJuego.gameObject.activeSelf))
+            throw new InvalidOperationException("La victoria normal no mostró exclusivamente PanelVictoria.");
+        game.ContinuarDespuesDeVictoria();
+        if (game.JuegoTerminado || game.panelVictoria.activeSelf || !game.playerMovement.enabled)
+            throw new InvalidOperationException("Continuar tras victoria no restauró la exploración.");
+    }
+
+    private static GameManager PrepareActiveGame()
+    {
+        GameManager game = UnityEngine.Object.FindAnyObjectByType<GameManager>(FindObjectsInactive.Include);
+        if (game == null || game.playerMovement == null) throw new InvalidOperationException("Falta GameManager/Player.");
+        Time.timeScale = 1f;
+        SetPrivate(game, "juegoTerminado", false);
+        SetPrivate(game, "zonaActiva", true);
+        SetPrivate(game, "cronometroActivo", true);
+        SetPrivate(game, "cronometroPausado", false);
+        SetPrivate(game, "victoriaPendiente", false);
+        game.playerMovement.enabled = true;
+        if (game.panelDerrota != null) game.panelDerrota.SetActive(false);
+        if (game.panelVictoria != null) game.panelVictoria.SetActive(false);
+        if (game.panelFinalJuego != null) game.panelFinalJuego.gameObject.SetActive(false);
+        return game;
+    }
+
+    private static void AssertDefeat(GameManager game, string titlePart, string messagePart)
+    {
+        if (!game.JuegoTerminado || !game.panelDerrota.activeSelf || game.playerMovement.enabled ||
+            game.CronometroEnMarcha || game.panelVictoria.activeSelf ||
+            !game.tituloDerrota.text.Contains(titlePart) || !game.textoMotivoDerrota.text.Contains(messagePart))
+            throw new InvalidOperationException("La derrota no reflejó su causa real o no bloqueó el gameplay.");
+    }
+
+    private static void SetPrivate(object target, string name, object value)
+    {
+        FieldInfo field = target.GetType().GetField(name, BindingFlags.Instance | BindingFlags.NonPublic);
+        if (field == null) throw new MissingFieldException(target.GetType().Name, name);
+        field.SetValue(target, value);
+    }
+
+    private static void InvokePrivate(object target, string name)
+    {
+        MethodInfo method = target.GetType().GetMethod(name, BindingFlags.Instance | BindingFlags.NonPublic);
+        if (method == null) throw new MissingMethodException(target.GetType().Name, name);
+        method.Invoke(target, null);
     }
 
     public static void RenderPreviews()
@@ -157,6 +300,10 @@ public static class GameplayUIPolishTool
             "Vaciarla y guardarla invertida o bajo\ntecho para evitar nuevo\nestancamiento.",
             "LongAnswerCarretilla_1366.png");
         RenderPanel(camera, canvas, Find(scene, "PanelDialogo"), "FinePolishDialogue.png");
+        RenderPanel(camera, canvas, Find(scene, "PanelPausa"), "PausePreview_1366.png");
+        RenderPanel(camera, canvas, Find(scene, "PanelVictoria"), "VictoryPreview_1366.png");
+        RenderDefeatPreview(camera, canvas, Find(scene, "PanelDerrota"), true, "DefeatTimePreview_1366.png");
+        RenderDefeatPreview(camera, canvas, Find(scene, "PanelDerrota"), false, "DefeatErrorsPreview_1366.png");
         RenderPanel(camera, canvas, Find(scene, "PanelInicioZona2"), "FinePolishZone2_1920.png", 1920, 1080);
         RenderPanel(camera, canvas, decisionPanel, "FinePolishDecision_1920.png", 1920, 1080);
         UnityEngine.Object.DestroyImmediate(cameraObject);
@@ -176,9 +323,28 @@ public static class GameplayUIPolishTool
         string previousAnswer = ui.textoBoton1.text;
         if (title != null) title.text = titleText;
         ui.textoBoton1.text = answerText;
+        ui.AjustarLayoutOpciones();
         RenderPanel(camera, canvas, panel, fileName);
         if (title != null) title.text = previousTitle;
         ui.textoBoton1.text = previousAnswer;
+        ui.AjustarLayoutOpciones();
+    }
+
+    private static void RenderDefeatPreview(Camera camera, Canvas canvas, GameObject panel,
+        bool timeout, string fileName)
+    {
+        GameManager game = UnityEngine.Object.FindAnyObjectByType<GameManager>(FindObjectsInactive.Include);
+        if (game == null || game.tituloDerrota == null || game.textoMotivoDerrota == null)
+            throw new InvalidOperationException("PanelDerrota no conserva sus textos enlazados.");
+        string oldTitle = game.tituloDerrota.text;
+        string oldMessage = game.textoMotivoDerrota.text;
+        game.tituloDerrota.text = timeout ? "¡TIEMPO AGOTADO!" : "¡INSPECCIÓN INTERRUMPIDA!";
+        game.textoMotivoDerrota.text = timeout
+            ? "Se terminó el tiempo de inspección. Inténtalo de nuevo y revisa los riesgos con mayor rapidez."
+            : "Alcanzaste el máximo de errores permitidos. Inténtalo nuevamente y observa cada situación con atención.";
+        RenderPanel(camera, canvas, panel, fileName);
+        game.tituloDerrota.text = oldTitle;
+        game.textoMotivoDerrota.text = oldMessage;
     }
 
     private static void RenderPanel(Camera camera, Canvas canvas, GameObject panel, string fileName,
@@ -187,6 +353,12 @@ public static class GameplayUIPolishTool
         if (panel == null) throw new InvalidOperationException("No se encontró el panel para la previsualización.");
         foreach (Transform child in canvas.transform)
             child.gameObject.SetActive(false);
+        Transform ancestor = panel.transform.parent;
+        while (ancestor != null && ancestor != canvas.transform)
+        {
+            ancestor.gameObject.SetActive(true);
+            ancestor = ancestor.parent;
+        }
         panel.SetActive(true);
         Canvas.ForceUpdateCanvases();
 
@@ -288,7 +460,7 @@ public static class GameplayUIPolishTool
     private static void PolishDecision(GameObject panel)
     {
         if (panel == null) throw new InvalidOperationException("No se encontró VentanaDecision.");
-        SetRect((RectTransform)panel.transform, new Vector2(800f, 760f), new Vector2(0f, -8f));
+        SetRect((RectTransform)panel.transform, new Vector2(800f, 720f), new Vector2(0f, -8f));
         Image rootImage = panel.GetComponent<Image>();
         if (rootImage != null) rootImage.color = Color.clear;
         RectTransform border = ChildRect(panel.transform, "BordeMarron");
@@ -297,23 +469,23 @@ public static class GameplayUIPolishTool
         RectTransform line = ChildRect(panel.transform, "LineaTitulo");
         if (border != null)
         {
-            SetRect(border, new Vector2(780f, 740f), Vector2.zero);
+            SetRect(border, new Vector2(780f, 700f), Vector2.zero);
             SetImage(border.GetComponent<Image>(), DarkPanelSprite(), Color.white);
             SetShadow(border.gameObject, new Color(0f, 0f, 0f, 0.38f), new Vector2(9f, -10f));
             border.SetAsFirstSibling();
         }
         if (background != null)
         {
-            SetRect(background, new Vector2(750f, 710f), Vector2.zero);
+            SetRect(background, new Vector2(750f, 670f), Vector2.zero);
             SetImage(background.GetComponent<Image>(), PanelSprite(), Cream);
             background.SetSiblingIndex(1);
         }
         RectTransform titleBackground = Layer((RectTransform)panel.transform, "Decor_CabeceraDecision",
-            null, DeepGreen, new Vector2(730f, 92f), new Vector2(0f, 307f));
+            null, DeepGreen, new Vector2(730f, 92f), new Vector2(0f, 287f));
         titleBackground.SetSiblingIndex(2);
         if (titlePanel != null)
         {
-            SetRect(titlePanel, new Vector2(730f, 92f), new Vector2(0f, 307f));
+            SetRect(titlePanel, new Vector2(730f, 92f), new Vector2(0f, 287f));
             SetImage(titlePanel.GetComponent<Image>(), null, Color.clear);
             TMP_Text title = titlePanel.GetComponentInChildren<TMP_Text>(true);
             if (title != null)
@@ -327,25 +499,25 @@ public static class GameplayUIPolishTool
         }
         if (line != null)
         {
-            SetRect(line, new Vector2(630f, 4f), new Vector2(0f, 132f));
+            SetRect(line, new Vector2(630f, 4f), new Vector2(0f, 122f));
             SetImage(line.GetComponent<Image>(), null, WarmGold);
         }
 
         VentanaDecisionUI ui = UnityEngine.Object.FindObjectsByType<VentanaDecisionUI>(FindObjectsInactive.Include)
             .FirstOrDefault(v => v.ventanaDecision == panel);
         if (ui == null) throw new InvalidOperationException("VentanaDecision no conserva su controlador.");
-        SetRect(ui.descripcionObjeto.rectTransform, new Vector2(670f, 120f), new Vector2(0f, 204f));
+        SetRect(ui.descripcionObjeto.rectTransform, new Vector2(670f, 112f), new Vector2(0f, 184f));
         SetText(ui.descripcionObjeto, Ink, 21f, FontStyles.Normal, TextAlignmentOptions.Center);
         ConfigureResponsiveText(ui.descripcionObjeto, 17f, 21f, TextWrappingModes.Normal, 3f,
             new Vector4(18f, 7f, 18f, 7f));
 
         TMP_Text[] labels = { ui.textoBoton1, ui.textoBoton2, ui.textoBoton3 };
-        float[] ys = { 55f, -75f, -205f };
+        float[] ys = { 51f, -11f, -73f };
         for (int index = 0; index < labels.Length; index++)
         {
             Button button = labels[index].GetComponentInParent<Button>(true);
             if (button == null) continue;
-            SetRect((RectTransform)button.transform, new Vector2(600f, 120f), new Vector2(0f, ys[index]));
+            SetRect((RectTransform)button.transform, new Vector2(600f, 54f), new Vector2(0f, ys[index]));
             StyleAnswerButton(button);
             SetText(labels[index], DeepGreen, 20f, FontStyles.Bold, TextAlignmentOptions.Center);
             ConfigureResponsiveText(labels[index], 16f, 20f, TextWrappingModes.Normal, 1f,
@@ -355,7 +527,7 @@ public static class GameplayUIPolishTool
         RectTransform feedback = ui.textoFeedback.transform.parent as RectTransform;
         if (feedback != null)
         {
-            SetRect(feedback, new Vector2(660f, 78f), new Vector2(0f, -311f));
+            SetRect(feedback, new Vector2(660f, 82f), new Vector2(0f, -260f));
             SetImage(feedback.GetComponent<Image>(), PanelSprite(), CreamSoft);
             SetOutline(feedback.gameObject, new Color32(204, 164, 81, 180), new Vector2(2f, -2f));
         }
@@ -411,14 +583,160 @@ public static class GameplayUIPolishTool
         ReplaceDialogueDecor(panel);
     }
 
+    private static void PolishPause(GameObject panel)
+    {
+        if (panel == null) throw new InvalidOperationException("No se encontró PanelPausa.");
+        Image overlay = panel.GetComponent<Image>();
+        if (overlay != null) overlay.color = new Color32(8, 25, 18, 205);
+        RectTransform root = (RectTransform)panel.transform;
+        RectTransform card = ChildRect(root, "TarjetaPausa");
+        if (card == null) throw new InvalidOperationException("PanelPausa no conserva TarjetaPausa.");
+        SetRect(card, new Vector2(600f, 520f), Vector2.zero);
+        SetImage(card.GetComponent<Image>(), PanelSprite(), Cream);
+        SetShadow(card.gameObject, new Color(0f, 0f, 0f, 0.45f), new Vector2(9f, -10f));
+        RectTransform header = Layer(card, "Decor_CabeceraPausa", null, DeepGreen,
+            new Vector2(560f, 104f), new Vector2(0f, 184f));
+        header.SetAsFirstSibling();
+        Layer(card, "Decor_LineaPausa", null, WarmGold, new Vector2(470f, 4f), new Vector2(0f, 127f));
+        TMP_Text title = card.GetComponentsInChildren<TMP_Text>(true).FirstOrDefault(t => t.name == "TituloPausa");
+        if (title != null)
+        {
+            SetRect(title.rectTransform, new Vector2(440f, 70f), new Vector2(0f, 184f));
+            SetText(title, White, 48f, FontStyles.Bold, TextAlignmentOptions.Center);
+            title.transform.SetAsLastSibling();
+        }
+        string[] names = { "BotonReanudar", "BotonReiniciar", "BotonSalirPausa" };
+        float[] ys = { 63f, -31f, -125f };
+        for (int i = 0; i < names.Length; i++)
+        {
+            Button button = card.GetComponentsInChildren<Button>(true).FirstOrDefault(b => b.name == names[i]);
+            if (button == null) continue;
+            SetRect((RectTransform)button.transform, new Vector2(360f, 68f), new Vector2(0f, ys[i]));
+            StyleWoodButton(button, 23f);
+            button.transform.SetAsLastSibling();
+        }
+        SetTropicalSprite(card, "Decor_PausaIzquierda", new Vector2(-246f, 184f), 34f, false);
+        SetTropicalSprite(card, "Decor_PausaDerecha", new Vector2(246f, 184f), 34f, true);
+    }
+
+    private static void PolishVictory(GameObject panel)
+    {
+        if (panel == null) throw new InvalidOperationException("No se encontró PanelVictoria.");
+        Image overlay = panel.GetComponent<Image>();
+        if (overlay != null) overlay.color = new Color32(8, 25, 18, 215);
+        RectTransform root = (RectTransform)panel.transform;
+        RectTransform card = ChildRect(root, "TarjetaVictoria");
+        if (card == null) throw new InvalidOperationException("PanelVictoria no conserva TarjetaVictoria.");
+        SetRect(card, new Vector2(820f, 600f), Vector2.zero);
+        SetImage(card.GetComponent<Image>(), PanelSprite(), Cream);
+        SetShadow(card.gameObject, new Color(0f, 0f, 0f, 0.46f), new Vector2(10f, -11f));
+        card.SetAsFirstSibling();
+        RectTransform header = Layer(root, "Decor_CabeceraVictoria", null, DeepGreen,
+            new Vector2(780f, 116f), new Vector2(0f, 222f));
+        header.SetSiblingIndex(1);
+        Layer(root, "Decor_LineaVictoria", null, WarmGold, new Vector2(660f, 4f), new Vector2(0f, 158f));
+
+        TMP_Text title = panel.GetComponentsInChildren<TMP_Text>(true).FirstOrDefault(t => t.name == "TituloResultados");
+        if (title != null)
+        {
+            SetRect(title.rectTransform, new Vector2(660f, 82f), new Vector2(0f, 222f));
+            SetText(title, White, 40f, FontStyles.Bold, TextAlignmentOptions.Center);
+            title.transform.SetAsLastSibling();
+        }
+        string[] statNames = { "ResultadoRiesgo", "ResultadoObjetivos", "ResultadoAciertos", "ResultadoErrores" };
+        Vector2[] positions = { new Vector2(-185f, 68f), new Vector2(185f, 68f), new Vector2(-185f, -8f), new Vector2(185f, -8f) };
+        for (int i = 0; i < statNames.Length; i++)
+        {
+            TMP_Text stat = panel.GetComponentsInChildren<TMP_Text>(true).FirstOrDefault(t => t.name == statNames[i]);
+            if (stat == null) continue;
+            SetRect(stat.rectTransform, new Vector2(330f, 54f), positions[i]);
+            SetText(stat, Ink, 23f, FontStyles.Bold, TextAlignmentOptions.Center);
+            ConfigureResponsiveText(stat, 18f, 23f, TextWrappingModes.Normal, 0f, new Vector4(8f, 5f, 8f, 5f));
+            stat.transform.SetAsLastSibling();
+        }
+        Button button = panel.GetComponentsInChildren<Button>(true).FirstOrDefault(b => b.name == "BotonContinuar");
+        if (button != null)
+        {
+            SetRect((RectTransform)button.transform, new Vector2(380f, 70f), new Vector2(0f, -216f));
+            StyleWoodButton(button, 23f);
+            button.transform.SetAsLastSibling();
+        }
+        SetTropicalSprite(root, "Decor_VictoriaIzquierda", new Vector2(-350f, 222f), 36f, false);
+        SetTropicalSprite(root, "Decor_VictoriaDerecha", new Vector2(350f, 222f), 36f, true);
+    }
+
+    private static void PolishDefeat(GameObject panel)
+    {
+        if (panel == null) throw new InvalidOperationException("No se encontró PanelDerrota.");
+        Image overlay = panel.GetComponent<Image>();
+        if (overlay != null) overlay.color = new Color32(20, 18, 14, 218);
+        RectTransform root = (RectTransform)panel.transform;
+        RectTransform card = Layer(root, "Decor_TarjetaDerrota", PanelSprite(), Cream,
+            new Vector2(780f, 500f), Vector2.zero);
+        card.SetAsFirstSibling();
+        SetShadow(card.gameObject, new Color(0f, 0f, 0f, 0.48f), new Vector2(10f, -11f));
+        RectTransform header = Layer(root, "Decor_CabeceraDerrota", null, new Color32(83, 55, 39, 255),
+            new Vector2(740f, 116f), new Vector2(0f, 172f));
+        header.SetSiblingIndex(1);
+        Layer(root, "Decor_LineaDerrota", null, WarmGold, new Vector2(620f, 4f), new Vector2(0f, 108f));
+
+        GameManager game = UnityEngine.Object.FindAnyObjectByType<GameManager>(FindObjectsInactive.Include);
+        if (game == null || game.textoMotivoDerrota == null)
+            throw new InvalidOperationException("PanelDerrota no conserva GameManager/textoMotivoDerrota.");
+        TMP_Text title = CreateOrGetText(root, "TituloDerrota", game.textoMotivoDerrota);
+        title.text = "¡TIEMPO AGOTADO!";
+        SetRect(title.rectTransform, new Vector2(620f, 78f), new Vector2(0f, 172f));
+        SetText(title, White, 38f, FontStyles.Bold, TextAlignmentOptions.Center);
+        ConfigureResponsiveText(title, 27f, 38f, TextWrappingModes.NoWrap, 0f,
+            new Vector4(8f, 5f, 8f, 5f));
+        title.transform.SetAsLastSibling();
+        game.tituloDerrota = title as TextMeshProUGUI;
+
+        SetRect(game.textoMotivoDerrota.rectTransform, new Vector2(640f, 122f), new Vector2(0f, 30f));
+        SetText(game.textoMotivoDerrota, Ink, 22f, FontStyles.Normal, TextAlignmentOptions.Center);
+        ConfigureResponsiveText(game.textoMotivoDerrota, 18f, 22f, TextWrappingModes.Normal, 5f,
+            new Vector4(18f, 10f, 18f, 10f));
+        game.textoMotivoDerrota.transform.SetAsLastSibling();
+        Button button = panel.GetComponentsInChildren<Button>(true).FirstOrDefault(b => b.name == "BotonReintentar");
+        if (button != null)
+        {
+            SetRect((RectTransform)button.transform, new Vector2(380f, 70f), new Vector2(0f, -150f));
+            StyleWoodButton(button, 23f);
+            button.transform.SetAsLastSibling();
+        }
+        SetTropicalSprite(root, "Decor_DerrotaIzquierda", new Vector2(-330f, 172f), 34f, false);
+        SetTropicalSprite(root, "Decor_DerrotaDerecha", new Vector2(330f, 172f), 34f, true);
+        EditorUtility.SetDirty(game);
+    }
+
+    private static TMP_Text CreateOrGetText(RectTransform parent, string name, TMP_Text template)
+    {
+        Transform existing = parent.Find(name);
+        TextMeshProUGUI text;
+        if (existing != null)
+        {
+            text = existing.GetComponent<TextMeshProUGUI>();
+        }
+        else
+        {
+            GameObject item = new GameObject(name, typeof(RectTransform), typeof(CanvasRenderer), typeof(TextMeshProUGUI));
+            item.transform.SetParent(parent, false);
+            item.layer = parent.gameObject.layer;
+            text = item.GetComponent<TextMeshProUGUI>();
+        }
+        text.font = template.font;
+        text.raycastTarget = false;
+        return text;
+    }
+
     private static void ReplaceDecisionDecor(GameObject panel)
     {
         if (panel == null) throw new InvalidOperationException("No se encontró VentanaDecision.");
         RectTransform root = (RectTransform)panel.transform;
         RemoveDecor(root, "Decor_AcentoIzquierdo");
         RemoveDecor(root, "Decor_AcentoDerecho");
-        SetTropicalSprite(root, "Decor_HojasDecisionIzq", new Vector2(-350f, 307f), 26f, false);
-        SetTropicalSprite(root, "Decor_HojasDecisionDer", new Vector2(350f, 307f), 26f, true);
+        SetTropicalSprite(root, "Decor_HojasDecisionIzq", new Vector2(-350f, 287f), 26f, false);
+        SetTropicalSprite(root, "Decor_HojasDecisionDer", new Vector2(350f, 287f), 26f, true);
     }
 
     private static void ReplaceDialogueDecor(GameObject panel)
@@ -484,7 +802,7 @@ public static class GameplayUIPolishTool
         SetImage(button.image, PanelSprite(), PaleGreen);
         button.transition = Selectable.Transition.ColorTint;
         button.colors = Colors(Color.white, new Color32(255, 242, 195, 255), new Color32(187, 211, 160, 255),
-            new Color32(246, 213, 143, 255), new Color32(157, 166, 145, 180));
+            Color.white, new Color32(157, 166, 145, 180));
         SetShadow(button.gameObject, new Color(0.16f, 0.24f, 0.15f, 0.28f), new Vector2(3f, -3f));
     }
 
