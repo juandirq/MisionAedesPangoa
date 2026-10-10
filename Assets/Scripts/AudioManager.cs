@@ -69,6 +69,11 @@ public class AudioManager : MonoBehaviour
     private float proximaPisada;
     private float proximoBlip;
     private bool estabaCaminandoAudio;
+    private bool rioPausadoPorJuego;
+    private float volumenRioObjetivo;
+
+    public bool RioPausadoPorJuego => rioPausadoPorJuego;
+    public float VolumenRioObjetivo => volumenRioObjetivo;
 
     private void Awake()
     {
@@ -155,6 +160,8 @@ public class AudioManager : MonoBehaviour
         if (fuentePisadas != null && fuentePisadas.isPlaying)
             fuentePisadas.volume = volumenPisadas * AjustesAudio.Sfx;
         ActualizarRio();
+        if (fuenteRio != null && Time.timeScale > 0f)
+            fuenteRio.volume = volumenRioObjetivo;
     }
 
     public void ReproducirMusicaZona(int indice)
@@ -303,13 +310,31 @@ public class AudioManager : MonoBehaviour
     private void ActualizarRio()
     {
         if (fuenteRio == null || playerMovement == null || referenciasRio == null) return;
+
+        if (Time.timeScale <= 0f)
+        {
+            if (!rioPausadoPorJuego)
+            {
+                fuenteRio.Pause();
+                rioPausadoPorJuego = true;
+            }
+            return;
+        }
+
+        if (rioPausadoPorJuego)
+        {
+            fuenteRio.UnPause();
+            rioPausadoPorJuego = false;
+        }
+        if (!fuenteRio.isPlaying && ambienteRio != null) fuenteRio.Play();
+
         float menor = float.PositiveInfinity;
         Vector2 jugador = playerMovement.transform.position;
         foreach (Transform rio in referenciasRio)
             if (rio != null) menor = Mathf.Min(menor, Vector2.Distance(jugador, rio.position));
         float t = Mathf.InverseLerp(distanciaRioSilencio, distanciaRioMaximo, menor);
-        float objetivo = Mathf.Clamp01(t) * volumenRioMaximo * AjustesAudio.Sfx;
-        fuenteRio.volume = Mathf.MoveTowards(fuenteRio.volume, objetivo,
+        volumenRioObjetivo = Mathf.Clamp01(t) * volumenRioMaximo * AjustesAudio.Sfx;
+        fuenteRio.volume = Mathf.MoveTowards(fuenteRio.volume, volumenRioObjetivo,
             Time.unscaledDeltaTime * suavizadoRio);
     }
 
