@@ -6,6 +6,8 @@ using UnityEngine;
 /// </summary>
 public static class AjustesAudio
 {
+    public static event System.Action<float> SfxCambiado;
+
     public const string ClaveMusica = "MisionAedes.VolumenMusica";
     public const string ClaveSfx = "MisionAedes.VolumenSFX";
 
@@ -26,7 +28,9 @@ public static class AjustesAudio
 
     public static void GuardarSfx(float valor)
     {
-        PlayerPrefs.SetFloat(ClaveSfx, Mathf.Clamp01(valor));
+        float ajustado = Mathf.Clamp01(valor);
+        PlayerPrefs.SetFloat(ClaveSfx, ajustado);
         PlayerPrefs.Save();
+        SfxCambiado?.Invoke(ajustado);
     }
 }
